@@ -1,6 +1,8 @@
 // Copyright (c) 2014, Ruslan Baratov
 // All rights reserved.
 
+#include <stdexcept> // std::runtime_error
+
 #include "Output.ipp"
 
 void Output::use_buffer(const char* name) {
