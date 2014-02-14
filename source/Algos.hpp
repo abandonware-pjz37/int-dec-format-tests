@@ -13,11 +13,9 @@ class AlgoFmtFormat {
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
     for(auto& i: in) {
-      fmt::FormatInt format_int(i);
-      const char* result = format_int.c_str();
-      strcpy(buffer, result);
-      buffer += strlen(result);
+      fmt::FormatDec(buffer, i);
     }
+    *buffer = '\0';
   }
 };
 
