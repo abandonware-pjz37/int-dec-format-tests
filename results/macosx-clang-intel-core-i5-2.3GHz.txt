@@ -1,300 +1,360 @@
 Converting 2 int with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:33462112 var:2.33167% ms:33 runs:50 conv_ops:50000000]
-                (+2%) cppx::decimal_from [avg:34239425 var:4.00801% ms:34 runs:50 conv_ops:50000000]
-             (+21%) boost::spirit::karma [avg:40788422 var:3.01155% ms:40 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:20907972 var:4.1556% ms:20 runs:50 conv_ops:50000000]
+               (+75%) cppx::decimal_from [avg:36717221 var:3.93095% ms:36 runs:50 conv_ops:50000000]
+            (+101%) boost::spirit::karma [avg:42046902 var:6.16522% ms:42 runs:50 conv_ops:50000000]
 Converting 1 long long with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:54612873 var:2.66724% ms:54 runs:50 conv_ops:50000000]
-               (+24%) cppx::decimal_from [avg:67970775 var:4.66761% ms:67 runs:50 conv_ops:50000000]
-             (+78%) boost::spirit::karma [avg:97740027 var:2.97384% ms:97 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:37393707 var:5.01026% ms:37 runs:50 conv_ops:50000000]
+               (+80%) cppx::decimal_from [avg:67619319 var:3.29684% ms:67 runs:50 conv_ops:50000000]
+            (+158%) boost::spirit::karma [avg:96586382 var:9.10682% ms:96 runs:50 conv_ops:50000000]
 Converting 2 int with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                    (+0%) fmt::FormatInt [avg:32036787 var:4.04709% ms:32 runs:50 conv_ops:50000000]
-                  (!) cppx::decimal_from [avg:31949344 var:2.53634% ms:31 runs:50 conv_ops:50000000]
-             (+20%) boost::spirit::karma [avg:38393245 var:2.18492% ms:38 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:20461362 var:2.29078% ms:20 runs:50 conv_ops:50000000]
+               (+79%) cppx::decimal_from [avg:36667335 var:3.83664% ms:36 runs:50 conv_ops:50000000]
+             (+98%) boost::spirit::karma [avg:40591083 var:4.14019% ms:40 runs:50 conv_ops:50000000]
 Converting 1 long long with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:53421829 var:2.79361% ms:53 runs:50 conv_ops:50000000]
-               (+27%) cppx::decimal_from [avg:68193065 var:5.56306% ms:68 runs:50 conv_ops:50000000]
-             (+78%) boost::spirit::karma [avg:95560603 var:3.02077% ms:95 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:34214282 var:5.22242% ms:34 runs:50 conv_ops:50000000]
+               (+77%) cppx::decimal_from [avg:60869291 var:3.57041% ms:60 runs:50 conv_ops:50000000]
+            (+145%) boost::spirit::karma [avg:83865687 var:5.72193% ms:83 runs:50 conv_ops:50000000]
 Converting 2 int with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+111%) fmt::FormatInt [avg:19569679 var:2.85147% ms:19 runs:50 conv_ops:50000000]
-               (+42%) cppx::decimal_from [avg:13180823 var:0.59345% ms:13 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:9232315 var:3.44647% ms:9 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:8016729 var:9.47499% ms:8 runs:50 conv_ops:50000000]
+               (+54%) cppx::decimal_from [avg:12358626 var:3.89875% ms:12 runs:50 conv_ops:50000000]
+              (+6%) boost::spirit::karma [avg:8562138 var:8.68736% ms:8 runs:50 conv_ops:50000000]
 Converting 1 long long with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+94%) fmt::FormatInt [avg:22676525 var:4.11468% ms:22 runs:50 conv_ops:50000000]
-               (+14%) cppx::decimal_from [avg:13423409 var:6.23231% ms:13 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:11688573 var:4.64186% ms:11 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:9819337 var:20.0212% ms:9 runs:50 conv_ops:50000000]
+               (+43%) cppx::decimal_from [avg:14083872 var:11.821% ms:14 runs:50 conv_ops:50000000]
+              (+6%) boost::spirit::karma [avg:10452832 var:9.99015% ms:10 runs:50 conv_ops:50000000]
 Converting 2 int with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+113%) fmt::FormatInt [avg:19110618 var:3.80892% ms:19 runs:50 conv_ops:50000000]
-               (+39%) cppx::decimal_from [avg:12484040 var:4.91329% ms:12 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:8946364 var:15.1662% ms:8 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:8345150 var:17.182% ms:8 runs:50 conv_ops:50000000]
+               (+55%) cppx::decimal_from [avg:12942960 var:9.70377% ms:12 runs:50 conv_ops:50000000]
+             (+15%) boost::spirit::karma [avg:9617548 var:24.6829% ms:9 runs:50 conv_ops:50000000]
 Converting 1 long long with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+120%) fmt::FormatInt [avg:21483517 var:1.03699% ms:21 runs:50 conv_ops:50000000]
-               (+33%) cppx::decimal_from [avg:13009568 var:3.42465% ms:13 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:9764140 var:0.783045% ms:9 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:8758526 var:9.5321% ms:8 runs:50 conv_ops:50000000]
+               (+42%) cppx::decimal_from [avg:12448744 var:7.70993% ms:12 runs:50 conv_ops:50000000]
+             (+16%) boost::spirit::karma [avg:10243764 var:5.66114% ms:10 runs:50 conv_ops:50000000]
 Converting 2 int with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+79%) fmt::FormatInt [avg:20288496 var:4.67715% ms:20 runs:50 conv_ops:50000000]
-               (+35%) cppx::decimal_from [avg:15312365 var:0.43386% ms:15 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:11286998 var:0.614727% ms:11 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:9741105 var:5.56884% ms:9 runs:50 conv_ops:50000000]
+               (+51%) cppx::decimal_from [avg:14791973 var:8.36857% ms:14 runs:50 conv_ops:50000000]
+             (+21%) boost::spirit::karma [avg:11856169 var:8.04066% ms:11 runs:50 conv_ops:50000000]
 Converting 1 long long with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+83%) fmt::FormatInt [avg:22282849 var:0.758043% ms:22 runs:50 conv_ops:50000000]
-               (+24%) cppx::decimal_from [avg:15170199 var:5.19156% ms:15 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:12139388 var:0.673979% ms:12 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:9545317 var:10.0567% ms:9 runs:50 conv_ops:50000000]
+               (+60%) cppx::decimal_from [avg:15319790 var:0.528502% ms:15 runs:50 conv_ops:50000000]
+             (+48%) boost::spirit::karma [avg:14210023 var:6.81845% ms:14 runs:50 conv_ops:50000000]
 Converting 2 int with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+94%) fmt::FormatInt [avg:20256496 var:9.90726% ms:20 runs:50 conv_ops:50000000]
-               (+39%) cppx::decimal_from [avg:14517968 var:0.742598% ms:14 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:10392715 var:3.85673% ms:10 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:8200648 var:7.34972% ms:8 runs:50 conv_ops:50000000]
+               (+80%) cppx::decimal_from [avg:14762065 var:7.08114% ms:14 runs:50 conv_ops:50000000]
+             (+38%) boost::spirit::karma [avg:11333560 var:2.72337% ms:11 runs:50 conv_ops:50000000]
 Converting 1 long long with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+85%) fmt::FormatInt [avg:22367216 var:2.39948% ms:22 runs:50 conv_ops:50000000]
-               (+26%) cppx::decimal_from [avg:15185437 var:5.98946% ms:15 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:12041541 var:4.04551% ms:12 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:8854807 var:2.90666% ms:8 runs:50 conv_ops:50000000]
+               (+85%) cppx::decimal_from [avg:16407063 var:7.34739% ms:16 runs:50 conv_ops:50000000]
+             (+36%) boost::spirit::karma [avg:12054931 var:2.10844% ms:12 runs:50 conv_ops:50000000]
 Converting 2 int with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+46%) fmt::FormatInt [avg:21374435 var:0.700778% ms:21 runs:50 conv_ops:50000000]
-               (+13%) cppx::decimal_from [avg:16608884 var:0.442246% ms:16 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:14631200 var:6.61887% ms:14 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:11115067 var:1.11975% ms:11 runs:50 conv_ops:50000000]
+               (+67%) cppx::decimal_from [avg:18660828 var:5.72661% ms:18 runs:50 conv_ops:50000000]
+             (+50%) boost::spirit::karma [avg:16676164 var:5.235% ms:16 runs:50 conv_ops:50000000]
 Converting 1 long long with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+39%) fmt::FormatInt [avg:22792399 var:0.640318% ms:22 runs:50 conv_ops:50000000]
-                (+1%) cppx::decimal_from [avg:16494509 var:5.53625% ms:16 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:16321172 var:6.38157% ms:16 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:8895963 var:5.11867% ms:8 runs:50 conv_ops:50000000]
+               (+81%) cppx::decimal_from [avg:16125214 var:3.31794% ms:16 runs:50 conv_ops:50000000]
+             (+36%) boost::spirit::karma [avg:12120377 var:0.986388% ms:12 runs:50 conv_ops:50000000]
 Converting 2 int with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+52%) fmt::FormatInt [avg:20965129 var:0.643337% ms:20 runs:50 conv_ops:50000000]
-               (+15%) cppx::decimal_from [avg:15905669 var:3.43885% ms:15 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:13787810 var:2.61812% ms:13 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:11088321 var:1.29229% ms:11 runs:50 conv_ops:50000000]
+               (+69%) cppx::decimal_from [avg:18742078 var:6.98073% ms:18 runs:50 conv_ops:50000000]
+             (+48%) boost::spirit::karma [avg:16438010 var:1.1891% ms:16 runs:50 conv_ops:50000000]
 Converting 1 long long with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+37%) fmt::FormatInt [avg:22790199 var:0.643531% ms:22 runs:50 conv_ops:50000000]
-                  (!) cppx::decimal_from [avg:16564036 var:5.47487% ms:16 runs:50 conv_ops:50000000]
-              (+0%) boost::spirit::karma [avg:16589547 var:4.14354% ms:16 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:12450690 var:1.26596% ms:12 runs:50 conv_ops:50000000]
+               (+56%) cppx::decimal_from [avg:19509365 var:3.52148% ms:19 runs:50 conv_ops:50000000]
+             (+71%) boost::spirit::karma [avg:21297236 var:5.4675% ms:21 runs:50 conv_ops:50000000]
 Converting 2 int with 10 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                    (+3%) fmt::FormatInt [avg:33721633 var:13.2326% ms:33 runs:50 conv_ops:50000000]
-                  (!) cppx::decimal_from [avg:32516597 var:6.82487% ms:32 runs:50 conv_ops:50000000]
-             (+20%) boost::spirit::karma [avg:39141476 var:5.86706% ms:39 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:21367180 var:5.93217% ms:21 runs:50 conv_ops:50000000]
+               (+68%) cppx::decimal_from [avg:36055320 var:0.905522% ms:36 runs:50 conv_ops:50000000]
+            (+103%) boost::spirit::karma [avg:43573878 var:2.84512% ms:43 runs:50 conv_ops:50000000]
 Converting 1 long long with 10 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:54082720 var:0.412115% ms:54 runs:50 conv_ops:50000000]
-               (+24%) cppx::decimal_from [avg:67152690 var:2.22732% ms:67 runs:50 conv_ops:50000000]
-             (+78%) boost::spirit::karma [avg:96771243 var:2.78216% ms:96 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:23769499 var:12.3791% ms:23 runs:50 conv_ops:50000000]
+               (+68%) cppx::decimal_from [avg:40077380 var:4.2493% ms:40 runs:50 conv_ops:50000000]
+            (+113%) boost::spirit::karma [avg:50652400 var:7.33505% ms:50 runs:50 conv_ops:50000000]
 Converting 2 int with 10 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:32159032 var:0.474396% ms:32 runs:50 conv_ops:50000000]
-                (+4%) cppx::decimal_from [avg:33601913 var:1.04914% ms:33 runs:50 conv_ops:50000000]
-             (+24%) boost::spirit::karma [avg:39919058 var:5.69621% ms:39 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:20793854 var:5.52463% ms:20 runs:50 conv_ops:50000000]
+               (+75%) cppx::decimal_from [avg:36525755 var:4.44348% ms:36 runs:50 conv_ops:50000000]
+            (+106%) boost::spirit::karma [avg:43035421 var:9.0057% ms:43 runs:50 conv_ops:50000000]
 Converting 1 long long with 10 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:52964882 var:1.02158% ms:52 runs:50 conv_ops:50000000]
-               (+27%) cppx::decimal_from [avg:67507596 var:2.22214% ms:67 runs:50 conv_ops:50000000]
-             (+79%) boost::spirit::karma [avg:95257444 var:2.05961% ms:95 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:20095989 var:3.61375% ms:20 runs:50 conv_ops:50000000]
+               (+58%) cppx::decimal_from [avg:31813901 var:3.46455% ms:31 runs:50 conv_ops:50000000]
+            (+106%) boost::spirit::karma [avg:41528858 var:3.87042% ms:41 runs:50 conv_ops:50000000]
 Converting 25 int with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:32602415 var:10.5734% ms:32 runs:50 conv_ops:50000000]
-                (+1%) cppx::decimal_from [avg:33199961 var:6.31386% ms:33 runs:50 conv_ops:50000000]
-             (+21%) boost::spirit::karma [avg:39650581 var:7.93717% ms:39 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:18179986 var:0.879832% ms:18 runs:50 conv_ops:50000000]
+               (+75%) cppx::decimal_from [avg:31889910 var:3.20555% ms:31 runs:50 conv_ops:50000000]
+            (+108%) boost::spirit::karma [avg:37905570 var:2.6387% ms:37 runs:50 conv_ops:50000000]
 Converting 14 long long with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:49414330 var:2.98826% ms:49 runs:50 conv_ops:49999600]
-               (+28%) cppx::decimal_from [avg:63339840 var:2.02752% ms:63 runs:50 conv_ops:49999600]
-             (+89%) boost::spirit::karma [avg:93820639 var:5.11613% ms:93 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:34275898 var:7.5553% ms:34 runs:50 conv_ops:49999600]
+               (+85%) cppx::decimal_from [avg:63498917 var:6.66135% ms:63 runs:50 conv_ops:49999600]
+            (+169%) boost::spirit::karma [avg:92476599 var:3.079% ms:92 runs:50 conv_ops:49999600]
 Converting 25 int with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:31108115 var:2.47981% ms:31 runs:50 conv_ops:50000000]
-                (+0%) cppx::decimal_from [avg:31399660 var:0.724675% ms:31 runs:50 conv_ops:50000000]
-             (+22%) boost::spirit::karma [avg:38033958 var:3.50389% ms:38 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:18211568 var:3.03142% ms:18 runs:50 conv_ops:50000000]
+               (+79%) cppx::decimal_from [avg:32725168 var:3.66112% ms:32 runs:50 conv_ops:50000000]
+            (+107%) boost::spirit::karma [avg:37797975 var:3.30374% ms:37 runs:50 conv_ops:50000000]
 Converting 14 long long with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:47345082 var:0.541313% ms:47 runs:50 conv_ops:49999600]
-               (+34%) cppx::decimal_from [avg:63449212 var:1.70569% ms:63 runs:50 conv_ops:49999600]
-             (+95%) boost::spirit::karma [avg:92465646 var:2.42205% ms:92 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:35188776 var:8.25433% ms:35 runs:50 conv_ops:49999600]
+               (+84%) cppx::decimal_from [avg:64820118 var:4.03209% ms:64 runs:50 conv_ops:49999600]
+            (+164%) boost::spirit::karma [avg:92991393 var:2.79362% ms:92 runs:50 conv_ops:49999600]
 Converting 25 int with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+109%) fmt::FormatInt [avg:16949445 var:0.909047% ms:16 runs:50 conv_ops:50000000]
-               (+55%) cppx::decimal_from [avg:12566005 var:5.2052% ms:12 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:8073559 var:1.17632% ms:8 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:6305734 var:7.76277% ms:6 runs:50 conv_ops:50000000]
+               (+97%) cppx::decimal_from [avg:12468129 var:2.92371% ms:12 runs:50 conv_ops:50000000]
+             (+16%) boost::spirit::karma [avg:7325775 var:8.56705% ms:7 runs:50 conv_ops:50000000]
 Converting 14 long long with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+144%) fmt::FormatInt [avg:17071068 var:3.65702% ms:17 runs:50 conv_ops:49999600]
-               (+75%) cppx::decimal_from [avg:12237099 var:4.18654% ms:12 runs:50 conv_ops:49999600]
-                (!) boost::spirit::karma [avg:6979178 var:1.30672% ms:6 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:6026447 var:2.40731% ms:6 runs:50 conv_ops:49999600]
+              (+111%) cppx::decimal_from [avg:12741035 var:3.0828% ms:12 runs:50 conv_ops:49999600]
+             (+22%) boost::spirit::karma [avg:7386121 var:11.7255% ms:7 runs:50 conv_ops:49999600]
 Converting 25 int with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+102%) fmt::FormatInt [avg:16908350 var:8.24206% ms:16 runs:50 conv_ops:50000000]
-               (+44%) cppx::decimal_from [avg:12009533 var:6.35046% ms:12 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:8330958 var:27.0348% ms:8 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:6418794 var:6.85574% ms:6 runs:50 conv_ops:50000000]
+               (+86%) cppx::decimal_from [avg:11944890 var:7.82586% ms:11 runs:50 conv_ops:50000000]
+              (+6%) boost::spirit::karma [avg:6807122 var:8.2416% ms:6 runs:50 conv_ops:50000000]
 Converting 14 long long with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+147%) fmt::FormatInt [avg:16736652 var:3.35945% ms:16 runs:50 conv_ops:49999600]
-               (+75%) cppx::decimal_from [avg:11826033 var:6.21271% ms:11 runs:50 conv_ops:49999600]
-                (!) boost::spirit::karma [avg:6749452 var:1.72888% ms:6 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:5991222 var:10.7519% ms:5 runs:50 conv_ops:49999600]
+               (+93%) cppx::decimal_from [avg:11583833 var:0.661734% ms:11 runs:50 conv_ops:49999600]
+             (+14%) boost::spirit::karma [avg:6833472 var:6.16728% ms:6 runs:50 conv_ops:49999600]
 Converting 25 int with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+71%) fmt::FormatInt [avg:17860538 var:3.91605% ms:17 runs:50 conv_ops:50000000]
-               (+42%) cppx::decimal_from [avg:14814570 var:0.448486% ms:14 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:10398791 var:3.9425% ms:10 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:6588317 var:4.12018% ms:6 runs:50 conv_ops:50000000]
+              (+128%) cppx::decimal_from [avg:15053702 var:5.25147% ms:15 runs:50 conv_ops:50000000]
+             (+57%) boost::spirit::karma [avg:10347547 var:4.34838% ms:10 runs:50 conv_ops:50000000]
 Converting 14 long long with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+62%) fmt::FormatInt [avg:18145762 var:4.81113% ms:18 runs:50 conv_ops:49999600]
-               (+36%) cppx::decimal_from [avg:15260758 var:5.27732% ms:15 runs:50 conv_ops:49999600]
-                (!) boost::spirit::karma [avg:11143619 var:1.07226% ms:11 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:6426297 var:1.65085% ms:6 runs:50 conv_ops:49999600]
+              (+134%) cppx::decimal_from [avg:15049943 var:8.376% ms:15 runs:50 conv_ops:49999600]
+             (+56%) boost::spirit::karma [avg:10055992 var:7.32562% ms:10 runs:50 conv_ops:49999600]
 Converting 25 int with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+89%) fmt::FormatInt [avg:17243222 var:3.24943% ms:17 runs:50 conv_ops:50000000]
-               (+54%) cppx::decimal_from [avg:14105197 var:2.12244% ms:14 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:9120494 var:2.08712% ms:9 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:6432373 var:8.06074% ms:6 runs:50 conv_ops:50000000]
+              (+113%) cppx::decimal_from [avg:13707851 var:0.895903% ms:13 runs:50 conv_ops:50000000]
+             (+39%) boost::spirit::karma [avg:8965335 var:9.39519% ms:8 runs:50 conv_ops:50000000]
 Converting 14 long long with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+82%) fmt::FormatInt [avg:17281912 var:2.50392% ms:17 runs:50 conv_ops:49999600]
-               (+46%) cppx::decimal_from [avg:13905598 var:1.90597% ms:13 runs:50 conv_ops:49999600]
-                (!) boost::spirit::karma [avg:9488304 var:4.39779% ms:9 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:6649786 var:1.54044% ms:6 runs:50 conv_ops:49999600]
+              (+120%) cppx::decimal_from [avg:14664478 var:9.29713% ms:14 runs:50 conv_ops:49999600]
+             (+43%) boost::spirit::karma [avg:9529182 var:1.18165% ms:9 runs:50 conv_ops:49999600]
 Converting 25 int with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+45%) fmt::FormatInt [avg:19738755 var:4.63939% ms:19 runs:50 conv_ops:50000000]
-               (+22%) cppx::decimal_from [avg:16583252 var:5.71797% ms:16 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:13543933 var:3.59465% ms:13 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:9828040 var:1.58101% ms:9 runs:50 conv_ops:50000000]
+               (+88%) cppx::decimal_from [avg:18572971 var:3.83905% ms:18 runs:50 conv_ops:50000000]
+             (+62%) boost::spirit::karma [avg:15972347 var:5.10344% ms:15 runs:50 conv_ops:50000000]
 Converting 14 long long with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+31%) fmt::FormatInt [avg:19487982 var:0.864751% ms:19 runs:50 conv_ops:49999600]
-                (+9%) cppx::decimal_from [avg:16261073 var:0.386139% ms:16 runs:50 conv_ops:49999600]
-                (!) boost::spirit::karma [avg:14785668 var:5.20346% ms:14 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:9829271 var:8.15391% ms:9 runs:50 conv_ops:49999600]
+               (+84%) cppx::decimal_from [avg:18148069 var:2.03501% ms:18 runs:50 conv_ops:49999600]
+             (+85%) boost::spirit::karma [avg:18246459 var:5.50456% ms:18 runs:50 conv_ops:49999600]
 Converting 25 int with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+49%) fmt::FormatInt [avg:19702964 var:7.4112% ms:19 runs:50 conv_ops:50000000]
-               (+19%) cppx::decimal_from [avg:15688353 var:3.84503% ms:15 runs:50 conv_ops:50000000]
-                (!) boost::spirit::karma [avg:13164914 var:0.625489% ms:13 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:9464103 var:1.04916% ms:9 runs:50 conv_ops:50000000]
+               (+84%) cppx::decimal_from [avg:17473386 var:5.05175% ms:17 runs:50 conv_ops:50000000]
+             (+57%) boost::spirit::karma [avg:14923767 var:6.846% ms:14 runs:50 conv_ops:50000000]
 Converting 14 long long with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+51%) fmt::FormatInt [avg:18897130 var:0.607572% ms:18 runs:50 conv_ops:49999600]
-               (+25%) cppx::decimal_from [avg:15647747 var:5.08727% ms:15 runs:50 conv_ops:49999600]
-                (!) boost::spirit::karma [avg:12451120 var:0.62974% ms:12 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:9404781 var:1.11314% ms:9 runs:50 conv_ops:49999600]
+               (+86%) cppx::decimal_from [avg:17510036 var:2.35819% ms:17 runs:50 conv_ops:49999600]
+             (+86%) boost::spirit::karma [avg:17511133 var:2.64802% ms:17 runs:50 conv_ops:49999600]
 Converting 25 int with 10 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:29582831 var:0.632721% ms:29 runs:50 conv_ops:50000000]
-                (+6%) cppx::decimal_from [avg:31439486 var:4.82459% ms:31 runs:50 conv_ops:50000000]
-             (+24%) boost::spirit::karma [avg:36695537 var:1.12095% ms:36 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:19399811 var:3.20611% ms:19 runs:50 conv_ops:50000000]
+               (+81%) cppx::decimal_from [avg:35164265 var:5.1112% ms:35 runs:50 conv_ops:50000000]
+            (+103%) boost::spirit::karma [avg:39475699 var:3.59492% ms:39 runs:50 conv_ops:50000000]
 Converting 14 long long with 10 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:48992935 var:0.884076% ms:48 runs:50 conv_ops:49999600]
-               (+28%) cppx::decimal_from [avg:63096492 var:4.91217% ms:63 runs:50 conv_ops:49999600]
-             (+93%) boost::spirit::karma [avg:94936385 var:7.7767% ms:94 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:18906231 var:3.35594% ms:18 runs:50 conv_ops:49999600]
+               (+78%) cppx::decimal_from [avg:33738611 var:1.9228% ms:33 runs:50 conv_ops:49999600]
+            (+157%) boost::spirit::karma [avg:48754046 var:4.13343% ms:48 runs:50 conv_ops:49999600]
 Converting 25 int with 10 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:30663769 var:3.48645% ms:30 runs:50 conv_ops:50000000]
-                (+0%) cppx::decimal_from [avg:30960576 var:0.264778% ms:30 runs:50 conv_ops:50000000]
-             (+19%) boost::spirit::karma [avg:36651699 var:3.80974% ms:36 runs:50 conv_ops:50000000]
+                      (!) fmt::FormatInt [avg:18145671 var:3.33641% ms:18 runs:50 conv_ops:50000000]
+               (+80%) cppx::decimal_from [avg:32825368 var:8.8973% ms:32 runs:50 conv_ops:50000000]
+            (+108%) boost::spirit::karma [avg:37828747 var:3.93668% ms:37 runs:50 conv_ops:50000000]
 Converting 14 long long with 10 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:48309054 var:3.09428% ms:48 runs:50 conv_ops:49999600]
-               (+31%) cppx::decimal_from [avg:63496540 var:0.309663% ms:63 runs:50 conv_ops:49999600]
-             (+90%) boost::spirit::karma [avg:91969731 var:2.26431% ms:91 runs:50 conv_ops:49999600]
+                      (!) fmt::FormatInt [avg:18933626 var:5.39578% ms:18 runs:50 conv_ops:49999600]
+               (+78%) cppx::decimal_from [avg:33775228 var:3.27772% ms:33 runs:50 conv_ops:49999600]
+            (+146%) boost::spirit::karma [avg:46686928 var:3.45302% ms:46 runs:50 conv_ops:49999600]
 Converting 341 int with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:32923791 var:3.67201% ms:32 runs:50 conv_ops:49990600]
-                (+3%) cppx::decimal_from [avg:34050379 var:2.9219% ms:34 runs:50 conv_ops:49990600]
-             (+27%) boost::spirit::karma [avg:42034977 var:0.319739% ms:42 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:18342540 var:2.94584% ms:18 runs:50 conv_ops:49990600]
+               (+81%) cppx::decimal_from [avg:33207045 var:3.48714% ms:33 runs:50 conv_ops:49990600]
+            (+131%) boost::spirit::karma [avg:42541625 var:3.42833% ms:42 runs:50 conv_ops:49990600]
 Converting 195 long long with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:49508173 var:3.75723% ms:49 runs:50 conv_ops:49998000]
-               (+32%) cppx::decimal_from [avg:65770735 var:4.755% ms:65 runs:50 conv_ops:49998000]
-             (+99%) boost::spirit::karma [avg:98876868 var:6.13764% ms:98 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:35236808 var:3.69919% ms:35 runs:50 conv_ops:49998000]
+               (+87%) cppx::decimal_from [avg:66242703 var:5.78437% ms:66 runs:50 conv_ops:49998000]
+            (+182%) boost::spirit::karma [avg:99425047 var:2.77162% ms:99 runs:50 conv_ops:49998000]
 Converting 341 int with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:32958768 var:1.63706% ms:32 runs:50 conv_ops:49990600]
-                (+5%) cppx::decimal_from [avg:34617073 var:0.422383% ms:34 runs:50 conv_ops:49990600]
-             (+29%) boost::spirit::karma [avg:42637249 var:4.72118% ms:42 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:21911405 var:15.1837% ms:21 runs:50 conv_ops:49990600]
+               (+67%) cppx::decimal_from [avg:36603707 var:10.8492% ms:36 runs:50 conv_ops:49990600]
+             (+90%) boost::spirit::karma [avg:41799329 var:16.418% ms:41 runs:50 conv_ops:49990600]
 Converting 195 long long with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:46834330 var:1.5732% ms:46 runs:50 conv_ops:49998000]
-               (+35%) cppx::decimal_from [avg:63520698 var:2.73334% ms:63 runs:50 conv_ops:49998000]
-            (+101%) boost::spirit::karma [avg:94436253 var:2.90824% ms:94 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:34693494 var:3.58673% ms:34 runs:50 conv_ops:49998000]
+               (+89%) cppx::decimal_from [avg:65872741 var:4.15899% ms:65 runs:50 conv_ops:49998000]
+            (+189%) boost::spirit::karma [avg:100451911 var:7.12374% ms:100 runs:50 conv_ops:49998000]
 Converting 341 int with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+140%) fmt::FormatInt [avg:17705844 var:2.11332% ms:17 runs:50 conv_ops:49990600]
-               (+70%) cppx::decimal_from [avg:12534400 var:4.80191% ms:12 runs:50 conv_ops:49990600]
-                (!) boost::spirit::karma [avg:7347991 var:0.641152% ms:7 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:6248509 var:8.80065% ms:6 runs:50 conv_ops:49990600]
+               (+99%) cppx::decimal_from [avg:12434578 var:3.22351% ms:12 runs:50 conv_ops:49990600]
+             (+16%) boost::spirit::karma [avg:7277381 var:3.32759% ms:7 runs:50 conv_ops:49990600]
 Converting 195 long long with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+131%) fmt::FormatInt [avg:17594710 var:3.06205% ms:17 runs:50 conv_ops:49998000]
-               (+63%) cppx::decimal_from [avg:12462716 var:7.12411% ms:12 runs:50 conv_ops:49998000]
-                (!) boost::spirit::karma [avg:7610974 var:5.72464% ms:7 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:6275828 var:12.7975% ms:6 runs:50 conv_ops:49998000]
+               (+99%) cppx::decimal_from [avg:12520882 var:5.498% ms:12 runs:50 conv_ops:49998000]
+              (+8%) boost::spirit::karma [avg:6834656 var:1.11347% ms:6 runs:50 conv_ops:49998000]
 Converting 341 int with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+150%) fmt::FormatInt [avg:16271937 var:0.782674% ms:16 runs:50 conv_ops:49990600]
-               (+87%) cppx::decimal_from [avg:12221136 var:8.68645% ms:12 runs:50 conv_ops:49990600]
-                (!) boost::spirit::karma [avg:6508502 var:0.786308% ms:6 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:6051631 var:5.74416% ms:6 runs:50 conv_ops:49990600]
+               (+98%) cppx::decimal_from [avg:12023691 var:0.883069% ms:12 runs:50 conv_ops:49990600]
+              (+7%) boost::spirit::karma [avg:6489623 var:0.655228% ms:6 runs:50 conv_ops:49990600]
 Converting 195 long long with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                  (+149%) fmt::FormatInt [avg:16282746 var:0.690387% ms:16 runs:50 conv_ops:49998000]
-               (+82%) cppx::decimal_from [avg:11924510 var:3.93246% ms:11 runs:50 conv_ops:49998000]
-                (!) boost::spirit::karma [avg:6533272 var:0.854347% ms:6 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:5886707 var:10.5451% ms:5 runs:50 conv_ops:49998000]
+              (+102%) cppx::decimal_from [avg:11927536 var:4.25818% ms:11 runs:50 conv_ops:49998000]
+             (+10%) boost::spirit::karma [avg:6492238 var:0.772489% ms:6 runs:50 conv_ops:49998000]
 Converting 341 int with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+76%) fmt::FormatInt [avg:17988565 var:4.27823% ms:17 runs:50 conv_ops:49990600]
-               (+45%) cppx::decimal_from [avg:14807877 var:4.38805% ms:14 runs:50 conv_ops:49990600]
-                (!) boost::spirit::karma [avg:10198128 var:0.716867% ms:10 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:6569706 var:6.81106% ms:6 runs:50 conv_ops:49990600]
+              (+128%) cppx::decimal_from [avg:15022400 var:5.57489% ms:15 runs:50 conv_ops:49990600]
+             (+53%) boost::spirit::karma [avg:10089675 var:0.856484% ms:10 runs:50 conv_ops:49990600]
 Converting 195 long long with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+88%) fmt::FormatInt [avg:17893635 var:0.733403% ms:17 runs:50 conv_ops:49998000]
-               (+56%) cppx::decimal_from [avg:14805396 var:4.98397% ms:14 runs:50 conv_ops:49998000]
-                (!) boost::spirit::karma [avg:9468276 var:0.93033% ms:9 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:6339287 var:11.5988% ms:6 runs:50 conv_ops:49998000]
+              (+130%) cppx::decimal_from [avg:14633844 var:0.544243% ms:14 runs:50 conv_ops:49998000]
+             (+48%) boost::spirit::karma [avg:9394384 var:2.52197% ms:9 runs:50 conv_ops:49998000]
 Converting 341 int with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+86%) fmt::FormatInt [avg:17149121 var:5.31815% ms:17 runs:50 conv_ops:49990600]
-               (+54%) cppx::decimal_from [avg:14205762 var:1.56601% ms:14 runs:50 conv_ops:49990600]
-                (!) boost::spirit::karma [avg:9170819 var:5.05269% ms:9 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:7163660 var:8.15015% ms:7 runs:50 conv_ops:49990600]
+              (+103%) cppx::decimal_from [avg:14612943 var:2.69474% ms:14 runs:50 conv_ops:49990600]
+             (+27%) boost::spirit::karma [avg:9151191 var:9.04078% ms:9 runs:50 conv_ops:49990600]
 Converting 195 long long with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+98%) fmt::FormatInt [avg:18692768 var:14.7787% ms:18 runs:50 conv_ops:49998000]
-               (+48%) cppx::decimal_from [avg:13995850 var:3.03573% ms:13 runs:50 conv_ops:49998000]
-                (!) boost::spirit::karma [avg:9415348 var:2.69118% ms:9 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:7052805 var:5.19736% ms:7 runs:50 conv_ops:49998000]
+              (+100%) cppx::decimal_from [avg:14148580 var:4.59543% ms:14 runs:50 conv_ops:49998000]
+             (+34%) boost::spirit::karma [avg:9497325 var:0.788123% ms:9 runs:50 conv_ops:49998000]
 Converting 341 int with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+56%) fmt::FormatInt [avg:20388580 var:2.6361% ms:20 runs:50 conv_ops:49990600]
-               (+24%) cppx::decimal_from [avg:16232498 var:0.403744% ms:16 runs:50 conv_ops:49990600]
-                (!) boost::spirit::karma [avg:13029611 var:6.38775% ms:13 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:9775370 var:4.11719% ms:9 runs:50 conv_ops:49990600]
+               (+91%) cppx::decimal_from [avg:18686238 var:5.47151% ms:18 runs:50 conv_ops:49990600]
+             (+67%) boost::spirit::karma [avg:16359948 var:3.61441% ms:16 runs:50 conv_ops:49990600]
 Converting 195 long long with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+43%) fmt::FormatInt [avg:20573591 var:3.55576% ms:20 runs:50 conv_ops:49998000]
-               (+12%) cppx::decimal_from [avg:16224060 var:0.457144% ms:16 runs:50 conv_ops:49998000]
-                (!) boost::spirit::karma [avg:14375609 var:4.95599% ms:14 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:9600613 var:7.71271% ms:9 runs:50 conv_ops:49998000]
+               (+92%) cppx::decimal_from [avg:18490756 var:6.63384% ms:18 runs:50 conv_ops:49998000]
+            (+100%) boost::spirit::karma [avg:19202414 var:6.63623% ms:19 runs:50 conv_ops:49998000]
 Converting 341 int with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+58%) fmt::FormatInt [avg:19066788 var:3.06528% ms:19 runs:50 conv_ops:49990600]
-               (+35%) cppx::decimal_from [avg:16264133 var:6.08056% ms:16 runs:50 conv_ops:49990600]
-                (!) boost::spirit::karma [avg:11997388 var:5.09058% ms:11 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:10119937 var:4.76251% ms:10 runs:50 conv_ops:49990600]
+               (+77%) cppx::decimal_from [avg:17969944 var:5.83771% ms:17 runs:50 conv_ops:49990600]
+             (+46%) boost::spirit::karma [avg:14840995 var:2.73645% ms:14 runs:50 conv_ops:49990600]
 Converting 195 long long with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                   (+48%) fmt::FormatInt [avg:19170475 var:4.44713% ms:19 runs:50 conv_ops:49998000]
-               (+22%) cppx::decimal_from [avg:15801875 var:0.447032% ms:15 runs:50 conv_ops:49998000]
-                (!) boost::spirit::karma [avg:12875012 var:0.539417% ms:12 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:10485018 var:8.66382% ms:10 runs:50 conv_ops:49998000]
+               (+68%) cppx::decimal_from [avg:17688827 var:5.76288% ms:17 runs:50 conv_ops:49998000]
+             (+67%) boost::spirit::karma [avg:17510147 var:6.01298% ms:17 runs:50 conv_ops:49998000]
 Converting 341 int with 10 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:33553708 var:2.33702% ms:33 runs:50 conv_ops:49990600]
-                (+1%) cppx::decimal_from [avg:33928554 var:1.65571% ms:33 runs:50 conv_ops:49990600]
-             (+15%) boost::spirit::karma [avg:38590856 var:3.70075% ms:38 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:19915954 var:13.4651% ms:19 runs:50 conv_ops:49990600]
+               (+78%) cppx::decimal_from [avg:35530806 var:8.45175% ms:35 runs:50 conv_ops:49990600]
+            (+104%) boost::spirit::karma [avg:40729796 var:5.48684% ms:40 runs:50 conv_ops:49990600]
 Converting 195 long long with 10 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:48951975 var:1.19939% ms:48 runs:50 conv_ops:49998000]
-               (+33%) cppx::decimal_from [avg:65332953 var:2.24514% ms:65 runs:50 conv_ops:49998000]
-             (+92%) boost::spirit::karma [avg:94386920 var:1.924% ms:94 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:18723449 var:2.20654% ms:18 runs:50 conv_ops:49998000]
+               (+80%) cppx::decimal_from [avg:33886793 var:2.99063% ms:33 runs:50 conv_ops:49998000]
+            (+166%) boost::spirit::karma [avg:49820940 var:9.84207% ms:49 runs:50 conv_ops:49998000]
 Converting 341 int with 10 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:33127494 var:1.81987% ms:33 runs:50 conv_ops:49990600]
-                (+6%) cppx::decimal_from [avg:35288266 var:8.50088% ms:35 runs:50 conv_ops:49990600]
-             (+19%) boost::spirit::karma [avg:39585150 var:10.4787% ms:39 runs:50 conv_ops:49990600]
+                      (!) fmt::FormatInt [avg:21995576 var:13.1793% ms:21 runs:50 conv_ops:49990600]
+               (+55%) cppx::decimal_from [avg:34212273 var:2.35384% ms:34 runs:50 conv_ops:49990600]
+             (+98%) boost::spirit::karma [avg:43620823 var:3.83435% ms:43 runs:50 conv_ops:49990600]
 Converting 195 long long with 10 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long): 2 4 8 8
 Run tests #1 #2 #3 #4 #5 Results:
-                      (!) fmt::FormatInt [avg:46761044 var:2.39261% ms:46 runs:50 conv_ops:49998000]
-               (+36%) cppx::decimal_from [avg:63775313 var:3.09168% ms:63 runs:50 conv_ops:49998000]
-             (+99%) boost::spirit::karma [avg:93190557 var:3.1539% ms:93 runs:50 conv_ops:49998000]
+                      (!) fmt::FormatInt [avg:19250182 var:1.6852% ms:19 runs:50 conv_ops:49998000]
+               (+83%) cppx::decimal_from [avg:35235356 var:5.34947% ms:35 runs:50 conv_ops:49998000]
+            (+141%) boost::spirit::karma [avg:46446699 var:2.4403% ms:46 runs:50 conv_ops:49998000]
