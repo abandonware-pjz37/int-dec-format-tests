@@ -32,36 +32,23 @@ class Input {
     values_.resize(output_size / bytes_per_value);
     assert(!values_.empty());
 
-    Type min = 0;
     Type max = 0;
-    switch(digit) {
-      case 1:
-        min = -9;
-        max = 9;
-        break;
-      case 2:
-        min = -99;
-        max = 99;
-        break;
-      case 4:
-        min = -999;
-        max = 999;
-        break;
-      case 10:
-        min = -999999999;
-        max = 999999999;
-      case 0:
-        min = std::numeric_limits<Type>::min();
-        max = std::numeric_limits<Type>::max();
-        break;
-      default:
-        assert(false);
-        break;
+    Type min = 0;
+
+    if (digit != 0) {
+      max = std::pow(10, digit) - 1;
+      min = -max;
+    }
+    else {
+      max = std::numeric_limits<Type>::max();
+      min = std::numeric_limits<Type>::min();
     }
 
     if (!have_sign) {
       min = 0;
     }
+
+    assert(max > min);
 
     std::random_device rd;
     std::uniform_int_distribution<Type> dist(min, max);
