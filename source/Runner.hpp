@@ -9,6 +9,7 @@
 #include <cmath> // std::sqrt
 #include <numeric> // std::accumulate
 #include <cassert>
+#include <stdexcept> // std::runtime_error
 
 #include "Input.hpp"
 #include "Output.hpp"
