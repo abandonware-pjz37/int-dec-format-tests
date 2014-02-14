@@ -56,6 +56,12 @@ template <class Type> void run_with_type(
   }
   std::cout << "to buffer " << output.size() << " bytes" << std::endl;
 
+  std::cout << "sizeof(short, int, long, long long): ";
+  std::cout << sizeof(short) << " ";
+  std::cout << sizeof(int) << " ";
+  std::cout << sizeof(long) << " ";
+  std::cout << sizeof(long long) << std::endl;
+
   Runner<In, AlgoFmtFormat> algo_fmt_format(input, output, "fmt::FormatInt");
   Runner<In, AlgoCppx> algo_cppx(input, output, "cppx::decimal_from");
   Runner<In, AlgoBoostKarma> algo_boost_karma(input, output, "boost::spirit::karma");
@@ -93,7 +99,9 @@ template <class Type> void run_with_type(
   Timer::Duration algo_boost_karma_avg = algo_boost_karma.average();
 
   Timer::Duration min = std::min(
-      {algo_fmt_format_avg, algo_cppx_avg, algo_boost_karma_avg}
+      {algo_fmt_format_avg,
+      algo_cppx_avg,
+      algo_boost_karma_avg}
   );
 
   // Output results
