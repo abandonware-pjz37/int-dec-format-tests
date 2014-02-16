@@ -19,5 +19,9 @@ if(BUILD32)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m32")
 endif()
 
+if($ENV{TRAVIS})
+  add_definitions(-DTOTAL_ITERATIONS=10000000)
+endif()
+
 enable_testing()
 add_subdirectory(source)
