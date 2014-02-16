@@ -20,7 +20,7 @@ class Runner {
  public:
   using Duration = Timer::Duration;
 
-  static const int ALL = 10000000;
+  static const int ALL = 30000000;
 #if defined(NDEBUG)
   static const int TIMED_RUN = 10;
 #else
