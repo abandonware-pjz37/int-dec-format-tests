@@ -35,12 +35,15 @@ template <class Type> void run_with_type(
 ) {
   using In = Input<Type>;
 
-  In input(output_size, digit, have_sign);
-  Output output(output_size, input);
-
 #if !defined(NDEBUG)
   std::cout << "*** DEBUG BUILD ***" << std::endl;
+  // Print config before assertions
+  std::cout << get_name<Type>() << " digit:" << digit << " ";
+  std::cout << "sign:" << have_sign << std::endl;
 #endif
+
+  In input(output_size, digit, have_sign);
+  Output output(output_size, input);
 
   std::cout << "Converting " << input.values().size() << " ";
   std::cout << get_name<Type>() << " with ";
