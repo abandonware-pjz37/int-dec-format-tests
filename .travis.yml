@@ -10,9 +10,10 @@ env:
 
 install:
     - brew install python3
+    - brew install boost
 
 script:
-    - cmake -H. -B_builds -DCMAKE_BUILD_TYPE=${BUILD_TYPE}
+    - cmake -H. -B_builds -DCMAKE_BUILD_TYPE=${BUILD_TYPE} -DCMAKE_VERBOSE_MAKEFILE=ON
     - cmake --build _builds
     - cd _builds
     - ctest -VV -C ${BUILD_TYPE}
