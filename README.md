@@ -26,5 +26,12 @@ Convert vector of integer values to `char` buffer.
 > (cd _builds/make-release && ctest -VV)
 ```
 
+### Arch 32-bit build
+```bash
+> cmake -H. -B_builds/make-release -DCMAKE_BUILD_TYPE=Release -DBUILD32=ON
+> cmake --build _builds/make-release
+> (cd _builds/make-release && ctest -VV)
+```
+
 ### Results
 * https://github.com/ruslo/int-dec-format-tests/tree/master/results
