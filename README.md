@@ -11,6 +11,10 @@ Convert vector of integer values to `char` buffer.
 * [run engine](https://github.com/ruslo/int-dec-format-tests/blob/master/source/Algos.hpp)
 * [algorithms](https://github.com/ruslo/int-dec-format-tests/tree/master/source/algos)
 
+### Algorithms
+* [fmt::FormatInt](https://github.com/vitaut/format)
+* [boost::spirit::karma](http://www.boost.org/doc/libs/1_55_0/libs/spirit/doc/html/spirit/karma.html)
+
 ### Usage
 * install boost
 * verify correctness:
