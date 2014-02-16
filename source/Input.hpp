@@ -10,10 +10,12 @@
 template <class Type>
 class Input {
  public:
-  static_assert(std::numeric_limits<Type>::is_integer, "");
-  using Vector = std::vector<Type>;
+  using value_t = Type;
+  using Vector = std::vector<value_t>;
 
-  static const int digits_per_value = std::numeric_limits<Type>::digits10;
+  static_assert(std::numeric_limits<value_t>::is_integer, "");
+
+  static const int digits_per_value = std::numeric_limits<value_t>::digits10;
   static_assert(digits_per_value != 0, "");
   static const size_t bytes_per_value = digits_per_value +
       1 + // rounding error
@@ -32,16 +34,16 @@ class Input {
     values_.resize(output_size / bytes_per_value);
     assert(!values_.empty());
 
-    Type max = 0;
-    Type min = 0;
+    value_t max = 0;
+    value_t min = 0;
 
     if (digit != 0) {
       max = std::pow(10, digit) - 1;
       min = -max;
     }
     else {
-      max = std::numeric_limits<Type>::max();
-      min = std::numeric_limits<Type>::min();
+      max = std::numeric_limits<value_t>::max();
+      min = std::numeric_limits<value_t>::min();
     }
 
     if (!have_sign) {
@@ -51,7 +53,7 @@ class Input {
     assert(max > min);
 
     std::random_device rd;
-    std::uniform_int_distribution<Type> dist(min, max);
+    std::uniform_int_distribution<value_t> dist(min, max);
     for (auto& i: values_) {
       i = dist(rd);
     }

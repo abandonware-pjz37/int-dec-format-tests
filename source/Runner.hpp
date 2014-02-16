@@ -10,6 +10,7 @@
 #include <numeric> // std::accumulate
 #include <cassert>
 #include <stdexcept> // std::runtime_error
+#include <sstream> // std::ostringstream
 
 #include "Input.hpp"
 #include "Output.hpp"
@@ -38,6 +39,9 @@ class Runner {
       name_(name)
   {
     assert(timer_iterations_ > 0);
+#if !defined(NDEBUG)
+    test_algo();
+#endif
   }
 
   void run() {
@@ -108,6 +112,38 @@ class Runner {
   }
 
  private:
+  using value_t = typename Input::value_t;
+
+  void test_algo() {
+    test_algo_iteration(0);
+    test_algo_iteration(-10);
+    test_algo_iteration(10);
+    test_algo_iteration(std::numeric_limits<value_t>::max());
+    test_algo_iteration(std::numeric_limits<value_t>::min());
+    test_algo_iteration(std::numeric_limits<value_t>::max() - 1);
+    test_algo_iteration(std::numeric_limits<value_t>::min() + 1);
+    test_algo_iteration(std::numeric_limits<value_t>::max() / 2);
+    test_algo_iteration(std::numeric_limits<value_t>::min() / 2);
+  }
+
+  void test_algo_iteration(value_t input_value) {
+    typename Input::Vector vector;
+    vector.push_back(input_value);
+
+    std::ostringstream result;
+    result << input_value;
+
+    std::vector<char> buffer;
+    buffer.resize(result.str().size() * 2);
+    Algo::run(buffer.data(), vector);
+
+    if (std::string(buffer.data()) != result.str()) {
+      std::cerr << "Convert " << input_value;
+      std::cerr << " failed for " << name_ << std::endl;
+      throw std::runtime_error("Incorrect algorithm");
+    }
+  }
+
   const Input& input_;
   Output& output_;
 
