@@ -3,6 +3,14 @@ int-dec-format-tests
 
 Comparison of decimal integers formatting algorithms
 
+| mac                             | linux                          |
+|---------------------------------|--------------------------------|
+| [![Build Status][master]][repo] | [![Build Status][linux]][repo] |
+
+[linux]: https://travis-ci.org/ruslo/int-dec-format-tests.png?branch=travis.linux
+[master]: https://travis-ci.org/ruslo/int-dec-format-tests.png?branch=master
+[repo]: https://travis-ci.org/ruslo/int-dec-format-tests
+
 ### Task
 Convert vector of integer values to `char` buffer.
 
