@@ -38,7 +38,7 @@ class Input {
     value_t min = 0;
 
     if (digit != 0) {
-      max = std::pow(10, digit) - 1;
+      max = static_cast<value_t>(std::pow(10, digit) - 1);
       min = -max;
     }
     else {

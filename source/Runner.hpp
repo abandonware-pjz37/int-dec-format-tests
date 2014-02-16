@@ -89,7 +89,7 @@ class Runner {
     output_name += " ";
     output_name += name_;
 
-    double avg_tick = avg.count();
+    double avg_tick = static_cast<double>(avg.count());
     double sd(0);
     for (auto i: durations_) {
       double x(i.count() - avg_tick);
