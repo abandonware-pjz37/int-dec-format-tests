@@ -16,7 +16,7 @@ before_install:
     #     * https://github.com/travis-ci-tester/travis-test-gcc-cxx-11
     - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
     - sudo apt-get update
-    - sudo apt-get install g++-4.8
+    - sudo apt-get install g++-4.8 libstdc++-4.8-dev
     # -- end
     - if [ "${CXX}" == "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
 
