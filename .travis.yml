@@ -1,16 +1,16 @@
 language:
-    - objective-c
+    - cpp
 
-before_install:
-    - brew update
+compiler:
+    - gcc
+    - clang
 
 env:
     - BUILD_TYPE=Debug
     - BUILD_TYPE=Release
 
 install:
-    - brew install python3
-    - brew install cmake
+    - sudo apt-get install cmake
 
 script:
     - cmake -H. -B_builds -DCMAKE_BUILD_TYPE=${BUILD_TYPE}
