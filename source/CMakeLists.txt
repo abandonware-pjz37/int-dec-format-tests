@@ -2,6 +2,7 @@
 # All rights reserved.
 
 include_directories(algos)
+include_directories(../third_party/format)
 
 find_package(Boost REQUIRED)
 include_directories(${Boost_INCLUDE_DIR})
@@ -14,8 +15,9 @@ add_executable(
     Runner.hpp
     Timer.hpp
     main.cpp
-    algos/format.h
-    algos/format.cc
+    ../third_party/format/format.h
+    ../third_party/format/format.cc
+    algos/cppx.hpp
     Algos.hpp
 )
 
