@@ -9,8 +9,18 @@ env:
     - BUILD_TYPE=Debug
     - BUILD_TYPE=Release
 
+before_install:
+    # gcc with c++11 support:
+    #     * https://github.com/travis-ci-tester/travis-test-gcc-cxx-11
+    - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+    - sudo apt-get update
+    - sudo apt-get install g++-4.8
+    # -- end
+    - if [ "${CXX}" == "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+
 install:
     - sudo apt-get install cmake
+    - sudo apt-get install libboost-dev
 
 script:
     - cmake -H. -B_builds -DCMAKE_BUILD_TYPE=${BUILD_TYPE}
