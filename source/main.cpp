@@ -42,6 +42,14 @@ template <class Type> void run_with_type(
   std::cout << "sign:" << have_sign << std::endl;
 #endif
 
+  if (digit != 0) {
+    if (std::pow(10, digit) > std::numeric_limits<Type>::max()) {
+      std::cout << "Skip: too much digits(" << digit << ") ";
+      std::cout << "for current type(" << get_name<Type>() << ")" << std::endl;
+      return;
+    }
+  }
+
   In input(output_size, digit, have_sign);
   Output output(output_size, input);
 
