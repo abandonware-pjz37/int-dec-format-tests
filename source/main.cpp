@@ -74,50 +74,41 @@ template <class Type> void run_with_type(
   std::cout << sizeof(long long) << std::endl;
 
   Runner<In, AlgoFmtFormat> algo_fmt_format(input, output, "fmt::FormatInt");
-  Runner<In, AlgoCppx> algo_cppx(input, output, "cppx::decimal_from");
   Runner<In, AlgoBoostKarma> algo_boost_karma(input, output, "boost::spirit::karma");
 
   std::cout << "Run tests ";
 
   std::cout << "#1 " << std::flush;
   algo_fmt_format.run();
-  algo_cppx.run();
   algo_boost_karma.run();
 
   std::cout << "#2 " << std::flush;
   algo_fmt_format.run();
-  algo_cppx.run();
   algo_boost_karma.run();
 
   std::cout << "#3 " << std::flush;
   algo_fmt_format.run();
-  algo_cppx.run();
   algo_boost_karma.run();
 
   std::cout << "#4 " << std::flush;
   algo_fmt_format.run();
-  algo_cppx.run();
   algo_boost_karma.run();
 
   std::cout << "#5 " << std::flush;
   algo_fmt_format.run();
-  algo_cppx.run();
   algo_boost_karma.run();
 
   std::cout << "Results: " << std::endl;
   Timer::Duration algo_fmt_format_avg = algo_fmt_format.average();
-  Timer::Duration algo_cppx_avg = algo_cppx.average();
   Timer::Duration algo_boost_karma_avg = algo_boost_karma.average();
 
   Timer::Duration min = std::min(
       {algo_fmt_format_avg,
-      algo_cppx_avg,
       algo_boost_karma_avg}
   );
 
   // Output results
   algo_fmt_format.output_result(min);
-  algo_cppx.output_result(min);
   algo_boost_karma.output_result(min);
 }
 
