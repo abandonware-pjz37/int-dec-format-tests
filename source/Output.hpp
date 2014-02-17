@@ -25,7 +25,7 @@ class Output {
 
   void clear() {
     for (auto& i: buffer_) {
-      i = 0xfe;
+      i = 'p';
     }
   }
 

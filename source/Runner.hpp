@@ -21,7 +21,10 @@ class Runner {
  public:
   using Duration = Timer::Duration;
 
-  static const int ALL = 30000000;
+#if !defined(TOTAL_ITERATIONS)
+# define TOTAL_ITERATIONS 30000000
+#endif
+
 #if defined(NDEBUG)
   static const int TIMED_RUN = 10;
 #else
@@ -32,7 +35,7 @@ class Runner {
       input_(input),
       output_(output),
 #if defined(NDEBUG)
-      timer_iterations_(ALL / input.size() / TIMED_RUN),
+      timer_iterations_(TOTAL_ITERATIONS / input.size() / TIMED_RUN),
 #else
       timer_iterations_(1),
 #endif
@@ -89,7 +92,7 @@ class Runner {
     output_name += " ";
     output_name += name_;
 
-    double avg_tick = avg.count();
+    double avg_tick = static_cast<double>(avg.count());
     double sd(0);
     for (auto i: durations_) {
       double x(i.count() - avg_tick);

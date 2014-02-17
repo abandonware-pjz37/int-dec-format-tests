@@ -6,6 +6,7 @@ project(IntDecFormat)
 
 option(USE_LIBCXX "Use libcxx library" OFF)
 option(BUILD32 "Build 32 bit test" OFF)
+option(FAST_TEST "Reduce number of iterations" OFF)
 
 if(NOT MSVC)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
@@ -17,6 +18,10 @@ endif()
 
 if(BUILD32)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m32")
+endif()
+
+if(FAST_TEST)
+  add_definitions(-DTOTAL_ITERATIONS=10000000)
 endif()
 
 enable_testing()
