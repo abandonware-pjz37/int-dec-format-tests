@@ -121,9 +121,9 @@ int main() {
     for (auto output_size: output_size_variants) {
       for (auto digit: digit_variants) {
         for (auto sign: sign_variants) {
-          // run_with_type<short>(output_size, digit, sign);
+          run_with_type<short>(output_size, digit, sign);
           run_with_type<int>(output_size, digit, sign);
-          // run_with_type<long>(output_size, digit, sign);
+          run_with_type<long>(output_size, digit, sign);
           run_with_type<long long>(output_size, digit, sign);
         }
       }
