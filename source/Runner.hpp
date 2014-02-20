@@ -73,7 +73,16 @@ class Runner {
     Duration sum = std::accumulate(
         durations_.begin(), durations_.end(), Duration(0)
     );
-    return sum / durations_.size();
+    Duration result = sum / durations_.size();
+    if (result.count() != 0) {
+      return result;
+    }
+
+#if defined(NDEBUG)
+    throw std::runtime_error("Too fast (:");
+#else
+    return Duration(1);
+#endif
   }
 
   void output_result(Duration best) const {
@@ -85,6 +94,7 @@ class Runner {
     }
     else {
       assert(best < avg);
+      assert(best.count() > 0);
       auto overhead = 100 * (avg - best).count() / best.count();
       output_name += "(+" + std::to_string(overhead) + "%)";
     }
