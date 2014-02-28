@@ -148,6 +148,19 @@ template <class Type> void run_with_type(
   algo_buffer.output_result(min);
   algo_hybrid_0.output_result(min);
   algo_hybrid_1.output_result(min);
+
+  // hybrid best combined results
+  using HybridBest = Runner<In, AlgoHybridBest>;
+  HybridBest::output_result(
+      min,
+      "hybrid(best)",
+      HybridBest::pick_best_durations(
+          algo_hybrid_0.durations(),
+          algo_hybrid_1.durations()
+      ),
+      algo_hybrid_0.timer_iterations(),
+      input
+  );
 }
 
 int main() {

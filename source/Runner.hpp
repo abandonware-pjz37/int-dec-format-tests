@@ -20,6 +20,7 @@ template <class Input, class Algo>
 class Runner {
  public:
   using Duration = Timer::Duration;
+  using Durations = std::vector<Duration>;
 
 #if !defined(TOTAL_ITERATIONS)
 # define TOTAL_ITERATIONS 30000000
@@ -67,26 +68,40 @@ class Runner {
   }
 
   Duration average() const {
-    if (durations_.empty()) {
-      throw std::runtime_error("No run detected");
-    }
-    Duration sum = std::accumulate(
-        durations_.begin(), durations_.end(), Duration(0)
-    );
-    Duration result = sum / durations_.size();
-    if (result.count() != 0) {
-      return result;
-    }
+    return average(durations_);
+  }
 
-#if defined(NDEBUG)
-    throw std::runtime_error("Too fast (:");
-#else
-    return Duration(1);
-#endif
+  const Durations& durations() const {
+    return durations_;
+  }
+
+  static const Durations& pick_best_durations(
+      const Durations& x1, const Durations& x2
+  ) {
+    if (average(x1) < average(x2)) {
+      return x1;
+    }
+    else {
+      return x2;
+    }
   }
 
   void output_result(Duration best) const {
-    const Duration avg = average();
+    output_result(best, name_, durations_, timer_iterations_, input_);
+  }
+
+  int timer_iterations() const {
+    return timer_iterations_;
+  }
+
+  static void output_result(
+      Duration best,
+      std::string name,
+      const Durations& durations,
+      int timer_iterations,
+      const Input& input
+  ) {
+    const Duration avg = average(durations);
 
     std::string output_name;
     if (avg == best) {
@@ -100,32 +115,51 @@ class Runner {
     }
 
     output_name += " ";
-    output_name += name_;
+    output_name += name;
 
     double avg_tick = static_cast<double>(avg.count());
     double sd(0);
-    for (auto i: durations_) {
+    for (auto i: durations) {
       double x(i.count() - avg_tick);
       sd += x * x;
     }
-    sd = sd / durations_.size();
+    sd = sd / durations.size();
     sd = std::sqrt(sd);
     const double var = (sd / avg_tick) * 100.0;
 
-    uint64_t input_size = input_.values().size();
-    uint64_t conv_ops = durations_.size() * timer_iterations_ * input_size;
+    uint64_t input_size = input.values().size();
+    uint64_t conv_ops = durations.size() * timer_iterations * input_size;
     using Ms = std::chrono::milliseconds;
     std::cout << std::setw(40) << output_name << " [";
     std::cout << "avg:" << avg.count() << " ";
     std::cout << "var:" << var << "% ";
     std::cout << "ms:" << std::chrono::duration_cast<Ms>(avg).count() << " ";
-    std::cout << "runs:" << durations_.size() << " ";
+    std::cout << "runs:" << durations.size() << " ";
     std::cout << "conv_ops:" << conv_ops;
     std::cout << "]" << std::endl;
   }
 
  private:
   using value_t = typename Input::value_t;
+
+  static Duration average(const Durations& durations) {
+    if (durations.empty()) {
+      throw std::runtime_error("No run detected");
+    }
+    Duration sum = std::accumulate(
+        durations.begin(), durations.end(), Duration(0)
+    );
+    Duration result = sum / durations.size();
+    if (result.count() != 0) {
+      return result;
+    }
+
+#if defined(NDEBUG)
+    throw std::runtime_error("Too fast (:");
+#else
+    return Duration(1);
+#endif
+  }
 
   void test_algo() {
     test_algo_iteration(0);
@@ -162,7 +196,7 @@ class Runner {
 
   const int timer_iterations_;
   const char* name_;
-  std::vector<Duration> durations_;
+  Durations durations_;
 };
 
 #endif // RUNNER_HPP_

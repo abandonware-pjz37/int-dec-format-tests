@@ -89,4 +89,8 @@ class AlgoHybrid1 {
   }
 };
 
+// Dummy class
+class AlgoHybridBest {
+};
+
 #endif // ALGOS_HPP_
