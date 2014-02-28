@@ -208,7 +208,7 @@ inline void generate_with_counting(Iterator& sink, Integer input_value) {
   }
   else {
     // 10..99
-    int index = value * 2; // 20..198
+    int index = static_cast<int>(value * 2); // 20..198
 
     --it;
     *it = cache[index + 1];
@@ -252,7 +252,7 @@ static void generate_with_reverse(Iterator& sink, Integer input_value) {
   }
   else {
     // 10..99
-    int index = value * 2; // 20..198
+    int index = static_cast<int>(value * 2); // 20..198
 
     // reverse order
     *sink = cache[index + 1];
