@@ -30,7 +30,7 @@ class Input {
     return values().size();
   }
 
-  Input(size_t output_size, int digit, bool have_sign) {
+  Input(size_t output_size, int digit, bool have_sign, bool same_size) {
     values_.resize(output_size / bytes_per_value);
     assert(!values_.empty());
 
@@ -48,6 +48,17 @@ class Input {
 
     if (!have_sign) {
       min = 0;
+    }
+
+    if (same_size) {
+      assert(!have_sign);
+      assert(digit > 0);
+      if (digit == 1) {
+        min = 0;
+      }
+      else {
+        min = static_cast<value_t>(std::pow(10, digit - 1));
+      }
     }
 
     assert(max > min);

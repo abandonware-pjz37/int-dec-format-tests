@@ -22,6 +22,7 @@ add_executable(
     algos/format_buffer.hpp
     algos/hybrid.hpp
     Algos.hpp
+    PickFastest.hpp
 )
 
 add_test(int_dec_format_test int_dec_format_test)
