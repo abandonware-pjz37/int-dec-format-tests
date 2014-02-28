@@ -22,7 +22,7 @@ if(BUILD32)
 endif()
 
 if(FAST_TEST)
-  add_definitions(-DTOTAL_ITERATIONS=10000000)
+  add_definitions(-DTOTAL_ITERATIONS=5000000)
 endif()
 
 if(LONG_TEST)
