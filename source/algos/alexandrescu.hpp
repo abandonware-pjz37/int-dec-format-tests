@@ -39,6 +39,11 @@ inline int count_digits(Integer value) {
     return 3;
   }
 
+#if defined(BOOST_CLANG)
+# pragma clang diagnostic push
+# pragma clang diagnostic ignored "-Wtautological-constant-out-of-range-compare"
+#endif
+
   if (value < p12) {
     if (value < p08) {
       if (value < p06) {
@@ -55,6 +60,10 @@ inline int count_digits(Integer value) {
     return 11 + (value >= p11);
   }
   return 12 + count_digits(value / p12);
+
+#if defined(BOOST_CLANG)
+# pragma clang diagnostic pop
+#endif
 }
 
 inline const char* cache_digits() {

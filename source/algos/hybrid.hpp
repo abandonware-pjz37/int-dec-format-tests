@@ -9,9 +9,49 @@
 
 namespace hybrid {
 
+template <class Type, class Enable = Type>
+class PickStdType;
+
+template <class T>
+class PickStdType<
+    T, typename std::enable_if<(sizeof(T) == sizeof(uint8_t)), T>::type
+> {
+ public:
+  static_assert(std::is_unsigned<T>::value, "");
+  using Type = uint8_t;
+};
+
+template <class T>
+class PickStdType<
+    T, typename std::enable_if<(sizeof(T) == sizeof(uint16_t)), T>::type
+> {
+ public:
+  static_assert(std::is_unsigned<T>::value, "");
+  using Type = uint16_t;
+};
+
+template <class T>
+class PickStdType<
+    T, typename std::enable_if<(sizeof(T) == sizeof(uint32_t)), T>::type
+> {
+ public:
+  static_assert(std::is_unsigned<T>::value, "");
+  using Type = uint32_t;
+};
+
+template <class T>
+class PickStdType<
+    T, typename std::enable_if<(sizeof(T) > sizeof(uint32_t)), T>::type
+> {
+ public:
+  static_assert(std::is_unsigned<T>::value, "");
+  using Type = T;
+};
+
 template <class Integer>
 inline int count_digits_impl(Integer value) {
-  assert(sizeof(Integer) > sizeof(uint32_t));
+  static_assert(sizeof(Integer) > sizeof(uint32_t), "");
+  static_assert(sizeof(Integer) >= sizeof(unsigned long long), "");
   static_assert(std::is_unsigned<Integer>::value, "");
 
   const Integer p01 = 10ull;
@@ -49,7 +89,6 @@ inline int count_digits_impl(Integer value) {
   return 9 + (value >= p09);
 }
 
-template <>
 inline int count_digits_impl(uint8_t value) {
   const uint8_t p01 = 10;
   const uint8_t p02 = 100;
@@ -61,7 +100,6 @@ inline int count_digits_impl(uint8_t value) {
   return 2 + (value >= p02);
 }
 
-template <>
 inline int count_digits_impl(uint16_t value) {
   const uint16_t p01 = 10;
   const uint16_t p02 = 100;
@@ -78,7 +116,6 @@ inline int count_digits_impl(uint16_t value) {
   return 4 + (value >= p04);
 }
 
-template <>
 inline int count_digits_impl(uint32_t value) {
   const uint32_t p01 = 10;
   const uint32_t p02 = 100;
@@ -110,22 +147,11 @@ inline int count_digits_impl(uint32_t value) {
   return 9 + (value >= p09);
 }
 
-template <class Type>
-inline int count_digits(Type value) {
-  static_assert(std::is_unsigned<Type>::value, "");
-
-  if (sizeof(Type) == sizeof(uint8_t)) {
-    return count_digits_impl<uint8_t>(value);
-  }
-
-  if (sizeof(Type) == sizeof(uint16_t)) {
-    return count_digits_impl<uint16_t>(value);
-  }
-
-  if (sizeof(Type) == sizeof(uint32_t)) {
-    return count_digits_impl<uint32_t>(value);
-  }
-
+template <class T>
+inline int count_digits(T v) {
+  static_assert(std::is_unsigned<T>::value, "");
+  using Type = typename PickStdType<T>::Type;
+  Type value(v);
   return count_digits_impl(value);
 }
 
