@@ -37,7 +37,7 @@ class CountDigits<5> {
   template <class T>
   static int count(T value) {
     static_assert(std::is_unsigned<T>::value, "");
-    assert(value <= 99999ull);
+    assert(static_cast<unsigned long long>(value) <= 99999ull);
 
     const T p03 = 1000;
     const T p04 = 10000;
@@ -57,7 +57,7 @@ class CountDigits<10> {
   template <class T>
   static int count(T value) {
     static_assert(std::is_unsigned<T>::value, "");
-    assert(value <= 9999999999ull);
+    assert(static_cast<unsigned long long>(value) <= 9999999999ull);
 
     const T p05 = 100000;
     const T p06 = 1000000;
