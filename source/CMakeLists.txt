@@ -3,6 +3,7 @@
 
 include_directories(algos)
 include_directories(../third_party/format)
+include_directories("./")
 
 find_package(Boost REQUIRED)
 include_directories(${Boost_INCLUDE_DIR})
