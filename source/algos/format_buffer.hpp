@@ -1,6 +1,9 @@
 #ifndef ALGOS_FORMAT_BUFFER_HPP_
 #define ALGOS_FORMAT_BUFFER_HPP_
 
+// Copyright (c) 2014, Ruslan Baratov
+// All rights reserved.
+
 #include <cassert> // assert
 
 // 1) fill temporary buffer with cache indexes

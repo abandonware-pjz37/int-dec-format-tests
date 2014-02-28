@@ -77,6 +77,8 @@ template <class Type> void run_with_type(
   Runner<In, AlgoBoostKarma> algo_boost_karma(input, output, "boost::spirit::karma");
   Runner<In, AlgoAlexandrescu> algo_alexandrescu(input, output, "alexandrescu");
   Runner<In, AlgoBuffer> algo_buffer(input, output, "buffer");
+  Runner<In, AlgoHybrid0> algo_hybrid_0(input, output, "hybrid(0)");
+  Runner<In, AlgoHybrid1> algo_hybrid_1(input, output, "hybrid(1)");
 
   std::cout << "Run tests ";
 
@@ -85,43 +87,57 @@ template <class Type> void run_with_type(
   algo_boost_karma.run();
   algo_alexandrescu.run();
   algo_buffer.run();
+  algo_hybrid_0.run();
+  algo_hybrid_1.run();
 
   std::cout << "#2 " << std::flush;
   algo_fmt_format.run();
   algo_boost_karma.run();
   algo_alexandrescu.run();
   algo_buffer.run();
+  algo_hybrid_0.run();
+  algo_hybrid_1.run();
 
   std::cout << "#3 " << std::flush;
   algo_fmt_format.run();
   algo_boost_karma.run();
   algo_alexandrescu.run();
   algo_buffer.run();
+  algo_hybrid_0.run();
+  algo_hybrid_1.run();
 
   std::cout << "#4 " << std::flush;
   algo_fmt_format.run();
   algo_boost_karma.run();
   algo_alexandrescu.run();
   algo_buffer.run();
+  algo_hybrid_0.run();
+  algo_hybrid_1.run();
 
   std::cout << "#5 " << std::flush;
   algo_fmt_format.run();
   algo_boost_karma.run();
   algo_alexandrescu.run();
   algo_buffer.run();
+  algo_hybrid_0.run();
+  algo_hybrid_1.run();
 
   std::cout << "Results: " << std::endl;
   Timer::Duration algo_fmt_format_avg = algo_fmt_format.average();
   Timer::Duration algo_boost_karma_avg = algo_boost_karma.average();
   Timer::Duration algo_alexandrescu_avg = algo_alexandrescu.average();
   Timer::Duration algo_buffer_avg = algo_buffer.average();
+  Timer::Duration algo_hybrid_0_avg = algo_hybrid_0.average();
+  Timer::Duration algo_hybrid_1_avg = algo_hybrid_1.average();
 
   Timer::Duration min = std::min(
       {
       algo_fmt_format_avg,
       algo_boost_karma_avg,
       algo_alexandrescu_avg,
-      algo_buffer_avg
+      algo_buffer_avg,
+      algo_hybrid_0_avg,
+      algo_hybrid_1_avg
       }
   );
 
@@ -130,6 +146,8 @@ template <class Type> void run_with_type(
   algo_boost_karma.output_result(min);
   algo_alexandrescu.output_result(min);
   algo_buffer.output_result(min);
+  algo_hybrid_0.output_result(min);
+  algo_hybrid_1.output_result(min);
 }
 
 int main() {
