@@ -7,6 +7,7 @@
 #include "cppx.hpp"
 #include "format.h"
 #include <boost/spirit/include/karma.hpp>
+#include "alexandrescu.hpp"
 
 class AlgoFmtFormat {
  public:
@@ -37,6 +38,17 @@ class AlgoBoostKarma {
     for(auto& i: in) {
       using namespace boost::spirit;
       karma::generate(buffer, int_, i);
+    }
+    *buffer = '\0';
+  }
+};
+
+class AlgoAlexandrescu {
+ public:
+  template <class Vector>
+  static void run(char* buffer, const Vector& in) {
+    for(auto& i: in) {
+      alexandrescu::generate(buffer, i);
     }
     *buffer = '\0';
   }
