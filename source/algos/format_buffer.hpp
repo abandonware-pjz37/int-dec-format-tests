@@ -60,12 +60,12 @@ inline void generate(Iterator& sink, Integer input_value) {
 
   if (value < 10) {
     // 0..9
-    *it = value * 2 + 1;
+    *it = static_cast<int>(value * 2 + 1);
     ++it;
   }
   else {
     // 10..99
-    int index = value * 2; // 20..198
+    int index = static_cast<int>(value * 2); // 20..198
 
     // reverse order
     *it = index + 1;
