@@ -52,5 +52,9 @@ then reverse chars
 > (cd _builds/make-release && ctest -VV)
 ```
 
+### Options
+* Number of iterations can be reduced using `-DFAST_TEST=ON` option
+* If `-DLONG_TEST` option is `ON`, number of iterations increased and additional `8Mb` test added
+
 ### Results
 * https://github.com/ruslo/int-dec-format-tests/tree/master/results
