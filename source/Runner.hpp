@@ -36,7 +36,7 @@ class Runner {
       input_(input),
       output_(output),
 #if defined(NDEBUG)
-      timer_iterations_(TOTAL_ITERATIONS / input.size() / TIMED_RUN),
+      timer_iterations_(TOTAL_ITERATIONS / static_cast<int>(input.size()) / TIMED_RUN),
 #else
       timer_iterations_(1),
 #endif
