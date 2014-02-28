@@ -10,7 +10,8 @@
 namespace hybrid {
 
 template <class Integer>
-inline int count_digits(Integer value) {
+inline int count_digits_impl(Integer value) {
+  assert(sizeof(Integer) > sizeof(uint32_t));
   static_assert(std::is_unsigned<Integer>::value, "");
 
   const Integer p01 = 10ull;
@@ -25,7 +26,7 @@ inline int count_digits(Integer value) {
   const Integer p10 = 10000000000ull;
 
   if (value >= p10) {
-    return 10 + count_digits(value / p10);
+    return 10 + count_digits_impl(value / p10);
   }
 
   if (value < p05) {
@@ -49,7 +50,7 @@ inline int count_digits(Integer value) {
 }
 
 template <>
-inline int count_digits<uint8_t>(uint8_t value) {
+inline int count_digits_impl(uint8_t value) {
   const uint8_t p01 = 10;
   const uint8_t p02 = 100;
 
@@ -61,7 +62,7 @@ inline int count_digits<uint8_t>(uint8_t value) {
 }
 
 template <>
-inline int count_digits<uint16_t>(uint16_t value) {
+inline int count_digits_impl(uint16_t value) {
   const uint16_t p01 = 10;
   const uint16_t p02 = 100;
   const uint16_t p03 = 1000;
@@ -78,7 +79,7 @@ inline int count_digits<uint16_t>(uint16_t value) {
 }
 
 template <>
-inline int count_digits<uint32_t>(uint32_t value) {
+inline int count_digits_impl(uint32_t value) {
   const uint32_t p01 = 10;
   const uint32_t p02 = 100;
   const uint32_t p03 = 1000;
@@ -107,6 +108,25 @@ inline int count_digits<uint32_t>(uint32_t value) {
   }
 
   return 9 + (value >= p09);
+}
+
+template <class Type>
+inline int count_digits(Type value) {
+  static_assert(std::is_unsigned<Type>::value, "");
+
+  if (sizeof(Type) == sizeof(uint8_t)) {
+    return count_digits_impl<uint8_t>(value);
+  }
+
+  if (sizeof(Type) == sizeof(uint16_t)) {
+    return count_digits_impl<uint16_t>(value);
+  }
+
+  if (sizeof(Type) == sizeof(uint32_t)) {
+    return count_digits_impl<uint32_t>(value);
+  }
+
+  return count_digits_impl(value);
 }
 
 inline const char* cache_digits() {
