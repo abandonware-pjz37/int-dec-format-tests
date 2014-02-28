@@ -46,7 +46,7 @@ class CountDigits<5> {
       return 4 + (value >= p04);
     }
 
-    return CountDigits<T, 3>::count(value);
+    return CountDigits<3>::count(value);
   }
 };
 
@@ -75,13 +75,13 @@ class CountDigits<10> {
       return 6 + (value >= p06);
     }
 
-    return CountDigits<T, 5>::count(value);
+    return CountDigits<5>::count(value);
   }
 };
 
 // unlimited variant for uint64_t and bigger
 template <int max_decimal_digits>
-class CountDigits<max_decimal_digits> {
+class CountDigits {
  public:
   static_assert(max_decimal_digits > 10, "");
 
@@ -96,18 +96,18 @@ class CountDigits<max_decimal_digits> {
       value = value / p10;
 
       if (next <= 3) {
-        return 10 + CountDigits<T, 3>::count(value);
+        return 10 + CountDigits<3>::count(value);
       }
       if (next <= 5) {
-        return 10 + CountDigits<T, 5>::count(value);
+        return 10 + CountDigits<5>::count(value);
       }
       if (next <= 10) {
-        return 10 + CountDigits<T, 10>::count(value);
+        return 10 + CountDigits<10>::count(value);
       }
-      return 10 + CountDigits<T, next>(value);
+      return 10 + CountDigits<next>::count(value);
     }
 
-    return CountDigits<T, 10>::count(value);
+    return CountDigits<10>::count(value);
   }
 };
 

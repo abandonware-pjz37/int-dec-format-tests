@@ -7,153 +7,10 @@
 #include <cassert> // assert
 #include <algorithm> // std::reverse
 
+#include "CountDigits.hpp"
+#include "PickFastest.hpp"
+
 namespace hybrid {
-
-template <class Type, class Enable = Type>
-class PickStdType;
-
-template <class T>
-class PickStdType<
-    T, typename std::enable_if<(sizeof(T) == sizeof(uint8_t)), T>::type
-> {
- public:
-  static_assert(std::is_unsigned<T>::value, "");
-  using Type = uint8_t;
-};
-
-template <class T>
-class PickStdType<
-    T, typename std::enable_if<(sizeof(T) == sizeof(uint16_t)), T>::type
-> {
- public:
-  static_assert(std::is_unsigned<T>::value, "");
-  using Type = uint16_t;
-};
-
-template <class T>
-class PickStdType<
-    T, typename std::enable_if<(sizeof(T) == sizeof(uint32_t)), T>::type
-> {
- public:
-  static_assert(std::is_unsigned<T>::value, "");
-  using Type = uint32_t;
-};
-
-template <class T>
-class PickStdType<
-    T, typename std::enable_if<(sizeof(T) > sizeof(uint32_t)), T>::type
-> {
- public:
-  static_assert(std::is_unsigned<T>::value, "");
-  using Type = T;
-};
-
-template <class Integer>
-inline int count_digits_impl(Integer value) {
-  static_assert(sizeof(Integer) > sizeof(uint32_t), "");
-  static_assert(sizeof(Integer) >= sizeof(unsigned long long), "");
-  static_assert(std::is_unsigned<Integer>::value, "");
-
-  const Integer p01 = 10ull;
-  const Integer p02 = 100ull;
-  const Integer p03 = 1000ull;
-  const Integer p04 = 10000ull;
-  const Integer p05 = 100000ull;
-  const Integer p06 = 1000000ull;
-  const Integer p07 = 10000000ull;
-  const Integer p08 = 100000000ull;
-  const Integer p09 = 1000000000ull;
-  const Integer p10 = 10000000000ull;
-
-  if (value >= p10) {
-    return 10 + count_digits_impl(value / p10);
-  }
-
-  if (value < p05) {
-    if (value < p03) {
-      if (value < p02) {
-        return 1 + (value >= p01);
-      }
-      return 3;
-    }
-    return 4 + (value >= p04);
-  }
-
-  if (value < p08) {
-    if (value < p07) {
-      return 6 + (value >= p06);
-    }
-    return 8;
-  }
-
-  return 9 + (value >= p09);
-}
-
-inline int count_digits_impl(uint8_t value) {
-  const uint8_t p01 = 10;
-  const uint8_t p02 = 100;
-
-  if (value < p01) {
-    return 1;
-  }
-
-  return 2 + (value >= p02);
-}
-
-inline int count_digits_impl(uint16_t value) {
-  const uint16_t p01 = 10;
-  const uint16_t p02 = 100;
-  const uint16_t p03 = 1000;
-  const uint16_t p04 = 10000;
-
-  if (value < p03) {
-    if (value < p02) {
-      return 1 + (value >= p01);
-    }
-    return 3;
-  }
-
-  return 4 + (value >= p04);
-}
-
-inline int count_digits_impl(uint32_t value) {
-  const uint32_t p01 = 10;
-  const uint32_t p02 = 100;
-  const uint32_t p03 = 1000;
-  const uint32_t p04 = 10000;
-  const uint32_t p05 = 100000;
-  const uint32_t p06 = 1000000;
-  const uint32_t p07 = 10000000;
-  const uint32_t p08 = 100000000;
-  const uint32_t p09 = 1000000000;
-
-  if (value < p05) {
-    if (value < p03) {
-      if (value < p02) {
-        return 1 + (value >= p01);
-      }
-      return 3;
-    }
-    return 4 + (value >= p04);
-  }
-
-  if (value < p08) {
-    if (value < p07) {
-      return 6 + (value >= p06);
-    }
-    return 8;
-  }
-
-  return 9 + (value >= p09);
-}
-
-template <class T>
-inline int count_digits(T v) {
-  static_assert(std::is_unsigned<T>::value, "");
-  using Type = typename PickStdType<T>::Type;
-  Type value(v);
-  return count_digits_impl(value);
-}
 
 inline const char* cache_digits() {
   return
@@ -172,18 +29,13 @@ inline const char* cache_digits() {
 
 using Iterator = char*;
 
-template <class Integer>
-inline void generate_with_counting(Iterator& sink, Integer input_value) {
-  const bool is_negative = (input_value < 0);
-  if (is_negative) {
-    *sink = '-';
-    ++sink;
-  }
+// For big numbers it's better to count digits first,
+// then fill sink "from the end"
+template <int max_digits, class Integer>
+inline void generate_big_numbers(Iterator& sink, Integer value) {
+  static_assert(std::is_unsigned<Integer>::value, "");
 
-  using Unsigned = typename std::make_unsigned<Integer>::type;
-  Unsigned value = is_negative ? -input_value : input_value;
-
-  int digits = count_digits(value);
+  int digits = CountDigits<max_digits>::count(value);
   sink += digits;
 
   Iterator it = sink;
@@ -218,21 +70,14 @@ inline void generate_with_counting(Iterator& sink, Integer input_value) {
   }
 }
 
+// For small numbers it's better to fill buffer, then revert it in-situ
 template <class Integer>
-static void generate_with_reverse(Iterator& sink, Integer input_value) {
-  const bool is_negative = (input_value < 0);
-  if (is_negative) {
-    *sink = '-';
-    ++sink;
-  }
-
-  using Unsigned = typename std::make_unsigned<Integer>::type;
-  Unsigned value = is_negative ? -input_value : input_value;
-
-  Iterator reverse_start = sink;
+inline void generate_small_numbers(Iterator& sink, Integer value) {
   const char* cache = cache_digits();
 
-  assert(value >= 0);
+  static_assert(std::is_unsigned<Integer>::value, "");
+  assert(value >= 100);
+  Iterator reverse_start = sink;
   while (value >= 100) {
     int index = (value % 100) * 2; // 0..198
     value /= 100;
@@ -265,14 +110,53 @@ static void generate_with_reverse(Iterator& sink, Integer input_value) {
   std::reverse(reverse_start, sink);
 }
 
-template <bool use_digits_counter, class Integer>
+template <bool big_numbers, class Integer>
 inline void generate(Iterator& sink, Integer input_value) {
-  if (use_digits_counter) {
-    return generate_with_counting(sink, input_value);
+  using Fast = typename PickFastest<Integer>::Type;
+  using UFast = typename std::make_unsigned<Fast>::type;
+  UFast value(input_value);
+
+  if (input_value < 0) {
+    *sink = '-';
+    ++sink;
+    value = 0 - value;
   }
-  else {
-    return generate_with_reverse(sink, input_value);
+
+  assert(value >= 0); // sanity check
+
+  if (big_numbers) {
+    using Unsigned = typename std::make_unsigned<Integer>::type;
+    static const int max_digits =
+        std::numeric_limits<Unsigned>::digits10 +
+        1; // rounding error
+    return generate_big_numbers<max_digits>(sink, value);
   }
+
+  const char* cache = cache_digits();
+
+  // very small numbers
+  if (value < 100) {
+    if (value < 10) {
+      // 0..9
+      *sink = static_cast<char>('0' + value);
+      ++sink;
+      return;
+    }
+
+    // 10..99
+    int index = static_cast<int>(value * 2); // 20..198
+
+    *sink = cache[index];
+    ++sink;
+
+    *sink = cache[index + 1];
+    ++sink;
+    return;
+  }
+
+  // MSVC magic: if inline this code instead of function call
+  // performace will change for the worse for very small input numbers
+  return generate_small_numbers(sink, value);
 }
 
 } // namespace hybrid
