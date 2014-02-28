@@ -101,7 +101,7 @@ inline int count_digits<uint32_t>(uint32_t value) {
 
   if (value < p08) {
     if (value < p07) {
-      return 7 + (value >= p06);
+      return 6 + (value >= p06);
     }
     return 8;
   }
