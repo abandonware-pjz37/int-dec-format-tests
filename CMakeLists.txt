@@ -25,5 +25,10 @@ if(FAST_TEST)
   add_definitions(-DTOTAL_ITERATIONS=10000000)
 endif()
 
+if(LONG_TEST)
+  add_definitions(-DLONG_TEST=1)
+  add_definitions(-DTOTAL_ITERATIONS=100000000)
+endif()
+
 enable_testing()
 add_subdirectory(source)
