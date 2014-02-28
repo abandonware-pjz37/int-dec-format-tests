@@ -18,6 +18,9 @@ add_executable(
     ../third_party/format/format.h
     ../third_party/format/format.cc
     algos/cppx.hpp
+    algos/alexandrescu.hpp
+    algos/format_buffer.hpp
+    algos/hybrid.hpp
     Algos.hpp
 )
 

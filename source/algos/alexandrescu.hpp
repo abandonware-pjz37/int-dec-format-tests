@@ -10,27 +10,22 @@ namespace alexandrescu {
 
 using Iterator = char*;
 
-#if defined(BOOST_CLANG)
-# pragma clang diagnostic push
-# pragma clang diagnostic ignored "-Wtautological-constant-out-of-range-compare"
-#endif
-
 template <class Integer>
 inline int count_digits(Integer value) {
-  enum {
-    p01 = 10ull,
-    p02 = 100ull,
-    p03 = 1000ull,
-    p04 = 10000ull,
-    p05 = 100000ull,
-    p06 = 1000000ull,
-    p07 = 10000000ull,
-    p08 = 100000000ull,
-    p09 = 1000000000ull,
-    p10 = 10000000000ull,
-    p11 = 100000000000ull,
-    p12 = 1000000000000ull
-  };
+  static_assert(std::is_unsigned<Integer>::value, "");
+
+  const uint64_t p01 = 10ull;
+  const uint64_t p02 = 100ull;
+  const uint64_t p03 = 1000ull;
+  const uint64_t p04 = 10000ull;
+  const uint64_t p05 = 100000ull;
+  const uint64_t p06 = 1000000ull;
+  const uint64_t p07 = 10000000ull;
+  const uint64_t p08 = 100000000ull;
+  const uint64_t p09 = 1000000000ull;
+  const uint64_t p10 = 10000000000ull;
+  const uint64_t p11 = 100000000000ull;
+  const uint64_t p12 = 1000000000000ull;
 
   if (value < p01) {
     return 1;
@@ -61,10 +56,6 @@ inline int count_digits(Integer value) {
   }
   return 12 + count_digits(value / p12);
 }
-
-#if defined(BOOST_CLANG)
-# pragma clang diagnostic pop
-#endif
 
 inline const char* cache_digits() {
   return
@@ -117,7 +108,7 @@ inline void generate(Iterator& sink, Integer input_value) {
   }
   else {
     // 10..99
-    int index = value * 2; // 20..198
+    int index = static_cast<int>(value * 2); // 20..198
 
     --it;
     *it = cache[index + 1];
