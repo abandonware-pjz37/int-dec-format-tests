@@ -184,6 +184,10 @@ int main() {
     std::vector<bool> sign_variants{true, false};
     std::vector<bool> same_size_variants{true, false};
 
+#if defined(LONG_TEST) && defined(NDEBUG)
+    output_size_variants.push_back(8 * 1024 * 1024);
+#endif
+
     for (auto output_size: output_size_variants) {
       for (auto digit: digit_variants) {
         for (auto sign: sign_variants) {
