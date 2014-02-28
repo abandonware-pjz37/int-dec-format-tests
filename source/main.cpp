@@ -31,7 +31,7 @@ const char* get_name<long long>() {
 }
 
 template <class Type> void run_with_type(
-    size_t output_size, int digit, bool have_sign
+    size_t output_size, int digit, bool have_sign, bool same_size
 ) {
   using In = Input<Type>;
 
@@ -50,7 +50,18 @@ template <class Type> void run_with_type(
     }
   }
 
-  In input(output_size, digit, have_sign);
+  if (same_size) {
+    if (have_sign) {
+      std::cout << "Skip: negative/positive with same size" << std::endl;
+      return;
+    }
+    if (digit == 0) {
+        std::cout << "Skip: same size with any number of digits" << std::endl;
+      return;
+    }
+  }
+
+  In input(output_size, digit, have_sign, same_size);
   Output output(output_size, input);
 
   std::cout << "Converting " << input.values().size() << " ";
@@ -64,6 +75,9 @@ template <class Type> void run_with_type(
   std::cout << "base-10 digits ";
   if (!have_sign) {
     std::cout << "(no sign) ";
+  }
+  if (same_size) {
+    std::cout << "(same size) ";
   }
   std::cout << "to buffer " << output.size() << " bytes" << std::endl;
 
@@ -95,32 +109,32 @@ template <class Type> void run_with_type(
   algo_boost_karma.run();
   algo_alexandrescu.run();
   algo_buffer.run();
-  algo_hybrid_0.run();
   algo_hybrid_1.run();
+  algo_hybrid_0.run();
 
   std::cout << "#3 " << std::flush;
+  algo_alexandrescu.run();
   algo_fmt_format.run();
   algo_boost_karma.run();
-  algo_alexandrescu.run();
   algo_buffer.run();
   algo_hybrid_0.run();
   algo_hybrid_1.run();
 
   std::cout << "#4 " << std::flush;
-  algo_fmt_format.run();
-  algo_boost_karma.run();
-  algo_alexandrescu.run();
   algo_buffer.run();
+  algo_fmt_format.run();
+  algo_alexandrescu.run();
+  algo_boost_karma.run();
   algo_hybrid_0.run();
   algo_hybrid_1.run();
 
   std::cout << "#5 " << std::flush;
+  algo_hybrid_0.run();
   algo_fmt_format.run();
   algo_boost_karma.run();
-  algo_alexandrescu.run();
   algo_buffer.run();
-  algo_hybrid_0.run();
   algo_hybrid_1.run();
+  algo_alexandrescu.run();
 
   std::cout << "Results: " << std::endl;
   Timer::Duration algo_fmt_format_avg = algo_fmt_format.average();
@@ -168,14 +182,17 @@ int main() {
     std::vector<size_t> output_size_variants{30, 300, 4096};
     std::vector<int> digit_variants{0, 1, 2, 4, 10};
     std::vector<bool> sign_variants{true, false};
+    std::vector<bool> same_size_variants{true, false};
 
     for (auto output_size: output_size_variants) {
       for (auto digit: digit_variants) {
         for (auto sign: sign_variants) {
-          run_with_type<short>(output_size, digit, sign);
-          run_with_type<int>(output_size, digit, sign);
-          run_with_type<long>(output_size, digit, sign);
-          run_with_type<long long>(output_size, digit, sign);
+          for (auto same_size: same_size_variants) {
+            run_with_type<short>(output_size, digit, sign, same_size);
+            run_with_type<int>(output_size, digit, sign, same_size);
+            run_with_type<long>(output_size, digit, sign, same_size);
+            run_with_type<long long>(output_size, digit, sign, same_size);
+          }
         }
       }
     }
