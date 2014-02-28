@@ -8,6 +8,7 @@
 #include "format.h"
 #include <boost/spirit/include/karma.hpp>
 #include "alexandrescu.hpp"
+#include "format_buffer.hpp"
 
 class AlgoFmtFormat {
  public:
@@ -49,6 +50,17 @@ class AlgoAlexandrescu {
   static void run(char* buffer, const Vector& in) {
     for(auto& i: in) {
       alexandrescu::generate(buffer, i);
+    }
+    *buffer = '\0';
+  }
+};
+
+class AlgoBuffer {
+ public:
+  template <class Vector>
+  static void run(char* buffer, const Vector& in) {
+    for(auto& i: in) {
+      format_buffer::generate(buffer, i);
     }
     *buffer = '\0';
   }
