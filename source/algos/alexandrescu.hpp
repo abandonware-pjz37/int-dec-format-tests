@@ -2,6 +2,7 @@
 #define ALGOS_ALEXANDRESCU_HPP_
 
 #include <cassert> // assert
+#include <boost/config.hpp> // BOOST_CLANG
 
 // https://www.facebook.com/notes/facebook-engineering/three-optimization-tips-for-c/10151361643253920
 
@@ -9,20 +10,27 @@ namespace alexandrescu {
 
 using Iterator = char*;
 
+#if defined(BOOST_CLANG)
+# pragma clang diagnostic push
+# pragma clang diagnostic ignored "-Wtautological-constant-out-of-range-compare"
+#endif
+
 template <class Integer>
 inline int count_digits(Integer value) {
-  const Integer p01 = 10ull;
-  const Integer p02 = 100ull;
-  const Integer p03 = 1000ull;
-  const Integer p04 = 10000ull;
-  const Integer p05 = 100000ull;
-  const Integer p06 = 1000000ull;
-  const Integer p07 = 10000000ull;
-  const Integer p08 = 100000000ull;
-  const Integer p09 = 1000000000ull;
-  const Integer p10 = 10000000000ull;
-  const Integer p11 = 100000000000ull;
-  const Integer p12 = 1000000000000ull;
+  enum {
+    p01 = 10ull,
+    p02 = 100ull,
+    p03 = 1000ull,
+    p04 = 10000ull,
+    p05 = 100000ull,
+    p06 = 1000000ull,
+    p07 = 10000000ull,
+    p08 = 100000000ull,
+    p09 = 1000000000ull,
+    p10 = 10000000000ull,
+    p11 = 100000000000ull,
+    p12 = 1000000000000ull
+  };
 
   if (value < p01) {
     return 1;
@@ -53,6 +61,10 @@ inline int count_digits(Integer value) {
   }
   return 12 + count_digits(value / p12);
 }
+
+#if defined(BOOST_CLANG)
+# pragma clang diagnostic pop
+#endif
 
 inline const char* cache_digits() {
   return
