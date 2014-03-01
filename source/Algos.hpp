@@ -13,6 +13,8 @@
 
 class AlgoFmtFormat {
  public:
+  static const bool enabled = true;
+
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
     for(auto& i: in) {
@@ -24,6 +26,8 @@ class AlgoFmtFormat {
 
 class AlgoCppx {
  public:
+  static const bool enabled = false;
+
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
     for(auto& i: in) {
@@ -35,6 +39,8 @@ class AlgoCppx {
 
 class AlgoBoostKarma {
  public:
+  static const bool enabled = true;
+
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
     for(auto& i: in) {
@@ -47,6 +53,8 @@ class AlgoBoostKarma {
 
 class AlgoAlexandrescu {
  public:
+  static const bool enabled = true;
+
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
     for(auto& i: in) {
@@ -58,6 +66,8 @@ class AlgoAlexandrescu {
 
 class AlgoBuffer {
  public:
+  static const bool enabled = true;
+
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
     for(auto& i: in) {
@@ -69,6 +79,8 @@ class AlgoBuffer {
 
 class AlgoHybrid0 {
  public:
+  static const bool enabled = true;
+
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
     for(auto& i: in) {
@@ -80,6 +92,8 @@ class AlgoHybrid0 {
 
 class AlgoHybrid1 {
  public:
+  static const bool enabled = true;
+
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
     for(auto& i: in) {
@@ -91,6 +105,8 @@ class AlgoHybrid1 {
 
 // Dummy class
 class AlgoHybridBest {
+ public:
+  static const bool enabled = true;
 };
 
 #endif // ALGOS_HPP_

@@ -49,6 +49,9 @@ class Runner {
   }
 
   void run() {
+    if (!Algo::enabled) {
+      return;
+    }
 #if !defined(NDEBUG)
     output_.clear();
 #endif
@@ -101,6 +104,10 @@ class Runner {
       int timer_iterations,
       const Input& input
   ) {
+    if (!Algo::enabled) {
+      return;
+    }
+
     const Duration avg = average(durations);
 
     std::string output_name;
@@ -143,6 +150,10 @@ class Runner {
   using value_t = typename Input::value_t;
 
   static Duration average(const Durations& durations) {
+    if (!Algo::enabled) {
+      return Duration::max();
+    }
+
     if (durations.empty()) {
       throw std::runtime_error("No run detected");
     }
