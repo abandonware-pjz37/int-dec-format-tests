@@ -6,7 +6,7 @@ include_directories(../third_party/format)
 include_directories("./")
 
 find_package(Boost REQUIRED)
-include_directories(${Boost_INCLUDE_DIR})
+include_directories(SYSTEM ${Boost_INCLUDE_DIR})
 
 add_executable(
     int_dec_format_test
