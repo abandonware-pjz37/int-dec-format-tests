@@ -81,11 +81,12 @@ template <class Type> void run_with_type(
   }
   std::cout << "to buffer " << output.size() << " bytes" << std::endl;
 
-  std::cout << "sizeof(short, int, long, long long): ";
+  std::cout << "sizeof(short, int, long, long long, void*): ";
   std::cout << sizeof(short) << " ";
   std::cout << sizeof(int) << " ";
   std::cout << sizeof(long) << " ";
-  std::cout << sizeof(long long) << std::endl;
+  std::cout << sizeof(long long) << " ";
+  std::cout << sizeof(void*) << std::endl;
 
   Runner<In, AlgoFmtFormat> algo_fmt_format(input, output, "fmt::FormatInt");
   Runner<In, AlgoBoostKarma> algo_boost_karma(input, output, "boost::spirit::karma");

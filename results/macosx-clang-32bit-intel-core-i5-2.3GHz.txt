@@ -1,0 +1,2012 @@
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+56%) fmt::FormatInt [avg:178612337 var:10.5423% ms:178 runs:50 conv_ops:500000000]
+             (+27%) boost::spirit::karma [avg:146128913 var:6.92584% ms:146 runs:50 conv_ops:500000000]
+                     (+13%) alexandrescu [avg:129207232 var:5.82475% ms:129 runs:50 conv_ops:500000000]
+                           (+28%) buffer [avg:146533349 var:9.52424% ms:146 runs:50 conv_ops:500000000]
+                        (+27%) hybrid(0) [avg:145429588 var:9.49715% ms:145 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:114267934 var:8.41326% ms:114 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:114267934 var:8.41326% ms:114 runs:50 conv_ops:500000000]
+Converting 2 int with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+42%) fmt::FormatInt [avg:251248369 var:6.67045% ms:251 runs:50 conv_ops:500000000]
+            (+204%) boost::spirit::karma [avg:538129954 var:8.17128% ms:538 runs:50 conv_ops:500000000]
+                     (+12%) alexandrescu [avg:199365712 var:6.92388% ms:199 runs:50 conv_ops:500000000]
+                           (+45%) buffer [avg:257155373 var:7.49956% ms:257 runs:50 conv_ops:500000000]
+                        (+34%) hybrid(0) [avg:237141120 var:6.01217% ms:237 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:176935006 var:7.67402% ms:176 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:176935006 var:7.67402% ms:176 runs:50 conv_ops:500000000]
+Converting 2 long with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+44%) fmt::FormatInt [avg:266783567 var:9.02975% ms:266 runs:50 conv_ops:500000000]
+            (+204%) boost::spirit::karma [avg:563159427 var:6.1383% ms:563 runs:50 conv_ops:500000000]
+                     (+14%) alexandrescu [avg:211460126 var:6.96569% ms:211 runs:50 conv_ops:500000000]
+                           (+43%) buffer [avg:264959600 var:6.67043% ms:264 runs:50 conv_ops:500000000]
+                        (+35%) hybrid(0) [avg:251097341 var:5.78309% ms:251 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:184797971 var:8.98868% ms:184 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:184797971 var:8.98868% ms:184 runs:50 conv_ops:500000000]
+Converting 1 long long with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+0%) fmt::FormatInt [avg:2256128904 var:6.55086% ms:2256 runs:50 conv_ops:500000000]
+             (+95%) boost::spirit::karma [avg:4359359725 var:3.66638% ms:4359 runs:50 conv_ops:500000000]
+                      (+8%) alexandrescu [avg:2429661616 var:4.32177% ms:2429 runs:50 conv_ops:500000000]
+                            (+3%) buffer [avg:2307941284 var:10.9996% ms:2307 runs:50 conv_ops:500000000]
+                         (+6%) hybrid(0) [avg:2369185448 var:7.63602% ms:2369 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:2235068117 var:5.76361% ms:2235 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:2235068117 var:5.76361% ms:2235 runs:50 conv_ops:500000000]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 4 short with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+65%) fmt::FormatInt [avg:163418755 var:10.3604% ms:163 runs:50 conv_ops:500000000]
+             (+30%) boost::spirit::karma [avg:129269134 var:10.0163% ms:129 runs:50 conv_ops:500000000]
+                     (+10%) alexandrescu [avg:109797236 var:4.33125% ms:109 runs:50 conv_ops:500000000]
+                           (+35%) buffer [avg:133841812 var:8.39608% ms:133 runs:50 conv_ops:500000000]
+                        (+34%) hybrid(0) [avg:132998581 var:6.63563% ms:132 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:99027098 var:3.58173% ms:99 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:99027098 var:3.58173% ms:99 runs:50 conv_ops:500000000]
+Converting 2 int with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+46%) fmt::FormatInt [avg:237037937 var:1.14833% ms:237 runs:50 conv_ops:500000000]
+            (+209%) boost::spirit::karma [avg:499407002 var:3.7742% ms:499 runs:50 conv_ops:500000000]
+                     (+15%) alexandrescu [avg:186338652 var:1.42102% ms:186 runs:50 conv_ops:500000000]
+                           (+47%) buffer [avg:237832636 var:1.17521% ms:237 runs:50 conv_ops:500000000]
+                        (+38%) hybrid(0) [avg:222749811 var:1.54701% ms:222 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:161269820 var:4.04847% ms:161 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:161269820 var:4.04847% ms:161 runs:50 conv_ops:500000000]
+Converting 2 long with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+42%) fmt::FormatInt [avg:232372150 var:1.34452% ms:232 runs:50 conv_ops:500000000]
+            (+188%) boost::spirit::karma [avg:470519414 var:1.31137% ms:470 runs:50 conv_ops:500000000]
+                     (+12%) alexandrescu [avg:183624052 var:1.19477% ms:183 runs:50 conv_ops:500000000]
+                           (+43%) buffer [avg:234247499 var:0.828693% ms:234 runs:50 conv_ops:500000000]
+                        (+32%) hybrid(0) [avg:216334503 var:1.18978% ms:216 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:163109647 var:1.34199% ms:163 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:163109647 var:1.34199% ms:163 runs:50 conv_ops:500000000]
+Converting 1 long long with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+1%) fmt::FormatInt [avg:2198795512 var:4.36142% ms:2198 runs:50 conv_ops:500000000]
+             (+99%) boost::spirit::karma [avg:4339670345 var:4.39538% ms:4339 runs:50 conv_ops:500000000]
+                      (+9%) alexandrescu [avg:2377426700 var:3.8329% ms:2377 runs:50 conv_ops:500000000]
+                            (+0%) buffer [avg:2192756170 var:5.48632% ms:2192 runs:50 conv_ops:500000000]
+                         (+4%) hybrid(0) [avg:2274572762 var:4.7022% ms:2274 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:2173823548 var:4.30197% ms:2173 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:2173823548 var:4.30197% ms:2173 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+125%) fmt::FormatInt [avg:76414719 var:4.05126% ms:76 runs:50 conv_ops:500000000]
+             (+51%) boost::spirit::karma [avg:51266659 var:0.638265% ms:51 runs:50 conv_ops:500000000]
+                     (+30%) alexandrescu [avg:44234346 var:0.242313% ms:44 runs:50 conv_ops:500000000]
+                           (+48%) buffer [avg:50505854 var:1.11529% ms:50 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:33937416 var:1.70755% ms:33 runs:50 conv_ops:500000000]
+                        (+22%) hybrid(1) [avg:41540094 var:8.73679% ms:41 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:33937416 var:1.70755% ms:33 runs:50 conv_ops:500000000]
+Converting 2 int with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+66%) fmt::FormatInt [avg:80819431 var:1.1221% ms:80 runs:50 conv_ops:500000000]
+            (+135%) boost::spirit::karma [avg:114552494 var:0.592011% ms:114 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:48568892 var:0.327444% ms:48 runs:50 conv_ops:500000000]
+                           (+19%) buffer [avg:58147571 var:1.05946% ms:58 runs:50 conv_ops:500000000]
+                         (+4%) hybrid(0) [avg:50790779 var:1.30192% ms:50 runs:50 conv_ops:500000000]
+                        (+32%) hybrid(1) [avg:64524476 var:1.54338% ms:64 runs:50 conv_ops:500000000]
+                      (+4%) hybrid(best) [avg:50790779 var:1.30192% ms:50 runs:50 conv_ops:500000000]
+Converting 2 long with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+74%) fmt::FormatInt [avg:84726086 var:1.70083% ms:84 runs:50 conv_ops:500000000]
+            (+119%) boost::spirit::karma [avg:106728166 var:1.28272% ms:106 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:48638900 var:0.389342% ms:48 runs:50 conv_ops:500000000]
+                           (+21%) buffer [avg:59295962 var:2.06475% ms:59 runs:50 conv_ops:500000000]
+                         (+3%) hybrid(0) [avg:50328752 var:0.287343% ms:50 runs:50 conv_ops:500000000]
+                        (+32%) hybrid(1) [avg:64430202 var:1.79277% ms:64 runs:50 conv_ops:500000000]
+                      (+3%) hybrid(best) [avg:50328752 var:0.287343% ms:50 runs:50 conv_ops:500000000]
+Converting 1 long long with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+23%) fmt::FormatInt [avg:123512992 var:0.507403% ms:123 runs:50 conv_ops:500000000]
+            (+117%) boost::spirit::karma [avg:216366742 var:1.7443% ms:216 runs:50 conv_ops:500000000]
+                     (+14%) alexandrescu [avg:114201225 var:0.238326% ms:114 runs:50 conv_ops:500000000]
+                            (+2%) buffer [avg:101823147 var:1.34305% ms:101 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:99667606 var:0.689073% ms:99 runs:50 conv_ops:500000000]
+                        (+60%) hybrid(1) [avg:160122854 var:1.02698% ms:160 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:99667606 var:0.689073% ms:99 runs:50 conv_ops:500000000]
+Converting 4 short with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+75%) fmt::FormatInt [avg:65466398 var:2.47029% ms:65 runs:50 conv_ops:500000000]
+             (+33%) boost::spirit::karma [avg:49676040 var:0.635199% ms:49 runs:50 conv_ops:500000000]
+                     (+27%) alexandrescu [avg:47710247 var:0.28124% ms:47 runs:50 conv_ops:500000000]
+                           (+44%) buffer [avg:53768358 var:0.245028% ms:53 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:37296983 var:0.249326% ms:37 runs:50 conv_ops:500000000]
+                        (+16%) hybrid(1) [avg:43469064 var:1.49794% ms:43 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:37296983 var:0.249326% ms:37 runs:50 conv_ops:500000000]
+Converting 2 int with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+45%) fmt::FormatInt [avg:75963922 var:0.824402% ms:75 runs:50 conv_ops:500000000]
+             (+89%) boost::spirit::karma [avg:99187744 var:4.77032% ms:99 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:52307509 var:2.26957% ms:52 runs:50 conv_ops:500000000]
+                           (+16%) buffer [avg:60802978 var:0.283125% ms:60 runs:50 conv_ops:500000000]
+                         (+2%) hybrid(0) [avg:53831506 var:1.03652% ms:53 runs:50 conv_ops:500000000]
+                        (+29%) hybrid(1) [avg:67657026 var:0.269115% ms:67 runs:50 conv_ops:500000000]
+                      (+2%) hybrid(best) [avg:53831506 var:1.03652% ms:53 runs:50 conv_ops:500000000]
+Converting 2 long with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+46%) fmt::FormatInt [avg:77167906 var:0.819487% ms:77 runs:50 conv_ops:500000000]
+             (+87%) boost::spirit::karma [avg:98518821 var:0.745224% ms:98 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:52561137 var:2.40422% ms:52 runs:50 conv_ops:500000000]
+                           (+15%) buffer [avg:60790392 var:0.256012% ms:60 runs:50 conv_ops:500000000]
+                         (+2%) hybrid(0) [avg:53962935 var:1.99831% ms:53 runs:50 conv_ops:500000000]
+                        (+29%) hybrid(1) [avg:67814159 var:1.46989% ms:67 runs:50 conv_ops:500000000]
+                      (+2%) hybrid(best) [avg:53962935 var:1.99831% ms:53 runs:50 conv_ops:500000000]
+Converting 1 long long with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+16%) fmt::FormatInt [avg:109242715 var:1.63778% ms:109 runs:50 conv_ops:500000000]
+            (+122%) boost::spirit::karma [avg:208494808 var:1.86643% ms:208 runs:50 conv_ops:500000000]
+                     (+21%) alexandrescu [avg:113540941 var:2.66734% ms:113 runs:50 conv_ops:500000000]
+                            (+6%) buffer [avg:100133255 var:1.69129% ms:100 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:93810807 var:0.969771% ms:93 runs:50 conv_ops:500000000]
+                        (+66%) hybrid(1) [avg:156098523 var:0.14775% ms:156 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:93810807 var:0.969771% ms:93 runs:50 conv_ops:500000000]
+Converting 4 short with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+74%) fmt::FormatInt [avg:65245194 var:2.57749% ms:65 runs:50 conv_ops:500000000]
+             (+33%) boost::spirit::karma [avg:49835622 var:1.41559% ms:49 runs:50 conv_ops:500000000]
+                     (+28%) alexandrescu [avg:48023289 var:2.51015% ms:48 runs:50 conv_ops:500000000]
+                           (+44%) buffer [avg:53920934 var:1.31535% ms:53 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:37283359 var:0.306735% ms:37 runs:50 conv_ops:500000000]
+                        (+16%) hybrid(1) [avg:43364095 var:0.301348% ms:43 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:37283359 var:0.306735% ms:37 runs:50 conv_ops:500000000]
+Converting 2 int with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+42%) fmt::FormatInt [avg:76655836 var:2.88986% ms:76 runs:50 conv_ops:500000000]
+             (+82%) boost::spirit::karma [avg:98077298 var:1.67501% ms:98 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:53679550 var:7.10369% ms:53 runs:50 conv_ops:500000000]
+                           (+13%) buffer [avg:61051286 var:1.6436% ms:61 runs:50 conv_ops:500000000]
+                         (+5%) hybrid(0) [avg:56375822 var:13.3432% ms:56 runs:50 conv_ops:500000000]
+                        (+26%) hybrid(1) [avg:68117556 var:1.98101% ms:68 runs:50 conv_ops:500000000]
+                      (+5%) hybrid(best) [avg:56375822 var:13.3432% ms:56 runs:50 conv_ops:500000000]
+Converting 2 long with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+52%) fmt::FormatInt [avg:79437723 var:10.3323% ms:79 runs:50 conv_ops:500000000]
+             (+88%) boost::spirit::karma [avg:98689614 var:1.45856% ms:98 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:52253354 var:1.93152% ms:52 runs:50 conv_ops:500000000]
+                           (+16%) buffer [avg:60794635 var:0.298154% ms:60 runs:50 conv_ops:500000000]
+                         (+5%) hybrid(0) [avg:55025069 var:8.87786% ms:55 runs:50 conv_ops:500000000]
+                        (+29%) hybrid(1) [avg:67810198 var:1.41007% ms:67 runs:50 conv_ops:500000000]
+                      (+5%) hybrid(best) [avg:55025069 var:8.87786% ms:55 runs:50 conv_ops:500000000]
+Converting 1 long long with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+16%) fmt::FormatInt [avg:108706752 var:0.169311% ms:108 runs:50 conv_ops:500000000]
+            (+121%) boost::spirit::karma [avg:207618731 var:1.46129% ms:207 runs:50 conv_ops:500000000]
+                     (+21%) alexandrescu [avg:113650882 var:2.58354% ms:113 runs:50 conv_ops:500000000]
+                            (+6%) buffer [avg:99814796 var:0.274084% ms:99 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:93702490 var:0.34988% ms:93 runs:50 conv_ops:500000000]
+                        (+66%) hybrid(1) [avg:156363332 var:0.63509% ms:156 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:93702490 var:0.34988% ms:93 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+130%) fmt::FormatInt [avg:97105143 var:4.21261% ms:97 runs:50 conv_ops:500000000]
+             (+85%) boost::spirit::karma [avg:78164736 var:0.243877% ms:78 runs:50 conv_ops:500000000]
+                      (+2%) alexandrescu [avg:43006686 var:0.625102% ms:43 runs:50 conv_ops:500000000]
+                           (+44%) buffer [avg:60718595 var:0.244291% ms:60 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:42140117 var:7.54945% ms:42 runs:50 conv_ops:500000000]
+                        (+26%) hybrid(1) [avg:53231140 var:4.14013% ms:53 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:42140117 var:7.54945% ms:42 runs:50 conv_ops:500000000]
+Converting 2 int with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+75%) fmt::FormatInt [avg:84564660 var:0.853439% ms:84 runs:50 conv_ops:500000000]
+            (+176%) boost::spirit::karma [avg:133369556 var:1.0937% ms:133 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:48254139 var:0.56624% ms:48 runs:50 conv_ops:500000000]
+                           (+41%) buffer [avg:68332937 var:0.277465% ms:68 runs:50 conv_ops:500000000]
+                        (+22%) hybrid(0) [avg:58992062 var:0.305835% ms:58 runs:50 conv_ops:500000000]
+                        (+40%) hybrid(1) [avg:67862153 var:1.37841% ms:67 runs:50 conv_ops:500000000]
+                     (+22%) hybrid(best) [avg:58992062 var:0.305835% ms:58 runs:50 conv_ops:500000000]
+Converting 2 long with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+88%) fmt::FormatInt [avg:92783303 var:0.526874% ms:92 runs:50 conv_ops:500000000]
+            (+184%) boost::spirit::karma [avg:140058339 var:0.595961% ms:140 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:49207511 var:1.02712% ms:49 runs:50 conv_ops:500000000]
+                           (+37%) buffer [avg:67520174 var:1.01252% ms:67 runs:50 conv_ops:500000000]
+                        (+12%) hybrid(0) [avg:55594114 var:0.309069% ms:55 runs:50 conv_ops:500000000]
+                        (+31%) hybrid(1) [avg:64606206 var:2.62897% ms:64 runs:50 conv_ops:500000000]
+                     (+12%) hybrid(best) [avg:55594114 var:0.309069% ms:55 runs:50 conv_ops:500000000]
+Converting 1 long long with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+32%) fmt::FormatInt [avg:144700412 var:0.746772% ms:144 runs:50 conv_ops:500000000]
+            (+304%) boost::spirit::karma [avg:440983330 var:1.50563% ms:440 runs:50 conv_ops:500000000]
+                     (+19%) alexandrescu [avg:130417459 var:0.487441% ms:130 runs:50 conv_ops:500000000]
+                            (+3%) buffer [avg:112613253 var:0.184169% ms:112 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:109086022 var:0.235063% ms:109 runs:50 conv_ops:500000000]
+                        (+47%) hybrid(1) [avg:160598400 var:1.72121% ms:160 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:109086022 var:0.235063% ms:109 runs:50 conv_ops:500000000]
+Converting 4 short with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+101%) fmt::FormatInt [avg:85518539 var:5.51253% ms:85 runs:50 conv_ops:500000000]
+             (+72%) boost::spirit::karma [avg:73061136 var:0.44998% ms:73 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:42383634 var:0.244877% ms:42 runs:50 conv_ops:500000000]
+                           (+51%) buffer [avg:64179513 var:0.369192% ms:64 runs:50 conv_ops:500000000]
+                         (+4%) hybrid(0) [avg:44220749 var:0.303236% ms:44 runs:50 conv_ops:500000000]
+                         (+8%) hybrid(1) [avg:45888275 var:0.227791% ms:45 runs:50 conv_ops:500000000]
+                      (+4%) hybrid(best) [avg:44220749 var:0.303236% ms:44 runs:50 conv_ops:500000000]
+Converting 2 int with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+82%) fmt::FormatInt [avg:88251857 var:2.19091% ms:88 runs:50 conv_ops:500000000]
+            (+174%) boost::spirit::karma [avg:133223698 var:1.49339% ms:133 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:48487461 var:2.29595% ms:48 runs:50 conv_ops:500000000]
+                           (+41%) buffer [avg:68568040 var:2.56526% ms:68 runs:50 conv_ops:500000000]
+                        (+21%) hybrid(0) [avg:58987009 var:0.449687% ms:58 runs:50 conv_ops:500000000]
+                        (+39%) hybrid(1) [avg:67716862 var:0.836864% ms:67 runs:50 conv_ops:500000000]
+                     (+21%) hybrid(best) [avg:58987009 var:0.449687% ms:58 runs:50 conv_ops:500000000]
+Converting 2 long with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+78%) fmt::FormatInt [avg:86192558 var:1.22365% ms:86 runs:50 conv_ops:500000000]
+            (+175%) boost::spirit::karma [avg:133011927 var:1.40623% ms:133 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:48338503 var:1.63976% ms:48 runs:50 conv_ops:500000000]
+                           (+41%) buffer [avg:68373542 var:0.382095% ms:68 runs:50 conv_ops:500000000]
+                        (+22%) hybrid(0) [avg:59097125 var:1.72271% ms:59 runs:50 conv_ops:500000000]
+                        (+40%) hybrid(1) [avg:68108014 var:2.18602% ms:68 runs:50 conv_ops:500000000]
+                     (+22%) hybrid(best) [avg:59097125 var:1.72271% ms:59 runs:50 conv_ops:500000000]
+Converting 1 long long with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+28%) fmt::FormatInt [avg:135197763 var:0.928114% ms:135 runs:50 conv_ops:500000000]
+            (+306%) boost::spirit::karma [avg:428285675 var:1.10328% ms:428 runs:50 conv_ops:500000000]
+                     (+22%) alexandrescu [avg:129652883 var:0.492571% ms:129 runs:50 conv_ops:500000000]
+                            (+5%) buffer [avg:111412917 var:0.50644% ms:111 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:105425207 var:0.200831% ms:105 runs:50 conv_ops:500000000]
+                        (+48%) hybrid(1) [avg:156599929 var:1.48568% ms:156 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:105425207 var:0.200831% ms:105 runs:50 conv_ops:500000000]
+Converting 4 short with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+80%) fmt::FormatInt [avg:73578526 var:5.89466% ms:73 runs:50 conv_ops:500000000]
+             (+48%) boost::spirit::karma [avg:60406462 var:0.632337% ms:60 runs:50 conv_ops:500000000]
+                     (+10%) alexandrescu [avg:44944704 var:0.535762% ms:44 runs:50 conv_ops:500000000]
+                           (+44%) buffer [avg:58948514 var:0.228682% ms:58 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:40745991 var:0.316207% ms:40 runs:50 conv_ops:500000000]
+                         (+8%) hybrid(1) [avg:44252255 var:0.486759% ms:44 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:40745991 var:0.316207% ms:40 runs:50 conv_ops:500000000]
+Converting 2 int with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+79%) fmt::FormatInt [avg:86624765 var:11.2853% ms:86 runs:50 conv_ops:500000000]
+            (+181%) boost::spirit::karma [avg:136386420 var:7.31516% ms:136 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:48378967 var:1.18408% ms:48 runs:50 conv_ops:500000000]
+                           (+41%) buffer [avg:68636039 var:2.75201% ms:68 runs:50 conv_ops:500000000]
+                        (+24%) hybrid(0) [avg:60198327 var:7.6139% ms:60 runs:50 conv_ops:500000000]
+                        (+39%) hybrid(1) [avg:67708148 var:0.648389% ms:67 runs:50 conv_ops:500000000]
+                     (+24%) hybrid(best) [avg:60198327 var:7.6139% ms:60 runs:50 conv_ops:500000000]
+Converting 2 long with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+77%) fmt::FormatInt [avg:85529919 var:0.309206% ms:85 runs:50 conv_ops:500000000]
+            (+175%) boost::spirit::karma [avg:132798041 var:0.502765% ms:132 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:48214897 var:1.30106% ms:48 runs:50 conv_ops:500000000]
+                           (+41%) buffer [avg:68324326 var:0.852775% ms:68 runs:50 conv_ops:500000000]
+                        (+22%) hybrid(0) [avg:59070688 var:0.86235% ms:59 runs:50 conv_ops:500000000]
+                        (+40%) hybrid(1) [avg:67577019 var:0.21576% ms:67 runs:50 conv_ops:500000000]
+                     (+22%) hybrid(best) [avg:59070688 var:0.86235% ms:59 runs:50 conv_ops:500000000]
+Converting 1 long long with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+25%) fmt::FormatInt [avg:132496763 var:5.61525% ms:132 runs:50 conv_ops:500000000]
+            (+302%) boost::spirit::karma [avg:426788418 var:2.41893% ms:426 runs:50 conv_ops:500000000]
+                     (+22%) alexandrescu [avg:129728154 var:0.97386% ms:129 runs:50 conv_ops:500000000]
+                            (+5%) buffer [avg:111420780 var:2.20924% ms:111 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:105974533 var:2.17421% ms:105 runs:50 conv_ops:500000000]
+                        (+47%) hybrid(1) [avg:156150260 var:0.637937% ms:156 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:105974533 var:2.17421% ms:105 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+62%) fmt::FormatInt [avg:145189908 var:7.49095% ms:145 runs:50 conv_ops:500000000]
+             (+28%) boost::spirit::karma [avg:114752219 var:0.809199% ms:114 runs:50 conv_ops:500000000]
+                     (+11%) alexandrescu [avg:99387754 var:0.215369% ms:99 runs:50 conv_ops:500000000]
+                           (+20%) buffer [avg:107881199 var:0.180603% ms:107 runs:50 conv_ops:500000000]
+                        (+21%) hybrid(0) [avg:108449573 var:1.16163% ms:108 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:89256212 var:0.209954% ms:89 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:89256212 var:0.209954% ms:89 runs:50 conv_ops:500000000]
+Converting 2 int with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+87%) fmt::FormatInt [avg:154422467 var:0.727475% ms:154 runs:50 conv_ops:500000000]
+            (+146%) boost::spirit::karma [avg:202874260 var:0.476643% ms:202 runs:50 conv_ops:500000000]
+                      (+3%) alexandrescu [avg:85194621 var:0.199262% ms:85 runs:50 conv_ops:500000000]
+                           (+26%) buffer [avg:104163285 var:0.23269% ms:104 runs:50 conv_ops:500000000]
+                        (+25%) hybrid(0) [avg:103056534 var:0.193401% ms:103 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:82165197 var:3.2292% ms:82 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:82165197 var:3.2292% ms:82 runs:50 conv_ops:500000000]
+Converting 2 long with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+71%) fmt::FormatInt [avg:156714367 var:0.931001% ms:156 runs:50 conv_ops:500000000]
+            (+172%) boost::spirit::karma [avg:248085930 var:0.890916% ms:248 runs:50 conv_ops:500000000]
+                      (+2%) alexandrescu [avg:93357872 var:11.4907% ms:93 runs:50 conv_ops:500000000]
+                           (+20%) buffer [avg:109874478 var:1.22512% ms:109 runs:50 conv_ops:500000000]
+                        (+22%) hybrid(0) [avg:111879209 var:0.141225% ms:111 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:91154235 var:2.49392% ms:91 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:91154235 var:2.49392% ms:91 runs:50 conv_ops:500000000]
+Converting 1 long long with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+13%) fmt::FormatInt [avg:382406743 var:1.04848% ms:382 runs:50 conv_ops:500000000]
+            (+145%) boost::spirit::karma [avg:829786985 var:2.73693% ms:829 runs:50 conv_ops:500000000]
+                     (+16%) alexandrescu [avg:391403402 var:1.05671% ms:391 runs:50 conv_ops:500000000]
+                              (!) buffer [avg:337320781 var:2.88207% ms:337 runs:50 conv_ops:500000000]
+                         (+2%) hybrid(0) [avg:346923868 var:0.351509% ms:346 runs:50 conv_ops:500000000]
+                         (+5%) hybrid(1) [avg:354234175 var:3.27147% ms:354 runs:50 conv_ops:500000000]
+                      (+2%) hybrid(best) [avg:346923868 var:0.351509% ms:346 runs:50 conv_ops:500000000]
+Converting 4 short with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+59%) fmt::FormatInt [avg:141928505 var:0.745038% ms:141 runs:50 conv_ops:500000000]
+             (+26%) boost::spirit::karma [avg:112216283 var:1.18602% ms:112 runs:50 conv_ops:500000000]
+                     (+11%) alexandrescu [avg:99269963 var:1.27856% ms:99 runs:50 conv_ops:500000000]
+                           (+22%) buffer [avg:108484999 var:4.81847% ms:108 runs:50 conv_ops:500000000]
+                        (+22%) hybrid(0) [avg:108853363 var:3.83636% ms:108 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:88888476 var:0.191446% ms:88 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:88888476 var:0.191446% ms:88 runs:50 conv_ops:500000000]
+Converting 2 int with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+73%) fmt::FormatInt [avg:153756718 var:0.492902% ms:153 runs:50 conv_ops:500000000]
+            (+152%) boost::spirit::karma [avg:224015347 var:0.597277% ms:224 runs:50 conv_ops:500000000]
+                      (+0%) alexandrescu [avg:88614969 var:0.126161% ms:88 runs:50 conv_ops:500000000]
+                           (+23%) buffer [avg:109721849 var:1.02124% ms:109 runs:50 conv_ops:500000000]
+                        (+24%) hybrid(0) [avg:110191200 var:1.1709% ms:110 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:88610873 var:0.242107% ms:88 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:88610873 var:0.242107% ms:88 runs:50 conv_ops:500000000]
+Converting 2 long with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+75%) fmt::FormatInt [avg:155101893 var:4.10926% ms:155 runs:50 conv_ops:500000000]
+            (+159%) boost::spirit::karma [avg:229635459 var:8.67766% ms:229 runs:50 conv_ops:500000000]
+                      (+0%) alexandrescu [avg:88705683 var:0.197821% ms:88 runs:50 conv_ops:500000000]
+                           (+23%) buffer [avg:109350362 var:2.23227% ms:109 runs:50 conv_ops:500000000]
+                        (+24%) hybrid(0) [avg:110264803 var:0.143682% ms:110 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:88602329 var:0.182724% ms:88 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:88602329 var:0.182724% ms:88 runs:50 conv_ops:500000000]
+Converting 1 long long with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+14%) fmt::FormatInt [avg:383973121 var:0.348841% ms:383 runs:50 conv_ops:500000000]
+            (+145%) boost::spirit::karma [avg:826361360 var:1.0463% ms:826 runs:50 conv_ops:500000000]
+                     (+16%) alexandrescu [avg:390846599 var:0.871008% ms:390 runs:50 conv_ops:500000000]
+                              (!) buffer [avg:336746699 var:2.98056% ms:336 runs:50 conv_ops:500000000]
+                         (+3%) hybrid(0) [avg:347530381 var:1.46359% ms:347 runs:50 conv_ops:500000000]
+                         (+5%) hybrid(1) [avg:355428444 var:4.07152% ms:355 runs:50 conv_ops:500000000]
+                      (+3%) hybrid(best) [avg:347530381 var:1.46359% ms:347 runs:50 conv_ops:500000000]
+Converting 4 short with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+59%) fmt::FormatInt [avg:142002548 var:0.198936% ms:142 runs:50 conv_ops:500000000]
+             (+27%) boost::spirit::karma [avg:113389941 var:4.86604% ms:113 runs:50 conv_ops:500000000]
+                     (+11%) alexandrescu [avg:99385010 var:1.64654% ms:99 runs:50 conv_ops:500000000]
+                           (+20%) buffer [avg:107152050 var:0.408583% ms:107 runs:50 conv_ops:500000000]
+                        (+21%) hybrid(0) [avg:108264411 var:1.2537% ms:108 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:88995661 var:1.1844% ms:88 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:88995661 var:1.1844% ms:88 runs:50 conv_ops:500000000]
+Converting 2 int with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+87%) fmt::FormatInt [avg:151143297 var:0.438865% ms:151 runs:50 conv_ops:500000000]
+            (+149%) boost::spirit::karma [avg:201408008 var:0.335203% ms:201 runs:50 conv_ops:500000000]
+                      (+4%) alexandrescu [avg:84648258 var:0.152147% ms:84 runs:50 conv_ops:500000000]
+                           (+29%) buffer [avg:104339555 var:0.153759% ms:104 runs:50 conv_ops:500000000]
+                        (+27%) hybrid(0) [avg:103020920 var:0.159954% ms:103 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:80631913 var:0.783318% ms:80 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:80631913 var:0.783318% ms:80 runs:50 conv_ops:500000000]
+Converting 2 long with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+91%) fmt::FormatInt [avg:151376887 var:4.09998% ms:151 runs:50 conv_ops:500000000]
+            (+153%) boost::spirit::karma [avg:200426751 var:0.7846% ms:200 runs:50 conv_ops:500000000]
+                      (+7%) alexandrescu [avg:84660380 var:4.81226% ms:84 runs:50 conv_ops:500000000]
+                           (+30%) buffer [avg:103252752 var:0.721827% ms:103 runs:50 conv_ops:500000000]
+                        (+32%) hybrid(0) [avg:104990017 var:1.54687% ms:104 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:78954867 var:0.287851% ms:78 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:78954867 var:0.287851% ms:78 runs:50 conv_ops:500000000]
+Converting 1 long long with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+16%) fmt::FormatInt [avg:389709451 var:6.88592% ms:389 runs:50 conv_ops:500000000]
+            (+145%) boost::spirit::karma [avg:822883002 var:1.13809% ms:822 runs:50 conv_ops:500000000]
+                     (+16%) alexandrescu [avg:391802844 var:0.306045% ms:391 runs:50 conv_ops:500000000]
+                              (!) buffer [avg:335282564 var:0.532459% ms:335 runs:50 conv_ops:500000000]
+                         (+3%) hybrid(0) [avg:346737513 var:0.280899% ms:346 runs:50 conv_ops:500000000]
+                         (+5%) hybrid(1) [avg:353600188 var:1.70587% ms:353 runs:50 conv_ops:500000000]
+                      (+3%) hybrid(best) [avg:346737513 var:0.280899% ms:346 runs:50 conv_ops:500000000]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 1 long long with 10 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+3%) fmt::FormatInt [avg:1013713395 var:0.485123% ms:1013 runs:50 conv_ops:500000000]
+            (+113%) boost::spirit::karma [avg:2093608497 var:3.13192% ms:2093 runs:50 conv_ops:500000000]
+                      (+3%) alexandrescu [avg:1013730587 var:0.431534% ms:1013 runs:50 conv_ops:500000000]
+                            (+0%) buffer [avg:985493258 var:3.60494% ms:985 runs:50 conv_ops:500000000]
+                         (+4%) hybrid(0) [avg:1022489992 var:2.40898% ms:1022 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:979356836 var:1.10963% ms:979 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:979356836 var:1.10963% ms:979 runs:50 conv_ops:500000000]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 1 long long with 10 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+3%) fmt::FormatInt [avg:1043285676 var:3.0992% ms:1043 runs:50 conv_ops:500000000]
+            (+110%) boost::spirit::karma [avg:2123180703 var:3.28871% ms:2123 runs:50 conv_ops:500000000]
+                      (+3%) alexandrescu [avg:1040251790 var:3.40475% ms:1040 runs:50 conv_ops:500000000]
+                            (+0%) buffer [avg:1007812193 var:3.54807% ms:1007 runs:50 conv_ops:500000000]
+                         (+4%) hybrid(0) [avg:1050509934 var:2.83937% ms:1050 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:1007139000 var:3.67414% ms:1007 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:1007139000 var:3.67414% ms:1007 runs:50 conv_ops:500000000]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 1 long long with 10 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+5%) fmt::FormatInt [avg:1043257068 var:3.47443% ms:1043 runs:50 conv_ops:500000000]
+            (+114%) boost::spirit::karma [avg:2119577735 var:3.61597% ms:2119 runs:50 conv_ops:500000000]
+                      (+5%) alexandrescu [avg:1040959347 var:3.67002% ms:1040 runs:50 conv_ops:500000000]
+                            (+0%) buffer [avg:997225048 var:5.29366% ms:997 runs:50 conv_ops:500000000]
+                         (+4%) hybrid(0) [avg:1032477424 var:3.6248% ms:1032 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:988117095 var:2.19778% ms:988 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:988117095 var:2.19778% ms:988 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+66%) fmt::FormatInt [avg:158061162 var:2.0396% ms:158 runs:50 conv_ops:499999500]
+             (+26%) boost::spirit::karma [avg:120576453 var:2.13111% ms:120 runs:50 conv_ops:499999500]
+                     (+11%) alexandrescu [avg:105874614 var:2.72648% ms:105 runs:50 conv_ops:499999500]
+                           (+37%) buffer [avg:130557939 var:3.73004% ms:130 runs:50 conv_ops:499999500]
+                        (+33%) hybrid(0) [avg:126862467 var:2.046% ms:126 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:94984345 var:3.07223% ms:94 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:94984345 var:3.07223% ms:94 runs:50 conv_ops:499999500]
+Converting 25 int with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+55%) fmt::FormatInt [avg:233327658 var:4.42973% ms:233 runs:50 conv_ops:500000000]
+            (+250%) boost::spirit::karma [avg:526602893 var:2.38245% ms:526 runs:50 conv_ops:500000000]
+                     (+15%) alexandrescu [avg:173270228 var:2.54199% ms:173 runs:50 conv_ops:500000000]
+                           (+51%) buffer [avg:227992074 var:2.76643% ms:227 runs:50 conv_ops:500000000]
+                        (+32%) hybrid(0) [avg:199499676 var:2.27966% ms:199 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:150455194 var:2.93335% ms:150 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:150455194 var:2.93335% ms:150 runs:50 conv_ops:500000000]
+Converting 25 long with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+53%) fmt::FormatInt [avg:231780947 var:3.17576% ms:231 runs:50 conv_ops:500000000]
+            (+247%) boost::spirit::karma [avg:524083028 var:2.336% ms:524 runs:50 conv_ops:500000000]
+                     (+15%) alexandrescu [avg:173718728 var:4.04084% ms:173 runs:50 conv_ops:500000000]
+                           (+51%) buffer [avg:228896110 var:3.32523% ms:228 runs:50 conv_ops:500000000]
+                        (+34%) hybrid(0) [avg:202646723 var:6.31508% ms:202 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:150698235 var:3.12513% ms:150 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:150698235 var:3.12513% ms:150 runs:50 conv_ops:500000000]
+Converting 14 long long with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+5%) fmt::FormatInt [avg:2137790550 var:4.09703% ms:2137 runs:50 conv_ops:499999500]
+            (+108%) boost::spirit::karma [avg:4246488528 var:4.7871% ms:4246 runs:50 conv_ops:499999500]
+                     (+12%) alexandrescu [avg:2295514851 var:4.68268% ms:2295 runs:50 conv_ops:499999500]
+                            (+4%) buffer [avg:2133377706 var:4.82123% ms:2133 runs:50 conv_ops:499999500]
+                         (+6%) hybrid(0) [avg:2169256830 var:4.98671% ms:2169 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:2034377633 var:2.36179% ms:2034 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:2034377633 var:2.36179% ms:2034 runs:50 conv_ops:499999500]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 42 short with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+65%) fmt::FormatInt [avg:146534451 var:0.719356% ms:146 runs:50 conv_ops:499999500]
+             (+19%) boost::spirit::karma [avg:105768035 var:0.212438% ms:105 runs:50 conv_ops:499999500]
+                     (+12%) alexandrescu [avg:99506205 var:0.212929% ms:99 runs:50 conv_ops:499999500]
+                           (+36%) buffer [avg:121117145 var:1.00024% ms:121 runs:50 conv_ops:499999500]
+                        (+32%) hybrid(0) [avg:117656663 var:0.203134% ms:117 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:88734404 var:0.55718% ms:88 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:88734404 var:0.55718% ms:88 runs:50 conv_ops:499999500]
+Converting 25 int with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+54%) fmt::FormatInt [avg:213466431 var:1.18575% ms:213 runs:50 conv_ops:500000000]
+            (+250%) boost::spirit::karma [avg:485561237 var:1.4374% ms:485 runs:50 conv_ops:500000000]
+                     (+16%) alexandrescu [avg:161835158 var:1.81289% ms:161 runs:50 conv_ops:500000000]
+                           (+60%) buffer [avg:221839099 var:4.95961% ms:221 runs:50 conv_ops:500000000]
+                        (+35%) hybrid(0) [avg:187650736 var:0.868003% ms:187 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:138466644 var:2.22533% ms:138 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:138466644 var:2.22533% ms:138 runs:50 conv_ops:500000000]
+Converting 25 long with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+53%) fmt::FormatInt [avg:212765113 var:0.672299% ms:212 runs:50 conv_ops:500000000]
+            (+244%) boost::spirit::karma [avg:476574294 var:0.372768% ms:476 runs:50 conv_ops:500000000]
+                     (+16%) alexandrescu [avg:161179247 var:0.900789% ms:161 runs:50 conv_ops:500000000]
+                           (+57%) buffer [avg:217728800 var:0.220643% ms:217 runs:50 conv_ops:500000000]
+                        (+35%) hybrid(0) [avg:187129756 var:0.728446% ms:187 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:138506792 var:1.08148% ms:138 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:138506792 var:1.08148% ms:138 runs:50 conv_ops:500000000]
+Converting 14 long long with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+2%) fmt::FormatInt [avg:2080795885 var:1.36793% ms:2080 runs:50 conv_ops:499999500]
+            (+104%) boost::spirit::karma [avg:4137835242 var:0.592237% ms:4137 runs:50 conv_ops:499999500]
+                     (+10%) alexandrescu [avg:2239627731 var:0.531934% ms:2239 runs:50 conv_ops:499999500]
+                            (+1%) buffer [avg:2064037600 var:0.61717% ms:2064 runs:50 conv_ops:499999500]
+                         (+3%) hybrid(0) [avg:2092089036 var:0.223539% ms:2092 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:2023889398 var:0.955469% ms:2023 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:2023889398 var:0.955469% ms:2023 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+144%) fmt::FormatInt [avg:55137113 var:2.39337% ms:55 runs:50 conv_ops:499999500]
+            (+116%) boost::spirit::karma [avg:48910663 var:0.414768% ms:48 runs:50 conv_ops:499999500]
+                     (+73%) alexandrescu [avg:39264203 var:0.721068% ms:39 runs:50 conv_ops:499999500]
+                          (+104%) buffer [avg:46122549 var:0.331311% ms:46 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:22583551 var:0.823728% ms:22 runs:50 conv_ops:499999500]
+                        (+58%) hybrid(1) [avg:35693375 var:0.461523% ms:35 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:22583551 var:0.823728% ms:22 runs:50 conv_ops:499999500]
+Converting 25 int with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+136%) fmt::FormatInt [avg:62601016 var:0.934922% ms:62 runs:50 conv_ops:500000000]
+            (+244%) boost::spirit::karma [avg:91191557 var:1.07155% ms:91 runs:50 conv_ops:500000000]
+                     (+48%) alexandrescu [avg:39355084 var:2.88791% ms:39 runs:50 conv_ops:500000000]
+                           (+75%) buffer [avg:46393279 var:0.335316% ms:46 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:26503466 var:0.395383% ms:26 runs:50 conv_ops:500000000]
+                       (+100%) hybrid(1) [avg:53132029 var:0.243062% ms:53 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:26503466 var:0.395383% ms:26 runs:50 conv_ops:500000000]
+Converting 25 long with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+160%) fmt::FormatInt [avg:68277601 var:1.96124% ms:68 runs:50 conv_ops:500000000]
+            (+275%) boost::spirit::karma [avg:98527213 var:1.33564% ms:98 runs:50 conv_ops:500000000]
+                     (+46%) alexandrescu [avg:38568828 var:0.319373% ms:38 runs:50 conv_ops:500000000]
+                           (+81%) buffer [avg:47630652 var:8.11618% ms:47 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:26252036 var:2.46762% ms:26 runs:50 conv_ops:500000000]
+                       (+105%) hybrid(1) [avg:53926692 var:2.35584% ms:53 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:26252036 var:2.46762% ms:26 runs:50 conv_ops:500000000]
+Converting 14 long long with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+62%) fmt::FormatInt [avg:75052463 var:0.577517% ms:75 runs:50 conv_ops:499999500]
+            (+276%) boost::spirit::karma [avg:173419506 var:1.54377% ms:173 runs:50 conv_ops:499999500]
+                     (+95%) alexandrescu [avg:90278266 var:0.201947% ms:90 runs:50 conv_ops:499999500]
+                           (+34%) buffer [avg:61948461 var:4.59658% ms:61 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:46068729 var:0.244867% ms:46 runs:50 conv_ops:499999500]
+                       (+135%) hybrid(1) [avg:108660716 var:0.800608% ms:108 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:46068729 var:0.244867% ms:46 runs:50 conv_ops:499999500]
+Converting 42 short with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+134%) fmt::FormatInt [avg:53082952 var:0.46238% ms:53 runs:50 conv_ops:499999500]
+            (+120%) boost::spirit::karma [avg:49840489 var:1.74281% ms:49 runs:50 conv_ops:499999500]
+                     (+24%) alexandrescu [avg:28093003 var:0.431635% ms:28 runs:50 conv_ops:499999500]
+                          (+132%) buffer [avg:52547573 var:9.50144% ms:52 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:22604082 var:4.11127% ms:22 runs:50 conv_ops:499999500]
+                        (+27%) hybrid(1) [avg:28771023 var:0.681979% ms:28 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:22604082 var:4.11127% ms:22 runs:50 conv_ops:499999500]
+Converting 25 int with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+116%) fmt::FormatInt [avg:59474967 var:0.209216% ms:59 runs:50 conv_ops:500000000]
+            (+183%) boost::spirit::karma [avg:77618069 var:0.254949% ms:77 runs:50 conv_ops:500000000]
+                     (+15%) alexandrescu [avg:31806525 var:0.344944% ms:31 runs:50 conv_ops:500000000]
+                           (+92%) buffer [avg:52818029 var:0.317022% ms:52 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:27422983 var:0.753126% ms:27 runs:50 conv_ops:500000000]
+                       (+116%) hybrid(1) [avg:59443639 var:0.217612% ms:59 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:27422983 var:0.753126% ms:27 runs:50 conv_ops:500000000]
+Converting 25 long with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+107%) fmt::FormatInt [avg:56934207 var:1.9219% ms:56 runs:50 conv_ops:500000000]
+            (+185%) boost::spirit::karma [avg:78314453 var:2.23233% ms:78 runs:50 conv_ops:500000000]
+                     (+16%) alexandrescu [avg:31888220 var:1.28867% ms:31 runs:50 conv_ops:500000000]
+                           (+92%) buffer [avg:52850775 var:0.33203% ms:52 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:27459701 var:2.22044% ms:27 runs:50 conv_ops:500000000]
+                       (+116%) hybrid(1) [avg:59457932 var:0.329312% ms:59 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:27459701 var:2.22044% ms:27 runs:50 conv_ops:500000000]
+Converting 14 long long with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+73%) fmt::FormatInt [avg:76122683 var:1.10089% ms:76 runs:50 conv_ops:499999500]
+            (+304%) boost::spirit::karma [avg:177804616 var:4.05604% ms:177 runs:50 conv_ops:499999500]
+                    (+122%) alexandrescu [avg:98025908 var:0.441067% ms:98 runs:50 conv_ops:499999500]
+                           (+39%) buffer [avg:61599813 var:4.89858% ms:61 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:44000174 var:0.281997% ms:44 runs:50 conv_ops:499999500]
+                       (+157%) hybrid(1) [avg:113100368 var:0.445419% ms:113 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:44000174 var:0.281997% ms:44 runs:50 conv_ops:499999500]
+Converting 42 short with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+113%) fmt::FormatInt [avg:47721824 var:0.253049% ms:47 runs:50 conv_ops:499999500]
+            (+122%) boost::spirit::karma [avg:49732623 var:0.218265% ms:49 runs:50 conv_ops:499999500]
+                     (+25%) alexandrescu [avg:28102216 var:0.494473% ms:28 runs:50 conv_ops:499999500]
+                          (+128%) buffer [avg:51021686 var:0.300037% ms:51 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:22332089 var:0.765165% ms:22 runs:50 conv_ops:499999500]
+                        (+28%) hybrid(1) [avg:28613006 var:0.331022% ms:28 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:22332089 var:0.765165% ms:22 runs:50 conv_ops:499999500]
+Converting 25 int with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+115%) fmt::FormatInt [avg:59992209 var:2.92947% ms:59 runs:50 conv_ops:500000000]
+            (+185%) boost::spirit::karma [avg:79453045 var:4.65454% ms:79 runs:50 conv_ops:500000000]
+                     (+14%) alexandrescu [avg:31828959 var:0.568388% ms:31 runs:50 conv_ops:500000000]
+                           (+94%) buffer [avg:54094044 var:6.49603% ms:54 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:27819535 var:5.41958% ms:27 runs:50 conv_ops:500000000]
+                       (+121%) hybrid(1) [avg:61567197 var:6.9789% ms:61 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:27819535 var:5.41958% ms:27 runs:50 conv_ops:500000000]
+Converting 25 long with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+106%) fmt::FormatInt [avg:56793357 var:0.753123% ms:56 runs:50 conv_ops:500000000]
+            (+183%) boost::spirit::karma [avg:77769190 var:0.20552% ms:77 runs:50 conv_ops:500000000]
+                     (+15%) alexandrescu [avg:31798072 var:0.35616% ms:31 runs:50 conv_ops:500000000]
+                           (+95%) buffer [avg:53645732 var:4.97574% ms:53 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:27473020 var:1.77334% ms:27 runs:50 conv_ops:500000000]
+                       (+118%) hybrid(1) [avg:60120753 var:4.31966% ms:60 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:27473020 var:1.77334% ms:27 runs:50 conv_ops:500000000]
+Converting 14 long long with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+72%) fmt::FormatInt [avg:76170154 var:0.695339% ms:76 runs:50 conv_ops:499999500]
+            (+306%) boost::spirit::karma [avg:179249992 var:5.75793% ms:179 runs:50 conv_ops:499999500]
+                    (+122%) alexandrescu [avg:98156976 var:0.939355% ms:98 runs:50 conv_ops:499999500]
+                           (+38%) buffer [avg:61108832 var:2.2987% ms:61 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:44143798 var:2.42026% ms:44 runs:50 conv_ops:499999500]
+                       (+156%) hybrid(1) [avg:113040773 var:0.454399% ms:113 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:44143798 var:2.42026% ms:44 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+161%) fmt::FormatInt [avg:73362644 var:0.420714% ms:73 runs:50 conv_ops:499999500]
+            (+120%) boost::spirit::karma [avg:61845498 var:1.28521% ms:61 runs:50 conv_ops:499999500]
+                     (+42%) alexandrescu [avg:39914879 var:4.46883% ms:39 runs:50 conv_ops:499999500]
+                           (+95%) buffer [avg:54765414 var:1.99946% ms:54 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:28026206 var:0.530135% ms:28 runs:50 conv_ops:499999500]
+                        (+39%) hybrid(1) [avg:39117242 var:0.44504% ms:39 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:28026206 var:0.530135% ms:28 runs:50 conv_ops:499999500]
+Converting 25 int with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+125%) fmt::FormatInt [avg:72916841 var:0.252424% ms:72 runs:50 conv_ops:500000000]
+            (+269%) boost::spirit::karma [avg:119626992 var:0.491802% ms:119 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:32350870 var:0.475295% ms:32 runs:50 conv_ops:500000000]
+                           (+63%) buffer [avg:52775591 var:0.286986% ms:52 runs:50 conv_ops:500000000]
+                         (+1%) hybrid(0) [avg:32754286 var:0.331803% ms:32 runs:50 conv_ops:500000000]
+                        (+63%) hybrid(1) [avg:52881817 var:0.324124% ms:52 runs:50 conv_ops:500000000]
+                      (+1%) hybrid(best) [avg:32754286 var:0.331803% ms:32 runs:50 conv_ops:500000000]
+Converting 25 long with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+121%) fmt::FormatInt [avg:72676298 var:2.43029% ms:72 runs:50 conv_ops:500000000]
+            (+263%) boost::spirit::karma [avg:119117966 var:0.681324% ms:119 runs:50 conv_ops:500000000]
+                      (+2%) alexandrescu [avg:33549816 var:0.606123% ms:33 runs:50 conv_ops:500000000]
+                           (+63%) buffer [avg:53407352 var:3.42799% ms:53 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:32742834 var:0.30165% ms:32 runs:50 conv_ops:500000000]
+                        (+63%) hybrid(1) [avg:53429766 var:0.380448% ms:53 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:32742834 var:0.30165% ms:32 runs:50 conv_ops:500000000]
+Converting 14 long long with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+88%) fmt::FormatInt [avg:95125164 var:1.39376% ms:95 runs:50 conv_ops:499999500]
+            (+640%) boost::spirit::karma [avg:373497069 var:0.744895% ms:373 runs:50 conv_ops:499999500]
+                     (+94%) alexandrescu [avg:98359087 var:0.185819% ms:98 runs:50 conv_ops:499999500]
+                           (+55%) buffer [avg:78293597 var:0.282716% ms:78 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:50472171 var:1.1246% ms:50 runs:50 conv_ops:499999500]
+                       (+117%) hybrid(1) [avg:109694291 var:0.942904% ms:109 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:50472171 var:1.1246% ms:50 runs:50 conv_ops:499999500]
+Converting 42 short with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+157%) fmt::FormatInt [avg:64086577 var:5.05064% ms:64 runs:50 conv_ops:499999500]
+            (+161%) boost::spirit::karma [avg:65172600 var:2.7012% ms:65 runs:50 conv_ops:499999500]
+                     (+74%) alexandrescu [avg:43541490 var:2.31618% ms:43 runs:50 conv_ops:499999500]
+                          (+146%) buffer [avg:61494727 var:0.28483% ms:61 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:24932895 var:0.650665% ms:24 runs:50 conv_ops:499999500]
+                        (+54%) hybrid(1) [avg:38445632 var:2.24361% ms:38 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:24932895 var:0.650665% ms:24 runs:50 conv_ops:499999500]
+Converting 25 int with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+118%) fmt::FormatInt [avg:65028815 var:0.432282% ms:65 runs:50 conv_ops:500000000]
+            (+297%) boost::spirit::karma [avg:118499304 var:0.181043% ms:118 runs:50 conv_ops:500000000]
+                      (+8%) alexandrescu [avg:32369354 var:0.536601% ms:32 runs:50 conv_ops:500000000]
+                          (+100%) buffer [avg:59792209 var:0.939222% ms:59 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:29791071 var:3.32536% ms:29 runs:50 conv_ops:500000000]
+                       (+101%) hybrid(1) [avg:59900321 var:0.899903% ms:59 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:29791071 var:3.32536% ms:29 runs:50 conv_ops:500000000]
+Converting 25 long with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+121%) fmt::FormatInt [avg:65697240 var:0.411311% ms:65 runs:50 conv_ops:500000000]
+            (+300%) boost::spirit::karma [avg:118594740 var:0.446847% ms:118 runs:50 conv_ops:500000000]
+                      (+9%) alexandrescu [avg:32414386 var:2.10734% ms:32 runs:50 conv_ops:500000000]
+                          (+101%) buffer [avg:59709928 var:0.230954% ms:59 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:29637462 var:0.387014% ms:29 runs:50 conv_ops:500000000]
+                       (+104%) hybrid(1) [avg:60603817 var:1.69866% ms:60 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:29637462 var:0.387014% ms:29 runs:50 conv_ops:500000000]
+Converting 14 long long with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+89%) fmt::FormatInt [avg:92685706 var:0.815872% ms:92 runs:50 conv_ops:499999500]
+            (+689%) boost::spirit::karma [avg:385593444 var:1.3225% ms:385 runs:50 conv_ops:499999500]
+                    (+122%) alexandrescu [avg:108607303 var:0.222257% ms:108 runs:50 conv_ops:499999500]
+                           (+71%) buffer [avg:83949661 var:1.51686% ms:83 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:48821688 var:0.305528% ms:48 runs:50 conv_ops:499999500]
+                       (+132%) hybrid(1) [avg:113406902 var:0.12244% ms:113 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:48821688 var:0.305528% ms:48 runs:50 conv_ops:499999500]
+Converting 42 short with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+118%) fmt::FormatInt [avg:70936921 var:0.865712% ms:70 runs:50 conv_ops:499999500]
+             (+89%) boost::spirit::karma [avg:61727238 var:0.646969% ms:61 runs:50 conv_ops:499999500]
+                     (+32%) alexandrescu [avg:42965056 var:0.267836% ms:42 runs:50 conv_ops:499999500]
+                           (+92%) buffer [avg:62543824 var:0.333183% ms:62 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:32506037 var:3.40617% ms:32 runs:50 conv_ops:499999500]
+                        (+30%) hybrid(1) [avg:42423332 var:1.08363% ms:42 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:32506037 var:3.40617% ms:32 runs:50 conv_ops:499999500]
+Converting 25 int with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+91%) fmt::FormatInt [avg:69940606 var:2.35962% ms:69 runs:50 conv_ops:500000000]
+            (+206%) boost::spirit::karma [avg:111861604 var:0.855123% ms:111 runs:50 conv_ops:500000000]
+                      (+4%) alexandrescu [avg:37936533 var:0.344187% ms:37 runs:50 conv_ops:500000000]
+                           (+52%) buffer [avg:55740140 var:0.9724% ms:55 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:36447794 var:1.46798% ms:36 runs:50 conv_ops:500000000]
+                        (+55%) hybrid(1) [avg:56697025 var:2.02533% ms:56 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:36447794 var:1.46798% ms:36 runs:50 conv_ops:500000000]
+Converting 25 long with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+86%) fmt::FormatInt [avg:70672147 var:1.74075% ms:70 runs:50 conv_ops:500000000]
+            (+201%) boost::spirit::karma [avg:114084952 var:11.0231% ms:114 runs:50 conv_ops:500000000]
+                      (+3%) alexandrescu [avg:39100065 var:0.461028% ms:39 runs:50 conv_ops:500000000]
+                           (+47%) buffer [avg:55793079 var:1.40042% ms:55 runs:50 conv_ops:500000000]
+                           (!) hybrid(0) [avg:37829159 var:1.19841% ms:37 runs:50 conv_ops:500000000]
+                        (+49%) hybrid(1) [avg:56584443 var:1.11346% ms:56 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:37829159 var:1.19841% ms:37 runs:50 conv_ops:500000000]
+Converting 14 long long with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+91%) fmt::FormatInt [avg:93640640 var:0.194543% ms:93 runs:50 conv_ops:499999500]
+            (+694%) boost::spirit::karma [avg:388060046 var:1.89337% ms:388 runs:50 conv_ops:499999500]
+                    (+123%) alexandrescu [avg:109223641 var:0.315512% ms:109 runs:50 conv_ops:499999500]
+                           (+71%) buffer [avg:83882370 var:0.807945% ms:83 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:48846294 var:0.315356% ms:48 runs:50 conv_ops:499999500]
+                       (+132%) hybrid(1) [avg:113558461 var:0.420099% ms:113 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:48846294 var:0.315356% ms:48 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+62%) fmt::FormatInt [avg:131925150 var:5.58798% ms:131 runs:50 conv_ops:499999500]
+             (+21%) boost::spirit::karma [avg:98708936 var:0.148515% ms:98 runs:50 conv_ops:499999500]
+                     (+12%) alexandrescu [avg:90865793 var:0.88171% ms:90 runs:50 conv_ops:499999500]
+                           (+20%) buffer [avg:97603451 var:0.562827% ms:97 runs:50 conv_ops:499999500]
+                        (+16%) hybrid(0) [avg:94789699 var:0.971873% ms:94 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:81071640 var:1.9835% ms:81 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:81071640 var:1.9835% ms:81 runs:50 conv_ops:499999500]
+Converting 25 int with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+96%) fmt::FormatInt [avg:130025926 var:2.2434% ms:130 runs:50 conv_ops:500000000]
+            (+209%) boost::spirit::karma [avg:204464431 var:0.127107% ms:204 runs:50 conv_ops:500000000]
+                      (+1%) alexandrescu [avg:66835969 var:1.33573% ms:66 runs:50 conv_ops:500000000]
+                           (+30%) buffer [avg:86019287 var:0.212449% ms:86 runs:50 conv_ops:500000000]
+                        (+16%) hybrid(0) [avg:76707863 var:0.181392% ms:76 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:66118230 var:1.42261% ms:66 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:66118230 var:1.42261% ms:66 runs:50 conv_ops:500000000]
+Converting 25 long with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+93%) fmt::FormatInt [avg:131129858 var:0.41254% ms:131 runs:50 conv_ops:500000000]
+            (+199%) boost::spirit::karma [avg:202725455 var:0.676503% ms:202 runs:50 conv_ops:500000000]
+                        (!) alexandrescu [avg:67788080 var:2.17324% ms:67 runs:50 conv_ops:500000000]
+                           (+27%) buffer [avg:86514579 var:0.224708% ms:86 runs:50 conv_ops:500000000]
+                        (+15%) hybrid(0) [avg:78104181 var:1.6025% ms:78 runs:50 conv_ops:500000000]
+                         (+2%) hybrid(1) [avg:69616896 var:14.2925% ms:69 runs:50 conv_ops:500000000]
+                      (+2%) hybrid(best) [avg:69616896 var:14.2925% ms:69 runs:50 conv_ops:500000000]
+Converting 14 long long with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+24%) fmt::FormatInt [avg:360609048 var:0.393454% ms:360 runs:50 conv_ops:499999500]
+            (+173%) boost::spirit::karma [avg:792478672 var:1.47663% ms:792 runs:50 conv_ops:499999500]
+                     (+22%) alexandrescu [avg:354215740 var:0.472645% ms:354 runs:50 conv_ops:499999500]
+                            (+6%) buffer [avg:307766200 var:0.331195% ms:307 runs:50 conv_ops:499999500]
+                         (+0%) hybrid(0) [avg:289773344 var:0.268334% ms:289 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:289271941 var:0.666258% ms:289 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:289271941 var:0.666258% ms:289 runs:50 conv_ops:499999500]
+Converting 42 short with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+57%) fmt::FormatInt [avg:132573410 var:1.8598% ms:132 runs:50 conv_ops:499999500]
+             (+15%) boost::spirit::karma [avg:96942311 var:0.706867% ms:96 runs:50 conv_ops:499999500]
+                     (+10%) alexandrescu [avg:93374235 var:1.07783% ms:93 runs:50 conv_ops:499999500]
+                           (+16%) buffer [avg:97955461 var:0.980313% ms:97 runs:50 conv_ops:499999500]
+                        (+15%) hybrid(0) [avg:96908027 var:1.2889% ms:96 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:84229725 var:0.697313% ms:84 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:84229725 var:0.697313% ms:84 runs:50 conv_ops:499999500]
+Converting 25 int with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+83%) fmt::FormatInt [avg:132200868 var:0.226542% ms:132 runs:50 conv_ops:500000000]
+            (+179%) boost::spirit::karma [avg:202139615 var:0.565544% ms:202 runs:50 conv_ops:500000000]
+                      (+0%) alexandrescu [avg:72403352 var:4.01438% ms:72 runs:50 conv_ops:500000000]
+                           (+26%) buffer [avg:91282600 var:1.73101% ms:91 runs:50 conv_ops:500000000]
+                        (+20%) hybrid(0) [avg:86829198 var:8.23083% ms:86 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:72224959 var:8.07141% ms:72 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:72224959 var:8.07141% ms:72 runs:50 conv_ops:500000000]
+Converting 25 long with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+88%) fmt::FormatInt [avg:133576474 var:0.178167% ms:133 runs:50 conv_ops:500000000]
+            (+190%) boost::spirit::karma [avg:205779466 var:4.79512% ms:205 runs:50 conv_ops:500000000]
+                      (+1%) alexandrescu [avg:71884175 var:0.31536% ms:71 runs:50 conv_ops:500000000]
+                           (+27%) buffer [avg:90300535 var:1.30047% ms:90 runs:50 conv_ops:500000000]
+                        (+20%) hybrid(0) [avg:85138449 var:0.859537% ms:85 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:70800075 var:0.284071% ms:70 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:70800075 var:0.284071% ms:70 runs:50 conv_ops:500000000]
+Converting 14 long long with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+24%) fmt::FormatInt [avg:352989451 var:0.292142% ms:352 runs:50 conv_ops:499999500]
+            (+178%) boost::spirit::karma [avg:787417870 var:1.8797% ms:787 runs:50 conv_ops:499999500]
+                     (+27%) alexandrescu [avg:359578755 var:3.60355% ms:359 runs:50 conv_ops:499999500]
+                            (+9%) buffer [avg:308239518 var:0.718981% ms:308 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:282640249 var:1.13741% ms:282 runs:50 conv_ops:499999500]
+                         (+1%) hybrid(1) [avg:287316164 var:0.150605% ms:287 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:282640249 var:1.13741% ms:282 runs:50 conv_ops:499999500]
+Converting 42 short with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+57%) fmt::FormatInt [avg:131989349 var:0.916766% ms:131 runs:50 conv_ops:499999500]
+             (+14%) boost::spirit::karma [avg:95747557 var:0.403006% ms:95 runs:50 conv_ops:499999500]
+                     (+10%) alexandrescu [avg:92528472 var:0.651579% ms:92 runs:50 conv_ops:499999500]
+                           (+18%) buffer [avg:99516068 var:1.2309% ms:99 runs:50 conv_ops:499999500]
+                        (+14%) hybrid(0) [avg:96480880 var:0.271388% ms:96 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:83923225 var:1.59624% ms:83 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:83923225 var:1.59624% ms:83 runs:50 conv_ops:499999500]
+Converting 25 int with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+86%) fmt::FormatInt [avg:132555931 var:0.416773% ms:132 runs:50 conv_ops:500000000]
+            (+190%) boost::spirit::karma [avg:205997287 var:6.01604% ms:205 runs:50 conv_ops:500000000]
+                      (+1%) alexandrescu [avg:72052733 var:1.57067% ms:72 runs:50 conv_ops:500000000]
+                           (+27%) buffer [avg:90669355 var:1.01785% ms:90 runs:50 conv_ops:500000000]
+                        (+20%) hybrid(0) [avg:85293549 var:0.233422% ms:85 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:70960590 var:1.59794% ms:70 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:70960590 var:1.59794% ms:70 runs:50 conv_ops:500000000]
+Converting 25 long with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+96%) fmt::FormatInt [avg:130429124 var:0.873275% ms:130 runs:50 conv_ops:500000000]
+            (+203%) boost::spirit::karma [avg:200858271 var:2.17425% ms:200 runs:50 conv_ops:500000000]
+                      (+1%) alexandrescu [avg:67119293 var:0.876134% ms:67 runs:50 conv_ops:500000000]
+                           (+37%) buffer [avg:91161771 var:0.647154% ms:91 runs:50 conv_ops:500000000]
+                        (+27%) hybrid(0) [avg:84727518 var:1.48519% ms:84 runs:50 conv_ops:500000000]
+                           (!) hybrid(1) [avg:66220548 var:0.273796% ms:66 runs:50 conv_ops:500000000]
+                        (!) hybrid(best) [avg:66220548 var:0.273796% ms:66 runs:50 conv_ops:500000000]
+Converting 14 long long with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+24%) fmt::FormatInt [avg:350841207 var:0.520667% ms:350 runs:50 conv_ops:499999500]
+            (+171%) boost::spirit::karma [avg:766504158 var:0.386852% ms:766 runs:50 conv_ops:499999500]
+                     (+26%) alexandrescu [avg:356994099 var:1.62496% ms:356 runs:50 conv_ops:499999500]
+                           (+12%) buffer [avg:318087630 var:5.89918% ms:318 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:282288578 var:0.0970471% ms:282 runs:50 conv_ops:499999500]
+                         (+2%) hybrid(1) [avg:290374421 var:4.20819% ms:290 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:282288578 var:0.0970471% ms:282 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 14 long long with 10 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+6%) fmt::FormatInt [avg:984331804 var:1.17361% ms:984 runs:50 conv_ops:499999500]
+            (+119%) boost::spirit::karma [avg:2028506300 var:0.706138% ms:2028 runs:50 conv_ops:499999500]
+                      (+7%) alexandrescu [avg:999219477 var:2.1199% ms:999 runs:50 conv_ops:499999500]
+                            (+7%) buffer [avg:997497874 var:0.31084% ms:997 runs:50 conv_ops:499999500]
+                         (+5%) hybrid(0) [avg:980970762 var:0.636666% ms:980 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:925491337 var:1.35827% ms:925 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:925491337 var:1.35827% ms:925 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 14 long long with 10 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+8%) fmt::FormatInt [avg:1007044971 var:0.446449% ms:1007 runs:50 conv_ops:499999500]
+            (+121%) boost::spirit::karma [avg:2049618243 var:0.94473% ms:2049 runs:50 conv_ops:499999500]
+                      (+7%) alexandrescu [avg:995860917 var:0.935743% ms:995 runs:50 conv_ops:499999500]
+                            (+7%) buffer [avg:999109753 var:0.853101% ms:999 runs:50 conv_ops:499999500]
+                         (+6%) hybrid(0) [avg:992180974 var:0.723526% ms:992 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:927303956 var:0.591684% ms:927 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:927303956 var:0.591684% ms:927 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 14 long long with 10 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+9%) fmt::FormatInt [avg:1006684182 var:0.842739% ms:1006 runs:50 conv_ops:499999500]
+            (+121%) boost::spirit::karma [avg:2043021137 var:1.42737% ms:2043 runs:50 conv_ops:499999500]
+                      (+9%) alexandrescu [avg:1011512471 var:0.519574% ms:1011 runs:50 conv_ops:499999500]
+                            (+7%) buffer [avg:989487023 var:1.02376% ms:989 runs:50 conv_ops:499999500]
+                         (+6%) hybrid(0) [avg:978337795 var:0.591309% ms:978 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:922289783 var:0.568958% ms:922 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:922289783 var:0.568958% ms:922 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+69%) fmt::FormatInt [avg:152171813 var:0.611685% ms:152 runs:50 conv_ops:499999500]
+             (+27%) boost::spirit::karma [avg:113912258 var:0.456237% ms:113 runs:50 conv_ops:499999500]
+                     (+11%) alexandrescu [avg:100327634 var:0.243611% ms:100 runs:50 conv_ops:499999500]
+                           (+47%) buffer [avg:132103605 var:0.849526% ms:132 runs:50 conv_ops:499999500]
+                        (+39%) hybrid(0) [avg:124724556 var:0.770519% ms:124 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:89656399 var:0.322125% ms:89 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:89656399 var:0.322125% ms:89 runs:50 conv_ops:499999500]
+Converting 341 int with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+54%) fmt::FormatInt [avg:214897194 var:0.814554% ms:214 runs:50 conv_ops:499991250]
+            (+277%) boost::spirit::karma [avg:525327820 var:0.568176% ms:525 runs:50 conv_ops:499991250]
+                     (+16%) alexandrescu [avg:162221591 var:0.27217% ms:162 runs:50 conv_ops:499991250]
+                           (+66%) buffer [avg:232065308 var:4.86865% ms:232 runs:50 conv_ops:499991250]
+                        (+38%) hybrid(0) [avg:192236379 var:0.546446% ms:192 runs:50 conv_ops:499991250]
+                           (!) hybrid(1) [avg:139056317 var:0.624404% ms:139 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:139056317 var:0.624404% ms:139 runs:50 conv_ops:499991250]
+Converting 341 long with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+56%) fmt::FormatInt [avg:222135984 var:8.33759% ms:222 runs:50 conv_ops:499991250]
+            (+265%) boost::spirit::karma [avg:519372132 var:0.779115% ms:519 runs:50 conv_ops:499991250]
+                     (+14%) alexandrescu [avg:163217831 var:0.998109% ms:163 runs:50 conv_ops:499991250]
+                           (+68%) buffer [avg:240026895 var:2.8539% ms:240 runs:50 conv_ops:499991250]
+                        (+32%) hybrid(0) [avg:189019074 var:1.6329% ms:189 runs:50 conv_ops:499991250]
+                           (!) hybrid(1) [avg:142254107 var:8.22619% ms:142 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:142254107 var:8.22619% ms:142 runs:50 conv_ops:499991250]
+Converting 195 long long with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+2%) fmt::FormatInt [avg:2096776644 var:0.372514% ms:2096 runs:50 conv_ops:499999500]
+            (+105%) boost::spirit::karma [avg:4208464018 var:0.800772% ms:4208 runs:50 conv_ops:499999500]
+                     (+10%) alexandrescu [avg:2265661965 var:1.98047% ms:2265 runs:50 conv_ops:499999500]
+                            (+2%) buffer [avg:2096118226 var:1.56587% ms:2096 runs:50 conv_ops:499999500]
+                         (+3%) hybrid(0) [avg:2124020477 var:0.772655% ms:2124 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:2050962787 var:3.15247% ms:2050 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:2050962787 var:3.15247% ms:2050 runs:50 conv_ops:499999500]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 585 short with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+63%) fmt::FormatInt [avg:156461360 var:4.71936% ms:156 runs:50 conv_ops:499999500]
+             (+12%) boost::spirit::karma [avg:107583520 var:4.65022% ms:107 runs:50 conv_ops:499999500]
+                     (+10%) alexandrescu [avg:105411714 var:7.75386% ms:105 runs:50 conv_ops:499999500]
+                           (+48%) buffer [avg:142031841 var:6.41761% ms:142 runs:50 conv_ops:499999500]
+                        (+39%) hybrid(0) [avg:133766501 var:8.60855% ms:133 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:95827453 var:7.98403% ms:95 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:95827453 var:7.98403% ms:95 runs:50 conv_ops:499999500]
+Converting 341 int with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+59%) fmt::FormatInt [avg:231934321 var:3.92806% ms:231 runs:50 conv_ops:499991250]
+            (+275%) boost::spirit::karma [avg:546364245 var:4.22503% ms:546 runs:50 conv_ops:499991250]
+                     (+15%) alexandrescu [avg:168099424 var:4.50037% ms:168 runs:50 conv_ops:499991250]
+                           (+69%) buffer [avg:246110723 var:6.26331% ms:246 runs:50 conv_ops:499991250]
+                        (+42%) hybrid(0) [avg:207170991 var:0.95433% ms:207 runs:50 conv_ops:499991250]
+                           (!) hybrid(1) [avg:145402312 var:8.35466% ms:145 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:145402312 var:8.35466% ms:145 runs:50 conv_ops:499991250]
+Converting 341 long with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+62%) fmt::FormatInt [avg:236161326 var:7.24231% ms:236 runs:50 conv_ops:499991250]
+            (+282%) boost::spirit::karma [avg:555225608 var:7.87576% ms:555 runs:50 conv_ops:499991250]
+                     (+14%) alexandrescu [avg:166501162 var:5.85908% ms:166 runs:50 conv_ops:499991250]
+                           (+71%) buffer [avg:248860401 var:7.32724% ms:248 runs:50 conv_ops:499991250]
+                        (+42%) hybrid(0) [avg:206423582 var:4.75832% ms:206 runs:50 conv_ops:499991250]
+                           (!) hybrid(1) [avg:145198376 var:8.27794% ms:145 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:145198376 var:8.27794% ms:145 runs:50 conv_ops:499991250]
+Converting 195 long long with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                      (!) fmt::FormatInt [avg:2128338112 var:3.84339% ms:2128 runs:50 conv_ops:499999500]
+            (+101%) boost::spirit::karma [avg:4291682965 var:3.80243% ms:4291 runs:50 conv_ops:499999500]
+                      (+8%) alexandrescu [avg:2304709151 var:3.55961% ms:2304 runs:50 conv_ops:499999500]
+                            (+0%) buffer [avg:2149424266 var:4.59263% ms:2149 runs:50 conv_ops:499999500]
+                         (+2%) hybrid(0) [avg:2175057308 var:5.22753% ms:2175 runs:50 conv_ops:499999500]
+                         (+0%) hybrid(1) [avg:2130117207 var:5.9388% ms:2130 runs:50 conv_ops:499999500]
+                      (+0%) hybrid(best) [avg:2130117207 var:5.9388% ms:2130 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+261%) fmt::FormatInt [avg:85488229 var:11.7745% ms:85 runs:50 conv_ops:499999500]
+            (+115%) boost::spirit::karma [avg:51051436 var:4.61668% ms:51 runs:50 conv_ops:499999500]
+                     (+91%) alexandrescu [avg:45375813 var:7.70957% ms:45 runs:50 conv_ops:499999500]
+                          (+141%) buffer [avg:57218095 var:7.92463% ms:57 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:23656368 var:11.8121% ms:23 runs:50 conv_ops:499999500]
+                        (+83%) hybrid(1) [avg:43488316 var:4.20034% ms:43 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:23656368 var:11.8121% ms:23 runs:50 conv_ops:499999500]
+Converting 341 int with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+171%) fmt::FormatInt [avg:70081522 var:8.22215% ms:70 runs:50 conv_ops:499991250]
+            (+318%) boost::spirit::karma [avg:108014473 var:10.3917% ms:108 runs:50 conv_ops:499991250]
+                     (+60%) alexandrescu [avg:41535066 var:8.5872% ms:41 runs:50 conv_ops:499991250]
+                           (+94%) buffer [avg:50160774 var:10.1438% ms:50 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:25811796 var:5.82903% ms:25 runs:50 conv_ops:499991250]
+                       (+134%) hybrid(1) [avg:60449831 var:2.60793% ms:60 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:25811796 var:5.82903% ms:25 runs:50 conv_ops:499991250]
+Converting 341 long with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+158%) fmt::FormatInt [avg:65827233 var:2.78504% ms:65 runs:50 conv_ops:499991250]
+            (+307%) boost::spirit::karma [avg:103663455 var:5.28175% ms:103 runs:50 conv_ops:499991250]
+                     (+56%) alexandrescu [avg:39797008 var:3.7554% ms:39 runs:50 conv_ops:499991250]
+                          (+101%) buffer [avg:51143861 var:8.64776% ms:51 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:25419533 var:3.80808% ms:25 runs:50 conv_ops:499991250]
+                       (+139%) hybrid(1) [avg:60826032 var:8.0392% ms:60 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:25419533 var:3.80808% ms:25 runs:50 conv_ops:499991250]
+Converting 195 long long with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+91%) fmt::FormatInt [avg:159732453 var:10.7899% ms:159 runs:50 conv_ops:499999500]
+            (+233%) boost::spirit::karma [avg:278729036 var:12.5012% ms:278 runs:50 conv_ops:499999500]
+                     (+53%) alexandrescu [avg:127762649 var:9.04544% ms:127 runs:50 conv_ops:499999500]
+                           (+43%) buffer [avg:119617020 var:10.5468% ms:119 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:83465120 var:6.35721% ms:83 runs:50 conv_ops:499999500]
+                        (+98%) hybrid(1) [avg:165747320 var:4.2394% ms:165 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:83465120 var:6.35721% ms:83 runs:50 conv_ops:499999500]
+Converting 585 short with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+238%) fmt::FormatInt [avg:76419593 var:21.7109% ms:76 runs:50 conv_ops:499999500]
+            (+146%) boost::spirit::karma [avg:55550501 var:5.21693% ms:55 runs:50 conv_ops:499999500]
+                     (+57%) alexandrescu [avg:35583009 var:15.9498% ms:35 runs:50 conv_ops:499999500]
+                          (+188%) buffer [avg:65176997 var:13.7598% ms:65 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:22573275 var:15.1614% ms:22 runs:50 conv_ops:499999500]
+                        (+52%) hybrid(1) [avg:34511307 var:15.3647% ms:34 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:22573275 var:15.1614% ms:22 runs:50 conv_ops:499999500]
+Converting 341 int with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+247%) fmt::FormatInt [avg:75481473 var:12.5311% ms:75 runs:50 conv_ops:499991250]
+            (+381%) boost::spirit::karma [avg:104574078 var:17.844% ms:104 runs:50 conv_ops:499991250]
+                     (+33%) alexandrescu [avg:28914442 var:18.5529% ms:28 runs:50 conv_ops:499991250]
+                          (+213%) buffer [avg:68097460 var:8.82247% ms:68 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:21732035 var:11.8177% ms:21 runs:50 conv_ops:499991250]
+                       (+213%) hybrid(1) [avg:68065247 var:11.0046% ms:68 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:21732035 var:11.8177% ms:21 runs:50 conv_ops:499991250]
+Converting 341 long with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+266%) fmt::FormatInt [avg:78752500 var:13.9112% ms:78 runs:50 conv_ops:499991250]
+            (+457%) boost::spirit::karma [avg:119771207 var:11.2826% ms:119 runs:50 conv_ops:499991250]
+                     (+37%) alexandrescu [avg:29471609 var:12.6527% ms:29 runs:50 conv_ops:499991250]
+                          (+189%) buffer [avg:62130814 var:8.33498% ms:62 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:21467124 var:7.5459% ms:21 runs:50 conv_ops:499991250]
+                       (+219%) hybrid(1) [avg:68657331 var:3.85843% ms:68 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:21467124 var:7.5459% ms:21 runs:50 conv_ops:499991250]
+Converting 195 long long with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+197%) fmt::FormatInt [avg:103621025 var:13.1966% ms:103 runs:50 conv_ops:499999500]
+            (+618%) boost::spirit::karma [avg:249978501 var:12.5071% ms:249 runs:50 conv_ops:499999500]
+                    (+240%) alexandrescu [avg:118351455 var:8.2354% ms:118 runs:50 conv_ops:499999500]
+                          (+159%) buffer [avg:90206768 var:12.3457% ms:90 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:34780314 var:12.7754% ms:34 runs:50 conv_ops:499999500]
+                       (+245%) hybrid(1) [avg:120125781 var:3.72174% ms:120 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:34780314 var:12.7754% ms:34 runs:50 conv_ops:499999500]
+Converting 585 short with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+215%) fmt::FormatInt [avg:72850793 var:10.9993% ms:72 runs:50 conv_ops:499999500]
+            (+126%) boost::spirit::karma [avg:52438887 var:2.3153% ms:52 runs:50 conv_ops:499999500]
+                     (+42%) alexandrescu [avg:32857123 var:10.6401% ms:32 runs:50 conv_ops:499999500]
+                          (+180%) buffer [avg:64906103 var:7.39454% ms:64 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:23125426 var:7.68471% ms:23 runs:50 conv_ops:499999500]
+                        (+54%) hybrid(1) [avg:35715994 var:12.5222% ms:35 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:23125426 var:7.68471% ms:23 runs:50 conv_ops:499999500]
+Converting 341 int with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+252%) fmt::FormatInt [avg:79944865 var:11.7433% ms:79 runs:50 conv_ops:499991250]
+            (+420%) boost::spirit::karma [avg:118113566 var:8.66097% ms:118 runs:50 conv_ops:499991250]
+                     (+31%) alexandrescu [avg:29841102 var:9.78085% ms:29 runs:50 conv_ops:499991250]
+                          (+173%) buffer [avg:62019084 var:6.32334% ms:62 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:22682644 var:6.93189% ms:22 runs:50 conv_ops:499991250]
+                       (+197%) hybrid(1) [avg:67558818 var:3.35729% ms:67 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:22682644 var:6.93189% ms:22 runs:50 conv_ops:499991250]
+Converting 341 long with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+241%) fmt::FormatInt [avg:77297338 var:10.5645% ms:77 runs:50 conv_ops:499991250]
+            (+381%) boost::spirit::karma [avg:108947652 var:11.9184% ms:108 runs:50 conv_ops:499991250]
+                     (+34%) alexandrescu [avg:30482012 var:10.6458% ms:30 runs:50 conv_ops:499991250]
+                          (+185%) buffer [avg:64614868 var:7.69851% ms:64 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:22626209 var:7.12643% ms:22 runs:50 conv_ops:499991250]
+                       (+196%) hybrid(1) [avg:67041651 var:5.98858% ms:67 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:22626209 var:7.12643% ms:22 runs:50 conv_ops:499991250]
+Converting 195 long long with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+219%) fmt::FormatInt [avg:111238503 var:14.6102% ms:111 runs:50 conv_ops:499999500]
+            (+668%) boost::spirit::karma [avg:267630003 var:7.31281% ms:267 runs:50 conv_ops:499999500]
+                    (+256%) alexandrescu [avg:123985480 var:9.14213% ms:123 runs:50 conv_ops:499999500]
+                          (+160%) buffer [avg:90783362 var:14.8076% ms:90 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:34815129 var:16.545% ms:34 runs:50 conv_ops:499999500]
+                       (+259%) hybrid(1) [avg:125126480 var:7.30287% ms:125 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:34815129 var:16.545% ms:34 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+184%) fmt::FormatInt [avg:106932840 var:7.7546% ms:106 runs:50 conv_ops:499999500]
+            (+100%) boost::spirit::karma [avg:75414334 var:5.15002% ms:75 runs:50 conv_ops:499999500]
+                     (+30%) alexandrescu [avg:48999254 var:6.86837% ms:48 runs:50 conv_ops:499999500]
+                          (+105%) buffer [avg:77303185 var:10.59% ms:77 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:37575157 var:8.04055% ms:37 runs:50 conv_ops:499999500]
+                        (+27%) hybrid(1) [avg:48095661 var:7.16619% ms:48 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:37575157 var:8.04055% ms:37 runs:50 conv_ops:499999500]
+Converting 341 int with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+177%) fmt::FormatInt [avg:111365219 var:5.53098% ms:111 runs:50 conv_ops:499991250]
+            (+358%) boost::spirit::karma [avg:183912071 var:12.7792% ms:183 runs:50 conv_ops:499991250]
+                     (+17%) alexandrescu [avg:47242208 var:11.4627% ms:47 runs:50 conv_ops:499991250]
+                           (+83%) buffer [avg:73606780 var:10.3004% ms:73 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:40137491 var:5.7671% ms:40 runs:50 conv_ops:499991250]
+                        (+73%) hybrid(1) [avg:69714156 var:6.58905% ms:69 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:40137491 var:5.7671% ms:40 runs:50 conv_ops:499991250]
+Converting 341 long with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+182%) fmt::FormatInt [avg:105785411 var:8.86547% ms:105 runs:50 conv_ops:499991250]
+            (+328%) boost::spirit::karma [avg:160737352 var:8.11671% ms:160 runs:50 conv_ops:499991250]
+                     (+16%) alexandrescu [avg:43802744 var:14.2644% ms:43 runs:50 conv_ops:499991250]
+                          (+101%) buffer [avg:75749765 var:9.90998% ms:75 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:37512306 var:5.96708% ms:37 runs:50 conv_ops:499991250]
+                        (+79%) hybrid(1) [avg:67202566 var:9.19654% ms:67 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:37512306 var:5.96708% ms:37 runs:50 conv_ops:499991250]
+Converting 195 long long with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+102%) fmt::FormatInt [avg:136832669 var:11.3274% ms:136 runs:50 conv_ops:499999500]
+            (+676%) boost::spirit::karma [avg:524876912 var:11.5319% ms:524 runs:50 conv_ops:499999500]
+                    (+107%) alexandrescu [avg:140444372 var:8.90955% ms:140 runs:50 conv_ops:499999500]
+                           (+72%) buffer [avg:116782536 var:9.47635% ms:116 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:67633376 var:9.35231% ms:67 runs:50 conv_ops:499999500]
+                       (+141%) hybrid(1) [avg:163670428 var:3.6031% ms:163 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:67633376 var:9.35231% ms:67 runs:50 conv_ops:499999500]
+Converting 585 short with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+189%) fmt::FormatInt [avg:86322522 var:13.041% ms:86 runs:50 conv_ops:499999500]
+            (+141%) boost::spirit::karma [avg:71968324 var:3.34143% ms:71 runs:50 conv_ops:499999500]
+                     (+58%) alexandrescu [avg:47199786 var:3.41919% ms:47 runs:50 conv_ops:499999500]
+                          (+162%) buffer [avg:78156713 var:7.33512% ms:78 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:29778484 var:16.4093% ms:29 runs:50 conv_ops:499999500]
+                        (+65%) hybrid(1) [avg:49367096 var:4.88323% ms:49 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:29778484 var:16.4093% ms:29 runs:50 conv_ops:499999500]
+Converting 341 int with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+268%) fmt::FormatInt [avg:93854748 var:10.6173% ms:93 runs:50 conv_ops:499991250]
+            (+566%) boost::spirit::karma [avg:169899885 var:8.8992% ms:169 runs:50 conv_ops:499991250]
+                     (+32%) alexandrescu [avg:33698894 var:18.7958% ms:33 runs:50 conv_ops:499991250]
+                          (+189%) buffer [avg:73709902 var:9.48452% ms:73 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:25487779 var:14.3006% ms:25 runs:50 conv_ops:499991250]
+                       (+172%) hybrid(1) [avg:69550412 var:5.79862% ms:69 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:25487779 var:14.3006% ms:25 runs:50 conv_ops:499991250]
+Converting 341 long with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+305%) fmt::FormatInt [avg:106397649 var:9.89937% ms:106 runs:50 conv_ops:499991250]
+            (+582%) boost::spirit::karma [avg:179086074 var:11.8408% ms:179 runs:50 conv_ops:499991250]
+                     (+43%) alexandrescu [avg:37667967 var:10.2374% ms:37 runs:50 conv_ops:499991250]
+                          (+198%) buffer [avg:78290228 var:11.0623% ms:78 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:26250443 var:36.194% ms:26 runs:50 conv_ops:499991250]
+                       (+179%) hybrid(1) [avg:73327499 var:8.13091% ms:73 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:26250443 var:36.194% ms:26 runs:50 conv_ops:499991250]
+Converting 195 long long with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+107%) fmt::FormatInt [avg:111389051 var:17.4667% ms:111 runs:50 conv_ops:499999500]
+            (+797%) boost::spirit::karma [avg:481691020 var:19.9432% ms:481 runs:50 conv_ops:499999500]
+                    (+150%) alexandrescu [avg:134511018 var:23.4774% ms:134 runs:50 conv_ops:499999500]
+                           (+89%) buffer [avg:101707238 var:23.3492% ms:101 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:53687250 var:17.1448% ms:53 runs:50 conv_ops:499999500]
+                       (+119%) hybrid(1) [avg:117931654 var:10.84% ms:117 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:53687250 var:17.1448% ms:53 runs:50 conv_ops:499999500]
+Converting 585 short with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+121%) fmt::FormatInt [avg:68970545 var:1.53665% ms:68 runs:50 conv_ops:499999500]
+            (+104%) boost::spirit::karma [avg:63643535 var:1.93969% ms:63 runs:50 conv_ops:499999500]
+                     (+42%) alexandrescu [avg:44240397 var:1.94558% ms:44 runs:50 conv_ops:499999500]
+                          (+116%) buffer [avg:67308989 var:1.12336% ms:67 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:31137985 var:4.49093% ms:31 runs:50 conv_ops:499999500]
+                        (+41%) hybrid(1) [avg:44150345 var:2.99848% ms:44 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:31137985 var:4.49093% ms:31 runs:50 conv_ops:499999500]
+Converting 341 int with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+118%) fmt::FormatInt [avg:76296159 var:1.30106% ms:76 runs:50 conv_ops:499991250]
+            (+275%) boost::spirit::karma [avg:131204741 var:5.59467% ms:131 runs:50 conv_ops:499991250]
+                      (+9%) alexandrescu [avg:38151871 var:3.76587% ms:38 runs:50 conv_ops:499991250]
+                           (+83%) buffer [avg:64307178 var:4.2267% ms:64 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:34964665 var:5.22363% ms:34 runs:50 conv_ops:499991250]
+                        (+82%) hybrid(1) [avg:63871191 var:3.91909% ms:63 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:34964665 var:5.22363% ms:34 runs:50 conv_ops:499991250]
+Converting 341 long with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+126%) fmt::FormatInt [avg:76374659 var:2.56451% ms:76 runs:50 conv_ops:499991250]
+            (+277%) boost::spirit::karma [avg:127119199 var:2.02282% ms:127 runs:50 conv_ops:499991250]
+                      (+6%) alexandrescu [avg:35992366 var:2.96445% ms:35 runs:50 conv_ops:499991250]
+                           (+83%) buffer [avg:61891517 var:2.02803% ms:61 runs:50 conv_ops:499991250]
+                           (!) hybrid(0) [avg:33661604 var:8.52108% ms:33 runs:50 conv_ops:499991250]
+                        (+88%) hybrid(1) [avg:63430161 var:2.58208% ms:63 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:33661604 var:8.52108% ms:33 runs:50 conv_ops:499991250]
+Converting 195 long long with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+92%) fmt::FormatInt [avg:97008243 var:9.68819% ms:97 runs:50 conv_ops:499999500]
+            (+642%) boost::spirit::karma [avg:374788011 var:4.50866% ms:374 runs:50 conv_ops:499999500]
+                    (+128%) alexandrescu [avg:115184727 var:7.56205% ms:115 runs:50 conv_ops:499999500]
+                           (+80%) buffer [avg:90946199 var:9.30551% ms:90 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:50456993 var:9.90098% ms:50 runs:50 conv_ops:499999500]
+                       (+129%) hybrid(1) [avg:115612389 var:4.62355% ms:115 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:50456993 var:9.90098% ms:50 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+70%) fmt::FormatInt [avg:153488561 var:9.11181% ms:153 runs:50 conv_ops:499999500]
+             (+17%) boost::spirit::karma [avg:105958253 var:7.92242% ms:105 runs:50 conv_ops:499999500]
+                     (+10%) alexandrescu [avg:99108554 var:5.74096% ms:99 runs:50 conv_ops:499999500]
+                           (+28%) buffer [avg:115999011 var:10.0065% ms:115 runs:50 conv_ops:499999500]
+                        (+27%) hybrid(0) [avg:115121785 var:9.34522% ms:115 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:89962682 var:9.04203% ms:89 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:89962682 var:9.04203% ms:89 runs:50 conv_ops:499999500]
+Converting 341 int with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+117%) fmt::FormatInt [avg:150138376 var:11.6198% ms:150 runs:50 conv_ops:499991250]
+            (+254%) boost::spirit::karma [avg:245025078 var:7.26957% ms:245 runs:50 conv_ops:499991250]
+                        (!) alexandrescu [avg:69171632 var:4.78882% ms:69 runs:50 conv_ops:499991250]
+                           (+39%) buffer [avg:96270515 var:10.2021% ms:96 runs:50 conv_ops:499991250]
+                        (+24%) hybrid(0) [avg:86342745 var:12.7634% ms:86 runs:50 conv_ops:499991250]
+                         (+5%) hybrid(1) [avg:73152054 var:7.91633% ms:73 runs:50 conv_ops:499991250]
+                      (+5%) hybrid(best) [avg:73152054 var:7.91633% ms:73 runs:50 conv_ops:499991250]
+Converting 341 long with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+106%) fmt::FormatInt [avg:143156867 var:5.25666% ms:143 runs:50 conv_ops:499991250]
+            (+236%) boost::spirit::karma [avg:233156750 var:5.84787% ms:233 runs:50 conv_ops:499991250]
+                      (+6%) alexandrescu [avg:73979018 var:16.3952% ms:73 runs:50 conv_ops:499991250]
+                           (+31%) buffer [avg:91187293 var:8.5062% ms:91 runs:50 conv_ops:499991250]
+                        (+13%) hybrid(0) [avg:78680985 var:2.10406% ms:78 runs:50 conv_ops:499991250]
+                           (!) hybrid(1) [avg:69222261 var:3.1349% ms:69 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:69222261 var:3.1349% ms:69 runs:50 conv_ops:499991250]
+Converting 195 long long with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+23%) fmt::FormatInt [avg:408237656 var:7.90992% ms:408 runs:50 conv_ops:499999500]
+            (+170%) boost::spirit::karma [avg:894079378 var:8.87133% ms:894 runs:50 conv_ops:499999500]
+                     (+20%) alexandrescu [avg:398977365 var:8.52909% ms:398 runs:50 conv_ops:499999500]
+                            (+4%) buffer [avg:345400290 var:2.52246% ms:345 runs:50 conv_ops:499999500]
+                         (+0%) hybrid(0) [avg:332171244 var:6.05983% ms:332 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:330755200 var:3.17958% ms:330 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:330755200 var:3.17958% ms:330 runs:50 conv_ops:499999500]
+Converting 585 short with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+62%) fmt::FormatInt [avg:135265275 var:1.13719% ms:135 runs:50 conv_ops:499999500]
+             (+16%) boost::spirit::karma [avg:96797448 var:6.33482% ms:96 runs:50 conv_ops:499999500]
+                     (+11%) alexandrescu [avg:92461125 var:0.825626% ms:92 runs:50 conv_ops:499999500]
+                           (+17%) buffer [avg:97808074 var:1.97832% ms:97 runs:50 conv_ops:499999500]
+                        (+13%) hybrid(0) [avg:94675903 var:0.994109% ms:94 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:83204735 var:1.72255% ms:83 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:83204735 var:1.72255% ms:83 runs:50 conv_ops:499999500]
+Converting 341 int with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+97%) fmt::FormatInt [avg:136397977 var:8.19746% ms:136 runs:50 conv_ops:499991250]
+            (+219%) boost::spirit::karma [avg:221269745 var:2.01048% ms:221 runs:50 conv_ops:499991250]
+                      (+1%) alexandrescu [avg:70053804 var:11.5696% ms:70 runs:50 conv_ops:499991250]
+                           (+27%) buffer [avg:88115539 var:1.8356% ms:88 runs:50 conv_ops:499991250]
+                        (+16%) hybrid(0) [avg:80683904 var:0.285495% ms:80 runs:50 conv_ops:499991250]
+                           (!) hybrid(1) [avg:69186781 var:3.32754% ms:69 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:69186781 var:3.32754% ms:69 runs:50 conv_ops:499991250]
+Converting 341 long with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+98%) fmt::FormatInt [avg:137379908 var:7.07695% ms:137 runs:50 conv_ops:499991250]
+            (+220%) boost::spirit::karma [avg:222141661 var:1.31152% ms:222 runs:50 conv_ops:499991250]
+                      (+0%) alexandrescu [avg:69552783 var:6.66533% ms:69 runs:50 conv_ops:499991250]
+                           (+29%) buffer [avg:89641578 var:5.19542% ms:89 runs:50 conv_ops:499991250]
+                        (+20%) hybrid(0) [avg:83438937 var:6.35395% ms:83 runs:50 conv_ops:499991250]
+                           (!) hybrid(1) [avg:69305922 var:3.83926% ms:69 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:69305922 var:3.83926% ms:69 runs:50 conv_ops:499991250]
+Converting 195 long long with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+31%) fmt::FormatInt [avg:375484259 var:12.4086% ms:375 runs:50 conv_ops:499999500]
+            (+207%) boost::spirit::karma [avg:875576378 var:12.5744% ms:875 runs:50 conv_ops:499999500]
+                     (+25%) alexandrescu [avg:358039157 var:4.85358% ms:358 runs:50 conv_ops:499999500]
+                           (+11%) buffer [avg:317053670 var:10.6442% ms:317 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:285198011 var:6.21242% ms:285 runs:50 conv_ops:499999500]
+                         (+1%) hybrid(1) [avg:290696013 var:5.92295% ms:290 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:285198011 var:6.21242% ms:285 runs:50 conv_ops:499999500]
+Converting 585 short with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+80%) fmt::FormatInt [avg:157543505 var:15.7441% ms:157 runs:50 conv_ops:499999500]
+             (+14%) boost::spirit::karma [avg:99615294 var:6.1472% ms:99 runs:50 conv_ops:499999500]
+                     (+11%) alexandrescu [avg:97574224 var:5.5396% ms:97 runs:50 conv_ops:499999500]
+                           (+21%) buffer [avg:105906403 var:4.26548% ms:105 runs:50 conv_ops:499999500]
+                        (+20%) hybrid(0) [avg:104873744 var:8.18121% ms:104 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:87381751 var:6.71628% ms:87 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:87381751 var:6.71628% ms:87 runs:50 conv_ops:499999500]
+Converting 341 int with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+100%) fmt::FormatInt [avg:144531179 var:6.71252% ms:144 runs:50 conv_ops:499991250]
+            (+227%) boost::spirit::karma [avg:235901483 var:7.43765% ms:235 runs:50 conv_ops:499991250]
+                      (+0%) alexandrescu [avg:72247660 var:2.32601% ms:72 runs:50 conv_ops:499991250]
+                           (+33%) buffer [avg:96536620 var:1.90138% ms:96 runs:50 conv_ops:499991250]
+                        (+27%) hybrid(0) [avg:91730941 var:9.30933% ms:91 runs:50 conv_ops:499991250]
+                           (!) hybrid(1) [avg:72053015 var:1.75637% ms:72 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:72053015 var:1.75637% ms:72 runs:50 conv_ops:499991250]
+Converting 341 long with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+110%) fmt::FormatInt [avg:148515825 var:8.896% ms:148 runs:50 conv_ops:499991250]
+            (+252%) boost::spirit::karma [avg:248686451 var:9.70833% ms:248 runs:50 conv_ops:499991250]
+                     (+10%) alexandrescu [avg:77545183 var:14.7321% ms:77 runs:50 conv_ops:499991250]
+                           (+45%) buffer [avg:102556520 var:11.3942% ms:102 runs:50 conv_ops:499991250]
+                        (+23%) hybrid(0) [avg:87267261 var:4.72284% ms:87 runs:50 conv_ops:499991250]
+                           (!) hybrid(1) [avg:70490242 var:3.16409% ms:70 runs:50 conv_ops:499991250]
+                        (!) hybrid(best) [avg:70490242 var:3.16409% ms:70 runs:50 conv_ops:499991250]
+Converting 195 long long with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+31%) fmt::FormatInt [avg:366735562 var:8.90417% ms:366 runs:50 conv_ops:499999500]
+            (+189%) boost::spirit::karma [avg:809037054 var:6.76697% ms:809 runs:50 conv_ops:499999500]
+                     (+33%) alexandrescu [avg:372562136 var:7.83462% ms:372 runs:50 conv_ops:499999500]
+                           (+15%) buffer [avg:322948860 var:7.56321% ms:322 runs:50 conv_ops:499999500]
+                           (!) hybrid(0) [avg:279050179 var:3.85153% ms:279 runs:50 conv_ops:499999500]
+                         (+4%) hybrid(1) [avg:291288981 var:7.42309% ms:291 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:279050179 var:3.85153% ms:279 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 195 long long with 10 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+4%) fmt::FormatInt [avg:1064268263 var:3.60986% ms:1064 runs:50 conv_ops:499999500]
+            (+112%) boost::spirit::karma [avg:2173683699 var:3.13223% ms:2173 runs:50 conv_ops:499999500]
+                      (+6%) alexandrescu [avg:1087350598 var:7.64502% ms:1087 runs:50 conv_ops:499999500]
+                            (+6%) buffer [avg:1088447427 var:7.85547% ms:1088 runs:50 conv_ops:499999500]
+                         (+3%) hybrid(0) [avg:1062935732 var:5.38787% ms:1062 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:1022244144 var:6.85812% ms:1022 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:1022244144 var:6.85812% ms:1022 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 195 long long with 10 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+9%) fmt::FormatInt [avg:1061169592 var:3.37979% ms:1061 runs:50 conv_ops:499999500]
+            (+122%) boost::spirit::karma [avg:2156833082 var:3.56091% ms:2156 runs:50 conv_ops:499999500]
+                     (+11%) alexandrescu [avg:1077292898 var:8.89458% ms:1077 runs:50 conv_ops:499999500]
+                            (+6%) buffer [avg:1029628867 var:3.75168% ms:1029 runs:50 conv_ops:499999500]
+                         (+4%) hybrid(0) [avg:1017805843 var:4.6695% ms:1017 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:969537663 var:5.21125% ms:969 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:969537663 var:5.21125% ms:969 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 195 long long with 10 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+10%) fmt::FormatInt [avg:1089097358 var:9.32056% ms:1089 runs:50 conv_ops:499999500]
+            (+119%) boost::spirit::karma [avg:2170223795 var:7.95865% ms:2170 runs:50 conv_ops:499999500]
+                     (+10%) alexandrescu [avg:1092208188 var:8.15753% ms:1092 runs:50 conv_ops:499999500]
+                            (+7%) buffer [avg:1057479466 var:5.8805% ms:1057 runs:50 conv_ops:499999500]
+                         (+3%) hybrid(0) [avg:1020357311 var:3.54917% ms:1020 runs:50 conv_ops:499999500]
+                           (!) hybrid(1) [avg:987496504 var:7.94439% ms:987 runs:50 conv_ops:499999500]
+                        (!) hybrid(best) [avg:987496504 var:7.94439% ms:987 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+47%) fmt::FormatInt [avg:205441310 var:6.30665% ms:205 runs:50 conv_ops:479348800]
+             (+11%) boost::spirit::karma [avg:154965114 var:6.24159% ms:154 runs:50 conv_ops:479348800]
+                      (+2%) alexandrescu [avg:142164523 var:2.57752% ms:142 runs:50 conv_ops:479348800]
+                           (+30%) buffer [avg:181318672 var:4.51677% ms:181 runs:50 conv_ops:479348800]
+                        (+22%) hybrid(0) [avg:170690844 var:4.50269% ms:170 runs:50 conv_ops:479348800]
+                           (!) hybrid(1) [avg:139270935 var:3.00767% ms:139 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:139270935 var:3.00767% ms:139 runs:50 conv_ops:479348800]
+Converting 699050 int with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+36%) fmt::FormatInt [avg:286042321 var:3.95699% ms:286 runs:50 conv_ops:489335000]
+            (+178%) boost::spirit::karma [avg:582471289 var:4.04154% ms:582 runs:50 conv_ops:489335000]
+                     (+10%) alexandrescu [avg:231650988 var:2.70184% ms:231 runs:50 conv_ops:489335000]
+                           (+38%) buffer [avg:289466202 var:2.84382% ms:289 runs:50 conv_ops:489335000]
+                        (+21%) hybrid(0) [avg:253718801 var:3.39492% ms:253 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:209252014 var:5.30988% ms:209 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:209252014 var:5.30988% ms:209 runs:50 conv_ops:489335000]
+Converting 699050 long with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+37%) fmt::FormatInt [avg:286931246 var:4.16089% ms:286 runs:50 conv_ops:489335000]
+            (+180%) boost::spirit::karma [avg:584202235 var:4.20153% ms:584 runs:50 conv_ops:489335000]
+                     (+17%) alexandrescu [avg:244740341 var:6.41747% ms:244 runs:50 conv_ops:489335000]
+                           (+41%) buffer [avg:294164112 var:4.4684% ms:294 runs:50 conv_ops:489335000]
+                        (+24%) hybrid(0) [avg:260119389 var:4.86026% ms:260 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:208498279 var:3.8448% ms:208 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:208498279 var:3.8448% ms:208 runs:50 conv_ops:489335000]
+Converting 399457 long long with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+2%) fmt::FormatInt [avg:2190346107 var:4.43075% ms:2190 runs:50 conv_ops:499321250]
+            (+102%) boost::spirit::karma [avg:4325937190 var:2.8964% ms:4325 runs:50 conv_ops:499321250]
+                     (+10%) alexandrescu [avg:2366195061 var:5.56059% ms:2366 runs:50 conv_ops:499321250]
+                            (+1%) buffer [avg:2164116802 var:3.71457% ms:2164 runs:50 conv_ops:499321250]
+                         (+1%) hybrid(0) [avg:2176229260 var:2.4478% ms:2176 runs:50 conv_ops:499321250]
+                           (!) hybrid(1) [avg:2135774713 var:3.17368% ms:2135 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:2135774713 var:3.17368% ms:2135 runs:50 conv_ops:499321250]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 1198372 short with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+56%) fmt::FormatInt [avg:158160874 var:5.07804% ms:158 runs:50 conv_ops:479348800]
+             (+19%) boost::spirit::karma [avg:121402921 var:2.96851% ms:121 runs:50 conv_ops:479348800]
+                     (+10%) alexandrescu [avg:112026865 var:2.26261% ms:112 runs:50 conv_ops:479348800]
+                           (+45%) buffer [avg:147529028 var:4.33229% ms:147 runs:50 conv_ops:479348800]
+                        (+32%) hybrid(0) [avg:133761072 var:2.19381% ms:133 runs:50 conv_ops:479348800]
+                           (!) hybrid(1) [avg:101288754 var:2.67715% ms:101 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:101288754 var:2.67715% ms:101 runs:50 conv_ops:479348800]
+Converting 699050 int with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+36%) fmt::FormatInt [avg:241183668 var:3.71731% ms:241 runs:50 conv_ops:489335000]
+            (+203%) boost::spirit::karma [avg:538828648 var:2.42272% ms:538 runs:50 conv_ops:489335000]
+                     (+12%) alexandrescu [avg:199365871 var:1.40738% ms:199 runs:50 conv_ops:489335000]
+                           (+44%) buffer [avg:256992756 var:3.69281% ms:256 runs:50 conv_ops:489335000]
+                        (+27%) hybrid(0) [avg:225970880 var:5.19887% ms:225 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:177297645 var:6.25038% ms:177 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:177297645 var:6.25038% ms:177 runs:50 conv_ops:489335000]
+Converting 699050 long with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+39%) fmt::FormatInt [avg:240047012 var:2.90475% ms:240 runs:50 conv_ops:489335000]
+            (+213%) boost::spirit::karma [avg:540236065 var:3.66877% ms:540 runs:50 conv_ops:489335000]
+                     (+15%) alexandrescu [avg:199710809 var:1.69572% ms:199 runs:50 conv_ops:489335000]
+                           (+46%) buffer [avg:251818959 var:1.30793% ms:251 runs:50 conv_ops:489335000]
+                        (+27%) hybrid(0) [avg:220028543 var:1.00497% ms:220 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:172420276 var:1.10734% ms:172 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:172420276 var:1.10734% ms:172 runs:50 conv_ops:489335000]
+Converting 399457 long long with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+3%) fmt::FormatInt [avg:2134610345 var:3.27655% ms:2134 runs:50 conv_ops:499321250]
+            (+107%) boost::spirit::karma [avg:4278662881 var:2.77293% ms:4278 runs:50 conv_ops:499321250]
+                     (+13%) alexandrescu [avg:2346190500 var:3.9476% ms:2346 runs:50 conv_ops:499321250]
+                            (+3%) buffer [avg:2142739964 var:4.9901% ms:2142 runs:50 conv_ops:499321250]
+                         (+3%) hybrid(0) [avg:2139102502 var:3.02611% ms:2139 runs:50 conv_ops:499321250]
+                           (!) hybrid(1) [avg:2061960370 var:2.70583% ms:2061 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:2061960370 var:2.70583% ms:2061 runs:50 conv_ops:499321250]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+72%) fmt::FormatInt [avg:101668029 var:10.6603% ms:101 runs:50 conv_ops:479348800]
+             (+17%) boost::spirit::karma [avg:69091222 var:10.4583% ms:69 runs:50 conv_ops:479348800]
+                     (+27%) alexandrescu [avg:75515945 var:6.46418% ms:75 runs:50 conv_ops:479348800]
+                           (+60%) buffer [avg:94671947 var:7.40466% ms:94 runs:50 conv_ops:479348800]
+                           (!) hybrid(0) [avg:59029724 var:9.49035% ms:59 runs:50 conv_ops:479348800]
+                        (+20%) hybrid(1) [avg:71024794 var:4.29939% ms:71 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:59029724 var:9.49035% ms:59 runs:50 conv_ops:479348800]
+Converting 699050 int with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+72%) fmt::FormatInt [avg:102194588 var:8.63667% ms:102 runs:50 conv_ops:489335000]
+            (+107%) boost::spirit::karma [avg:122965029 var:6.35316% ms:122 runs:50 conv_ops:489335000]
+                     (+21%) alexandrescu [avg:71830207 var:4.798% ms:71 runs:50 conv_ops:489335000]
+                           (+46%) buffer [avg:86711635 var:4.82935% ms:86 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:59271366 var:6.3115% ms:59 runs:50 conv_ops:489335000]
+                        (+54%) hybrid(1) [avg:91417550 var:5.2361% ms:91 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:59271366 var:6.3115% ms:59 runs:50 conv_ops:489335000]
+Converting 699050 long with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+75%) fmt::FormatInt [avg:105343391 var:7.72465% ms:105 runs:50 conv_ops:489335000]
+            (+112%) boost::spirit::karma [avg:127576047 var:9.96056% ms:127 runs:50 conv_ops:489335000]
+                     (+23%) alexandrescu [avg:73823137 var:6.68642% ms:73 runs:50 conv_ops:489335000]
+                           (+49%) buffer [avg:89840421 var:7.26245% ms:89 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:59909850 var:5.85106% ms:59 runs:50 conv_ops:489335000]
+                        (+61%) hybrid(1) [avg:96564344 var:7.15816% ms:96 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:59909850 var:5.85106% ms:59 runs:50 conv_ops:489335000]
+Converting 399457 long long with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+64%) fmt::FormatInt [avg:136881089 var:7.25284% ms:136 runs:50 conv_ops:499321250]
+            (+186%) boost::spirit::karma [avg:239164962 var:9.86618% ms:239 runs:50 conv_ops:499321250]
+                     (+74%) alexandrescu [avg:145251248 var:7.50694% ms:145 runs:50 conv_ops:499321250]
+                           (+36%) buffer [avg:113663834 var:8.80818% ms:113 runs:50 conv_ops:499321250]
+                           (!) hybrid(0) [avg:83454349 var:7.27246% ms:83 runs:50 conv_ops:499321250]
+                        (+76%) hybrid(1) [avg:147417101 var:4.23172% ms:147 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:83454349 var:7.27246% ms:83 runs:50 conv_ops:499321250]
+Converting 1198372 short with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+167%) fmt::FormatInt [avg:53042206 var:16.4861% ms:53 runs:50 conv_ops:479348800]
+            (+150%) boost::spirit::karma [avg:49761066 var:4.4972% ms:49 runs:50 conv_ops:479348800]
+                     (+15%) alexandrescu [avg:22888070 var:11.3099% ms:22 runs:50 conv_ops:479348800]
+                          (+154%) buffer [avg:50612248 var:7.30959% ms:50 runs:50 conv_ops:479348800]
+                           (!) hybrid(0) [avg:19850889 var:11.212% ms:19 runs:50 conv_ops:479348800]
+                        (+27%) hybrid(1) [avg:25323055 var:11.8672% ms:25 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:19850889 var:11.212% ms:19 runs:50 conv_ops:479348800]
+Converting 699050 int with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+201%) fmt::FormatInt [avg:55550056 var:11.5844% ms:55 runs:50 conv_ops:489335000]
+            (+331%) boost::spirit::karma [avg:79570995 var:7.59968% ms:79 runs:50 conv_ops:489335000]
+                     (+22%) alexandrescu [avg:22637012 var:12.097% ms:22 runs:50 conv_ops:489335000]
+                          (+177%) buffer [avg:51104367 var:9.01411% ms:51 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:18440838 var:8.23429% ms:18 runs:50 conv_ops:489335000]
+                       (+212%) hybrid(1) [avg:57618443 var:5.03129% ms:57 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:18440838 var:8.23429% ms:18 runs:50 conv_ops:489335000]
+Converting 699050 long with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+208%) fmt::FormatInt [avg:55983609 var:15.2414% ms:55 runs:50 conv_ops:489335000]
+            (+366%) boost::spirit::karma [avg:84551087 var:12.3018% ms:84 runs:50 conv_ops:489335000]
+                     (+28%) alexandrescu [avg:23379136 var:15.8585% ms:23 runs:50 conv_ops:489335000]
+                          (+189%) buffer [avg:52556381 var:9.48375% ms:52 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:18127085 var:5.98689% ms:18 runs:50 conv_ops:489335000]
+                       (+221%) hybrid(1) [avg:58266313 var:5.76114% ms:58 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:18127085 var:5.98689% ms:18 runs:50 conv_ops:489335000]
+Converting 399457 long long with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+169%) fmt::FormatInt [avg:70482318 var:4.69587% ms:70 runs:50 conv_ops:499321250]
+            (+579%) boost::spirit::karma [avg:177756025 var:10.173% ms:177 runs:50 conv_ops:499321250]
+                    (+252%) alexandrescu [avg:92265680 var:2.86822% ms:92 runs:50 conv_ops:499321250]
+                          (+134%) buffer [avg:61443774 var:3.70515% ms:61 runs:50 conv_ops:499321250]
+                           (!) hybrid(0) [avg:26178194 var:2.86363% ms:26 runs:50 conv_ops:499321250]
+                       (+306%) hybrid(1) [avg:106414684 var:2.14059% ms:106 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:26178194 var:2.86363% ms:26 runs:50 conv_ops:499321250]
+Converting 1198372 short with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+175%) fmt::FormatInt [avg:51411811 var:12.5998% ms:51 runs:50 conv_ops:479348800]
+            (+167%) boost::spirit::karma [avg:49862786 var:5.12814% ms:49 runs:50 conv_ops:479348800]
+                     (+28%) alexandrescu [avg:23877772 var:13.0091% ms:23 runs:50 conv_ops:479348800]
+                          (+187%) buffer [avg:53607943 var:9.97711% ms:53 runs:50 conv_ops:479348800]
+                           (!) hybrid(0) [avg:18629396 var:9.44159% ms:18 runs:50 conv_ops:479348800]
+                        (+35%) hybrid(1) [avg:25214035 var:10.3165% ms:25 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:18629396 var:9.44159% ms:18 runs:50 conv_ops:479348800]
+Converting 699050 int with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+195%) fmt::FormatInt [avg:62184919 var:15.7497% ms:62 runs:50 conv_ops:489335000]
+            (+327%) boost::spirit::karma [avg:89898898 var:13.1552% ms:89 runs:50 conv_ops:489335000]
+                     (+19%) alexandrescu [avg:25210545 var:13.5411% ms:25 runs:50 conv_ops:489335000]
+                          (+157%) buffer [avg:54201842 var:10.6559% ms:54 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:21044137 var:9.69612% ms:21 runs:50 conv_ops:489335000]
+                       (+186%) hybrid(1) [avg:60253203 var:6.37694% ms:60 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:21044137 var:9.69612% ms:21 runs:50 conv_ops:489335000]
+Converting 699050 long with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+208%) fmt::FormatInt [avg:59155776 var:11.5408% ms:59 runs:50 conv_ops:489335000]
+            (+354%) boost::spirit::karma [avg:87232597 var:10.887% ms:87 runs:50 conv_ops:489335000]
+                     (+22%) alexandrescu [avg:23466559 var:7.68322% ms:23 runs:50 conv_ops:489335000]
+                          (+173%) buffer [avg:52441403 var:6.6293% ms:52 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:19201052 var:7.2728% ms:19 runs:50 conv_ops:489335000]
+                       (+212%) hybrid(1) [avg:59946094 var:5.68642% ms:59 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:19201052 var:7.2728% ms:19 runs:50 conv_ops:489335000]
+Converting 399457 long long with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+161%) fmt::FormatInt [avg:70452105 var:4.42751% ms:70 runs:50 conv_ops:499321250]
+            (+540%) boost::spirit::karma [avg:172423356 var:3.2248% ms:172 runs:50 conv_ops:499321250]
+                    (+245%) alexandrescu [avg:93083632 var:3.93303% ms:93 runs:50 conv_ops:499321250]
+                          (+129%) buffer [avg:61880140 var:4.62468% ms:61 runs:50 conv_ops:499321250]
+                           (!) hybrid(0) [avg:26924083 var:6.29754% ms:26 runs:50 conv_ops:499321250]
+                       (+297%) hybrid(1) [avg:107038491 var:3.29197% ms:107 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:26924083 var:6.29754% ms:26 runs:50 conv_ops:499321250]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+73%) fmt::FormatInt [avg:116276441 var:1.47832% ms:116 runs:50 conv_ops:479348800]
+             (+41%) boost::spirit::karma [avg:94823532 var:1.50982% ms:94 runs:50 conv_ops:479348800]
+                     (+13%) alexandrescu [avg:75729654 var:2.39177% ms:75 runs:50 conv_ops:479348800]
+                           (+59%) buffer [avg:106695513 var:1.98255% ms:106 runs:50 conv_ops:479348800]
+                           (!) hybrid(0) [avg:66929635 var:2.06669% ms:66 runs:50 conv_ops:479348800]
+                        (+21%) hybrid(1) [avg:81301044 var:1.67291% ms:81 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:66929635 var:2.06669% ms:66 runs:50 conv_ops:479348800]
+Converting 699050 int with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+70%) fmt::FormatInt [avg:117238538 var:2.50534% ms:117 runs:50 conv_ops:489335000]
+            (+124%) boost::spirit::karma [avg:154979818 var:1.5023% ms:154 runs:50 conv_ops:489335000]
+                      (+8%) alexandrescu [avg:74897102 var:1.4886% ms:74 runs:50 conv_ops:489335000]
+                           (+41%) buffer [avg:97730765 var:1.85901% ms:97 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:68886443 var:3.15077% ms:68 runs:50 conv_ops:489335000]
+                        (+46%) hybrid(1) [avg:100839910 var:2.23186% ms:100 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:68886443 var:3.15077% ms:68 runs:50 conv_ops:489335000]
+Converting 699050 long with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+72%) fmt::FormatInt [avg:118030643 var:1.90194% ms:118 runs:50 conv_ops:489335000]
+            (+125%) boost::spirit::karma [avg:154969953 var:1.63913% ms:154 runs:50 conv_ops:489335000]
+                      (+9%) alexandrescu [avg:75231394 var:3.41822% ms:75 runs:50 conv_ops:489335000]
+                           (+42%) buffer [avg:97481710 var:1.31511% ms:97 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:68587212 var:2.03012% ms:68 runs:50 conv_ops:489335000]
+                        (+46%) hybrid(1) [avg:100733279 var:1.70023% ms:100 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:68587212 var:2.03012% ms:68 runs:50 conv_ops:489335000]
+Converting 399457 long long with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+60%) fmt::FormatInt [avg:145747708 var:3.27469% ms:145 runs:50 conv_ops:499321250]
+            (+353%) boost::spirit::karma [avg:412835990 var:0.96225% ms:412 runs:50 conv_ops:499321250]
+                     (+70%) alexandrescu [avg:155182368 var:1.40097% ms:155 runs:50 conv_ops:499321250]
+                           (+42%) buffer [avg:129454258 var:2.71151% ms:129 runs:50 conv_ops:499321250]
+                           (!) hybrid(0) [avg:90981655 var:1.42942% ms:90 runs:50 conv_ops:499321250]
+                        (+67%) hybrid(1) [avg:152667181 var:3.39554% ms:152 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:90981655 var:1.42942% ms:90 runs:50 conv_ops:499321250]
+Converting 1198372 short with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+244%) fmt::FormatInt [avg:63493254 var:2.67619% ms:63 runs:50 conv_ops:479348800]
+            (+230%) boost::spirit::karma [avg:60948511 var:2.13084% ms:60 runs:50 conv_ops:479348800]
+                    (+123%) alexandrescu [avg:41219605 var:4.09218% ms:41 runs:50 conv_ops:479348800]
+                          (+210%) buffer [avg:57233848 var:1.31777% ms:57 runs:50 conv_ops:479348800]
+                           (!) hybrid(0) [avg:18450908 var:5.67258% ms:18 runs:50 conv_ops:479348800]
+                       (+213%) hybrid(1) [avg:57810832 var:1.78245% ms:57 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:18450908 var:5.67258% ms:18 runs:50 conv_ops:479348800]
+Converting 699050 int with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+262%) fmt::FormatInt [avg:67354030 var:8.25021% ms:67 runs:50 conv_ops:489335000]
+            (+517%) boost::spirit::karma [avg:114809173 var:5.49709% ms:114 runs:50 conv_ops:489335000]
+                     (+34%) alexandrescu [avg:25089509 var:7.08861% ms:25 runs:50 conv_ops:489335000]
+                          (+202%) buffer [avg:56302365 var:4.52035% ms:56 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:18596333 var:6.58685% ms:18 runs:50 conv_ops:489335000]
+                       (+209%) hybrid(1) [avg:57534673 var:5.21857% ms:57 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:18596333 var:6.58685% ms:18 runs:50 conv_ops:489335000]
+Converting 699050 long with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+256%) fmt::FormatInt [avg:64280806 var:2.80096% ms:64 runs:50 conv_ops:489335000]
+            (+570%) boost::spirit::karma [avg:120849065 var:12.0533% ms:120 runs:50 conv_ops:489335000]
+                     (+36%) alexandrescu [avg:24527523 var:1.34099% ms:24 runs:50 conv_ops:489335000]
+                          (+221%) buffer [avg:57858125 var:10.632% ms:57 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:18012535 var:1.9103% ms:18 runs:50 conv_ops:489335000]
+                       (+210%) hybrid(1) [avg:55853527 var:1.23828% ms:55 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:18012535 var:1.9103% ms:18 runs:50 conv_ops:489335000]
+Converting 399457 long long with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+109%) fmt::FormatInt [avg:91486191 var:3.85657% ms:91 runs:50 conv_ops:499321250]
+            (+795%) boost::spirit::karma [avg:390681132 var:3.78917% ms:390 runs:50 conv_ops:499321250]
+                    (+142%) alexandrescu [avg:105712355 var:5.56862% ms:105 runs:50 conv_ops:499321250]
+                           (+87%) buffer [avg:81628977 var:7.86181% ms:81 runs:50 conv_ops:499321250]
+                           (!) hybrid(0) [avg:43633464 var:11.3449% ms:43 runs:50 conv_ops:499321250]
+                       (+149%) hybrid(1) [avg:108749720 var:3.57794% ms:108 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:43633464 var:11.3449% ms:43 runs:50 conv_ops:499321250]
+Converting 1198372 short with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+106%) fmt::FormatInt [avg:71177429 var:8.75744% ms:71 runs:50 conv_ops:479348800]
+             (+91%) boost::spirit::karma [avg:66050622 var:2.49814% ms:66 runs:50 conv_ops:479348800]
+                     (+42%) alexandrescu [avg:48944485 var:4.15504% ms:48 runs:50 conv_ops:479348800]
+                           (+96%) buffer [avg:67607509 var:4.46278% ms:67 runs:50 conv_ops:479348800]
+                           (!) hybrid(0) [avg:34414642 var:8.28963% ms:34 runs:50 conv_ops:479348800]
+                        (+39%) hybrid(1) [avg:48097597 var:6.31168% ms:48 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:34414642 var:8.28963% ms:34 runs:50 conv_ops:479348800]
+Converting 699050 int with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+101%) fmt::FormatInt [avg:71995825 var:2.02119% ms:71 runs:50 conv_ops:489335000]
+            (+227%) boost::spirit::karma [avg:117241291 var:1.13025% ms:117 runs:50 conv_ops:489335000]
+                     (+15%) alexandrescu [avg:41398904 var:9.89859% ms:41 runs:50 conv_ops:489335000]
+                           (+76%) buffer [avg:62988646 var:1.43763% ms:62 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:35746392 var:2.60273% ms:35 runs:50 conv_ops:489335000]
+                        (+76%) hybrid(1) [avg:62948230 var:2.61396% ms:62 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:35746392 var:2.60273% ms:35 runs:50 conv_ops:489335000]
+Converting 699050 long with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+101%) fmt::FormatInt [avg:71817908 var:3.07284% ms:71 runs:50 conv_ops:489335000]
+            (+236%) boost::spirit::karma [avg:119698868 var:4.01568% ms:119 runs:50 conv_ops:489335000]
+                     (+14%) alexandrescu [avg:40682752 var:4.72844% ms:40 runs:50 conv_ops:489335000]
+                           (+80%) buffer [avg:64308809 var:4.53229% ms:64 runs:50 conv_ops:489335000]
+                           (!) hybrid(0) [avg:35596175 var:0.308946% ms:35 runs:50 conv_ops:489335000]
+                        (+76%) hybrid(1) [avg:62794757 var:2.03317% ms:62 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:35596175 var:0.308946% ms:35 runs:50 conv_ops:489335000]
+Converting 399457 long long with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+101%) fmt::FormatInt [avg:97083689 var:1.63153% ms:97 runs:50 conv_ops:499321250]
+            (+672%) boost::spirit::karma [avg:371722620 var:3.05006% ms:371 runs:50 conv_ops:499321250]
+                    (+134%) alexandrescu [avg:112897798 var:2.05245% ms:112 runs:50 conv_ops:499321250]
+                           (+82%) buffer [avg:87953506 var:3.92355% ms:87 runs:50 conv_ops:499321250]
+                           (!) hybrid(0) [avg:48136258 var:2.37561% ms:48 runs:50 conv_ops:499321250]
+                       (+133%) hybrid(1) [avg:112287525 var:1.46713% ms:112 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:48136258 var:2.37561% ms:48 runs:50 conv_ops:499321250]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+53%) fmt::FormatInt [avg:173935525 var:3.38917% ms:173 runs:50 conv_ops:479348800]
+             (+13%) boost::spirit::karma [avg:128113549 var:2.09243% ms:128 runs:50 conv_ops:479348800]
+                      (+5%) alexandrescu [avg:118923559 var:4.52587% ms:118 runs:50 conv_ops:479348800]
+                           (+23%) buffer [avg:139904658 var:4.41909% ms:139 runs:50 conv_ops:479348800]
+                        (+13%) hybrid(0) [avg:128612176 var:5.90188% ms:128 runs:50 conv_ops:479348800]
+                           (!) hybrid(1) [avg:112998678 var:2.13996% ms:112 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:112998678 var:2.13996% ms:112 runs:50 conv_ops:479348800]
+Converting 699050 int with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+63%) fmt::FormatInt [avg:180622263 var:3.82033% ms:180 runs:50 conv_ops:489335000]
+            (+120%) boost::spirit::karma [avg:244126923 var:3.51295% ms:244 runs:50 conv_ops:489335000]
+                      (+9%) alexandrescu [avg:121414695 var:5.94855% ms:121 runs:50 conv_ops:489335000]
+                           (+20%) buffer [avg:133048952 var:5.36811% ms:133 runs:50 conv_ops:489335000]
+                         (+9%) hybrid(0) [avg:120652037 var:3.53422% ms:120 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:110474562 var:5.6354% ms:110 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:110474562 var:5.6354% ms:110 runs:50 conv_ops:489335000]
+Converting 699050 long with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+73%) fmt::FormatInt [avg:193058554 var:6.29886% ms:193 runs:50 conv_ops:489335000]
+            (+130%) boost::spirit::karma [avg:255904764 var:6.4261% ms:255 runs:50 conv_ops:489335000]
+                     (+10%) alexandrescu [avg:122621387 var:5.34867% ms:122 runs:50 conv_ops:489335000]
+                           (+21%) buffer [avg:134461012 var:6.39976% ms:134 runs:50 conv_ops:489335000]
+                        (+13%) hybrid(0) [avg:126336883 var:9.28778% ms:126 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:111028076 var:5.53768% ms:111 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:111028076 var:5.53768% ms:111 runs:50 conv_ops:489335000]
+Converting 399457 long long with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+21%) fmt::FormatInt [avg:420564137 var:4.81217% ms:420 runs:50 conv_ops:499321250]
+            (+147%) boost::spirit::karma [avg:854613076 var:5.1524% ms:854 runs:50 conv_ops:499321250]
+                     (+19%) alexandrescu [avg:412501308 var:6.01815% ms:412 runs:50 conv_ops:499321250]
+                           (+11%) buffer [avg:383842841 var:6.986% ms:383 runs:50 conv_ops:499321250]
+                           (!) hybrid(0) [avg:345059804 var:5.63478% ms:345 runs:50 conv_ops:499321250]
+                         (+4%) hybrid(1) [avg:361651510 var:6.39303% ms:361 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:345059804 var:5.63478% ms:345 runs:50 conv_ops:499321250]
+Converting 1198372 short with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+58%) fmt::FormatInt [avg:137335671 var:7.28332% ms:137 runs:50 conv_ops:479348800]
+              (+9%) boost::spirit::karma [avg:95091077 var:4.83963% ms:95 runs:50 conv_ops:479348800]
+                      (+6%) alexandrescu [avg:92407191 var:4.57186% ms:92 runs:50 conv_ops:479348800]
+                           (+14%) buffer [avg:99716901 var:8.6876% ms:99 runs:50 conv_ops:479348800]
+                        (+10%) hybrid(0) [avg:96022454 var:5.80884% ms:96 runs:50 conv_ops:479348800]
+                           (!) hybrid(1) [avg:86839765 var:6.48914% ms:86 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:86839765 var:6.48914% ms:86 runs:50 conv_ops:479348800]
+Converting 699050 int with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+105%) fmt::FormatInt [avg:140461720 var:13.9534% ms:140 runs:50 conv_ops:489335000]
+            (+207%) boost::spirit::karma [avg:209612260 var:5.7946% ms:209 runs:50 conv_ops:489335000]
+                      (+2%) alexandrescu [avg:69991806 var:9.63298% ms:69 runs:50 conv_ops:489335000]
+                           (+28%) buffer [avg:87809560 var:3.9751% ms:87 runs:50 conv_ops:489335000]
+                        (+21%) hybrid(0) [avg:83202772 var:7.20964% ms:83 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:68227687 var:3.43929% ms:68 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:68227687 var:3.43929% ms:68 runs:50 conv_ops:489335000]
+Converting 699050 long with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                  (+103%) fmt::FormatInt [avg:142754817 var:5.98503% ms:142 runs:50 conv_ops:489335000]
+            (+205%) boost::spirit::karma [avg:214825837 var:5.39083% ms:214 runs:50 conv_ops:489335000]
+                      (+3%) alexandrescu [avg:73015473 var:6.89044% ms:73 runs:50 conv_ops:489335000]
+                           (+28%) buffer [avg:90322255 var:5.55111% ms:90 runs:50 conv_ops:489335000]
+                        (+19%) hybrid(0) [avg:84017232 var:7.23743% ms:84 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:70307383 var:5.992% ms:70 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:70307383 var:5.992% ms:70 runs:50 conv_ops:489335000]
+Converting 399457 long long with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+29%) fmt::FormatInt [avg:362543896 var:6.68871% ms:362 runs:50 conv_ops:499321250]
+            (+189%) boost::spirit::karma [avg:814153624 var:6.09865% ms:814 runs:50 conv_ops:499321250]
+                     (+29%) alexandrescu [avg:363763785 var:7.16154% ms:363 runs:50 conv_ops:499321250]
+                           (+11%) buffer [avg:314499406 var:6.82015% ms:314 runs:50 conv_ops:499321250]
+                           (!) hybrid(0) [avg:280891445 var:3.79564% ms:280 runs:50 conv_ops:499321250]
+                         (+3%) hybrid(1) [avg:291378438 var:9.88034% ms:291 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:280891445 var:3.79564% ms:280 runs:50 conv_ops:499321250]
+Converting 1198372 short with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+59%) fmt::FormatInt [avg:136151460 var:7.90227% ms:136 runs:50 conv_ops:479348800]
+             (+14%) boost::spirit::karma [avg:97892668 var:1.84551% ms:97 runs:50 conv_ops:479348800]
+                     (+13%) alexandrescu [avg:96621202 var:2.34995% ms:96 runs:50 conv_ops:479348800]
+                           (+24%) buffer [avg:106251624 var:8.06004% ms:106 runs:50 conv_ops:479348800]
+                        (+15%) hybrid(0) [avg:98718384 var:6.58476% ms:98 runs:50 conv_ops:479348800]
+                           (!) hybrid(1) [avg:85312947 var:1.87402% ms:85 runs:50 conv_ops:479348800]
+                        (!) hybrid(best) [avg:85312947 var:1.87402% ms:85 runs:50 conv_ops:479348800]
+Converting 699050 int with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+99%) fmt::FormatInt [avg:149622933 var:17.7932% ms:149 runs:50 conv_ops:489335000]
+            (+188%) boost::spirit::karma [avg:216025973 var:7.94209% ms:216 runs:50 conv_ops:489335000]
+                     (+19%) alexandrescu [avg:89769502 var:20.69% ms:89 runs:50 conv_ops:489335000]
+                           (+34%) buffer [avg:100716258 var:10.0772% ms:100 runs:50 conv_ops:489335000]
+                        (+19%) hybrid(0) [avg:89609283 var:6.44384% ms:89 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:74968990 var:2.21318% ms:74 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:74968990 var:2.21318% ms:74 runs:50 conv_ops:489335000]
+Converting 699050 long with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+83%) fmt::FormatInt [avg:144260161 var:8.78186% ms:144 runs:50 conv_ops:489335000]
+            (+185%) boost::spirit::karma [avg:225025457 var:7.5907% ms:225 runs:50 conv_ops:489335000]
+                      (+1%) alexandrescu [avg:79839681 var:6.50926% ms:79 runs:50 conv_ops:489335000]
+                           (+25%) buffer [avg:99000030 var:3.75846% ms:99 runs:50 conv_ops:489335000]
+                        (+17%) hybrid(0) [avg:92211638 var:7.94736% ms:92 runs:50 conv_ops:489335000]
+                           (!) hybrid(1) [avg:78699180 var:6.12551% ms:78 runs:50 conv_ops:489335000]
+                        (!) hybrid(best) [avg:78699180 var:6.12551% ms:78 runs:50 conv_ops:489335000]
+Converting 399457 long long with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                   (+24%) fmt::FormatInt [avg:360510547 var:2.45161% ms:360 runs:50 conv_ops:499321250]
+            (+174%) boost::spirit::karma [avg:793642221 var:2.63045% ms:793 runs:50 conv_ops:499321250]
+                     (+25%) alexandrescu [avg:364215500 var:2.84284% ms:364 runs:50 conv_ops:499321250]
+                           (+13%) buffer [avg:329025925 var:6.97272% ms:329 runs:50 conv_ops:499321250]
+                           (!) hybrid(0) [avg:289616343 var:3.13779% ms:289 runs:50 conv_ops:499321250]
+                         (+2%) hybrid(1) [avg:295772945 var:4.23219% ms:295 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:289616343 var:3.13779% ms:289 runs:50 conv_ops:499321250]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 399457 long long with 10 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+8%) fmt::FormatInt [avg:1128645741 var:5.92904% ms:1128 runs:50 conv_ops:499321250]
+            (+113%) boost::spirit::karma [avg:2211661499 var:4.3749% ms:2211 runs:50 conv_ops:499321250]
+                      (+4%) alexandrescu [avg:1087253797 var:1.8949% ms:1087 runs:50 conv_ops:499321250]
+                            (+5%) buffer [avg:1091017834 var:1.76486% ms:1091 runs:50 conv_ops:499321250]
+                         (+4%) hybrid(0) [avg:1077334499 var:3.43233% ms:1077 runs:50 conv_ops:499321250]
+                           (!) hybrid(1) [avg:1035650821 var:3.81533% ms:1035 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:1035650821 var:3.81533% ms:1035 runs:50 conv_ops:499321250]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 399457 long long with 10 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+8%) fmt::FormatInt [avg:1097963752 var:3.41533% ms:1097 runs:50 conv_ops:499321250]
+            (+119%) boost::spirit::karma [avg:2223843649 var:3.67477% ms:2223 runs:50 conv_ops:499321250]
+                      (+7%) alexandrescu [avg:1087320000 var:3.75238% ms:1087 runs:50 conv_ops:499321250]
+                            (+5%) buffer [avg:1070001701 var:4.17409% ms:1070 runs:50 conv_ops:499321250]
+                         (+4%) hybrid(0) [avg:1057138031 var:3.88614% ms:1057 runs:50 conv_ops:499321250]
+                           (!) hybrid(1) [avg:1011277072 var:4.31028% ms:1011 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:1011277072 var:4.31028% ms:1011 runs:50 conv_ops:499321250]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 399457 long long with 10 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                    (+9%) fmt::FormatInt [avg:1039286604 var:1.34435% ms:1039 runs:50 conv_ops:499321250]
+            (+119%) boost::spirit::karma [avg:2080918377 var:1.4234% ms:2080 runs:50 conv_ops:499321250]
+                      (+9%) alexandrescu [avg:1035247614 var:1.16267% ms:1035 runs:50 conv_ops:499321250]
+                            (+7%) buffer [avg:1018278374 var:0.695103% ms:1018 runs:50 conv_ops:499321250]
+                         (+5%) hybrid(0) [avg:997234106 var:0.582948% ms:997 runs:50 conv_ops:499321250]
+                           (!) hybrid(1) [avg:949018549 var:0.373979% ms:949 runs:50 conv_ops:499321250]
+                        (!) hybrid(best) [avg:949018549 var:0.373979% ms:949 runs:50 conv_ops:499321250]
