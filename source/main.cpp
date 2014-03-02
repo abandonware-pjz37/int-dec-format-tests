@@ -189,10 +189,14 @@ int main() {
     output_size_variants.push_back(8 * 1024 * 1024);
 #endif
 
+    bool run_any = false;
+
     for (auto output_size: output_size_variants) {
       for (auto digit: digit_variants) {
         for (auto sign: sign_variants) {
           for (auto same_size: same_size_variants) {
+            run_any = true;
+
             run_with_type<short>(output_size, digit, sign, same_size);
             run_with_type<int>(output_size, digit, sign, same_size);
             run_with_type<long>(output_size, digit, sign, same_size);
@@ -200,6 +204,10 @@ int main() {
           }
         }
       }
+    }
+
+    if (!run_any) {
+      throw runtime_error("Test list is empty");
     }
     return EXIT_SUCCESS;
   }
