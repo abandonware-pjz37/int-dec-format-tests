@@ -5,9 +5,13 @@
 // All rights reserved.
 
 #include <cassert> // assert
+#include <limits> // std::numeric_limits
+#include <array>
 
-// 1) fill temporary buffer with cache indexes
-// 2) fill sink with indexes in reversed order
+#include "PickFastest.hpp"
+
+// 1) fill temporary buffer "from the end"
+// 2) copy to destination
 namespace format_buffer {
 
 using Iterator = char*;
@@ -28,59 +32,68 @@ inline const char* cache_digits() {
 }
 
 template <class Integer>
-inline void generate(Iterator& sink, Integer input_value) {
-  const bool is_negative = (input_value < 0);
-  if (is_negative) {
+inline void generate(Iterator& sink_out, Integer input_value) {
+  using Unsigned = typename std::make_unsigned<Integer>::type;
+  Unsigned value(input_value);
+
+  Iterator sink = sink_out;
+
+  if (input_value < 0) {
     *sink = '-';
     ++sink;
+    value = 0 - value;
   }
-
-  using Unsigned = typename std::make_unsigned<Integer>::type;
-  Unsigned value = is_negative ? -input_value : input_value;
 
   enum {
     MAX_DIGITS = std::numeric_limits<Integer>::digits10 +
         1 // round error
   };
-  int buffer[MAX_DIGITS];
-  int* it = buffer;
+
+  std::array<char, MAX_DIGITS> buffer;
+  char* it = buffer.end();
+
+  const char* cache = cache_digits();
 
   assert(value >= 0);
   while (value >= 100) {
-    int index = (value % 100) * 2; // 0..198
+    size_t index = (value % 100) * 2; // 0..198
     value /= 100;
 
     // reverse order
-    *it = index + 1;
-    ++it;
+    --it;
+    *it = cache[index + 1];
 
-    *it = index;
-    ++it;
+    --it;
+    *it = cache[index];
   }
 
   if (value < 10) {
     // 0..9
-    *it = static_cast<int>(value * 2 + 1);
-    ++it;
+    --it;
+    *it = cache[static_cast<size_t>(value * 2 + 1)];
   }
   else {
     // 10..99
-    int index = static_cast<int>(value * 2); // 20..198
+    size_t index = static_cast<size_t>(value * 2); // 20..198
 
     // reverse order
-    *it = index + 1;
-    ++it;
-
-    *it = index;
-    ++it;
-  }
-
-  const char* cache = cache_digits();
-  while (it > buffer) {
     --it;
-    *sink = cache[*it];
-    ++sink;
+    *it = cache[index + 1];
+
+    --it;
+    *it = cache[index];
   }
+
+  // std::copy implemented using memcpy call
+  // there is no visible befinits on such small memory chunks
+  // (20 char maximum) sometimes it's even worse
+  while (it != buffer.end()) {
+    *sink = *it;
+    ++sink;
+    ++it;
+  }
+
+  sink_out = sink;
 }
 
 } // namespace format_buffer

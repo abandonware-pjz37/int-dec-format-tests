@@ -35,7 +35,7 @@ template <int max_digits, class Integer>
 inline void generate_big_numbers(Iterator& sink, Integer value) {
   static_assert(std::is_unsigned<Integer>::value, "");
 
-  int digits = CountDigits<max_digits>::count(value);
+  size_t digits = CountDigits<max_digits>::count(value);
   sink += digits;
 
   Iterator it = sink;
@@ -43,7 +43,7 @@ inline void generate_big_numbers(Iterator& sink, Integer value) {
 
   assert(value >= 0);
   while (value >= 100) {
-    int index = (value % 100) * 2; // 0..198
+    size_t index = (value % 100) * 2; // 0..198
     value /= 100;
 
     --it;
@@ -60,7 +60,7 @@ inline void generate_big_numbers(Iterator& sink, Integer value) {
   }
   else {
     // 10..99
-    int index = static_cast<int>(value * 2); // 20..198
+    size_t index = static_cast<size_t>(value * 2); // 20..198
 
     --it;
     *it = cache[index + 1];
@@ -76,10 +76,9 @@ inline void generate_small_numbers(Iterator& sink, Integer value) {
   const char* cache = cache_digits();
 
   static_assert(std::is_unsigned<Integer>::value, "");
-  assert(value >= 100);
   Iterator reverse_start = sink;
   while (value >= 100) {
-    int index = (value % 100) * 2; // 0..198
+    size_t index = (value % 100) * 2; // 0..198
     value /= 100;
 
     // reverse order
@@ -97,7 +96,7 @@ inline void generate_small_numbers(Iterator& sink, Integer value) {
   }
   else {
     // 10..99
-    int index = static_cast<int>(value * 2); // 20..198
+    size_t index = static_cast<size_t>(value * 2); // 20..198
 
     // reverse order
     *sink = cache[index + 1];
@@ -112,9 +111,8 @@ inline void generate_small_numbers(Iterator& sink, Integer value) {
 
 template <bool big_numbers, class Integer>
 inline void generate(Iterator& sink, Integer input_value) {
-  using Fast = typename PickFastest<Integer>::Type;
-  using UFast = typename std::make_unsigned<Fast>::type;
-  UFast value(input_value);
+  using Unsigned = typename std::make_unsigned<Integer>::type;
+  Unsigned value(input_value);
 
   if (input_value < 0) {
     *sink = '-';
@@ -132,30 +130,6 @@ inline void generate(Iterator& sink, Integer input_value) {
     return generate_big_numbers<max_digits>(sink, value);
   }
 
-  const char* cache = cache_digits();
-
-  // very small numbers
-  if (value < 100) {
-    if (value < 10) {
-      // 0..9
-      *sink = static_cast<char>('0' + value);
-      ++sink;
-      return;
-    }
-
-    // 10..99
-    int index = static_cast<int>(value * 2); // 20..198
-
-    *sink = cache[index];
-    ++sink;
-
-    *sink = cache[index + 1];
-    ++sink;
-    return;
-  }
-
-  // MSVC magic: if inline this code instead of function call
-  // performace will change for the worse for very small input numbers
   return generate_small_numbers(sink, value);
 }
 

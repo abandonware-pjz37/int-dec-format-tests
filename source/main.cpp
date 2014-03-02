@@ -207,7 +207,7 @@ int main() {
     }
 
     if (!run_any) {
-      throw runtime_error("Test list is empty");
+      throw std::runtime_error("Test list is empty");
     }
     return EXIT_SUCCESS;
   }
