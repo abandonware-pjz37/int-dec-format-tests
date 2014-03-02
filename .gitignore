@@ -14,6 +14,7 @@
 
 # Temp build
 _builds/*
+build.sh
 
 # macosx temp
 */.DS_Store

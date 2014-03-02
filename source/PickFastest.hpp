@@ -4,6 +4,8 @@
 // Copyright (c) 2014, Ruslan Baratov
 // All rights reserved.
 
+#include <type_traits> // std::enable_if
+
 // Get fastest available integer type by given type size
 
 template <class T, class Enable = T>
