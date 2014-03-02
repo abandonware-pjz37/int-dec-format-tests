@@ -4,12 +4,12 @@
 // Copyright (c) 2014, Ruslan Baratov
 // All rights reserved.
 
-#include "cppx.hpp"
 #include "format.h"
 #include <boost/spirit/include/karma.hpp>
 #include "alexandrescu.hpp"
-#include "format_buffer.hpp"
-#include "hybrid.hpp"
+#include "reverse.hpp"
+#include "tmpbuf.hpp"
+#include "counting.hpp"
 
 class AlgoFmtFormat {
  public:
@@ -21,19 +21,6 @@ class AlgoFmtFormat {
       fmt::FormatDec(buffer, i);
     }
     *buffer = '\0';
-  }
-};
-
-class AlgoCppx {
- public:
-  static const bool enabled = false;
-
-  template <class Vector>
-  static void run(char* buffer, const Vector& in) {
-    for(auto& i: in) {
-      cppx::decimal_from(i, buffer);
-      buffer += strlen(buffer);
-    }
   }
 };
 
@@ -64,49 +51,43 @@ class AlgoAlexandrescu {
   }
 };
 
-class AlgoBuffer {
+class AlgoCounting {
  public:
   static const bool enabled = true;
 
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
-    for(auto& i: in) {
-      format_buffer::generate(buffer, i);
+    for (auto& i: in) {
+      counting::generate(buffer, i);
     }
     *buffer = '\0';
   }
 };
 
-class AlgoHybrid0 {
+class AlgoReverse {
  public:
   static const bool enabled = true;
 
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
-    for(auto& i: in) {
-      hybrid::generate<false>(buffer, i);
+    for (auto& i: in) {
+      reverse::generate(buffer, i);
     }
     *buffer = '\0';
   }
 };
 
-class AlgoHybrid1 {
+class AlgoTmpbuf {
  public:
   static const bool enabled = true;
 
   template <class Vector>
   static void run(char* buffer, const Vector& in) {
-    for(auto& i: in) {
-      hybrid::generate<true>(buffer, i);
+    for (auto& i: in) {
+      tmpbuf::generate(buffer, i);
     }
     *buffer = '\0';
   }
-};
-
-// Dummy class
-class AlgoHybridBest {
- public:
-  static const bool enabled = true;
 };
 
 #endif // ALGOS_HPP_

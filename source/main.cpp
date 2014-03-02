@@ -91,9 +91,9 @@ template <class Type> void run_with_type(
   Runner<In, AlgoFmtFormat> algo_fmt_format(input, output, "fmt::FormatInt");
   Runner<In, AlgoBoostKarma> algo_boost_karma(input, output, "boost::spirit::karma");
   Runner<In, AlgoAlexandrescu> algo_alexandrescu(input, output, "alexandrescu");
-  Runner<In, AlgoBuffer> algo_buffer(input, output, "buffer");
-  Runner<In, AlgoHybrid0> algo_hybrid_0(input, output, "hybrid(0)");
-  Runner<In, AlgoHybrid1> algo_hybrid_1(input, output, "hybrid(1)");
+  Runner<In, AlgoReverse> algo_reverse(input, output, "reverse");
+  Runner<In, AlgoTmpbuf> algo_tmpbuf(input, output, "tmpbuf");
+  Runner<In, AlgoCounting> algo_counting(input, output, "counting");
 
   std::cout << "Run tests ";
 
@@ -101,58 +101,58 @@ template <class Type> void run_with_type(
   algo_fmt_format.run();
   algo_boost_karma.run();
   algo_alexandrescu.run();
-  algo_buffer.run();
-  algo_hybrid_0.run();
-  algo_hybrid_1.run();
+  algo_reverse.run();
+  algo_tmpbuf.run();
+  algo_counting.run();
 
   std::cout << "#2 " << std::flush;
   algo_fmt_format.run();
   algo_boost_karma.run();
   algo_alexandrescu.run();
-  algo_buffer.run();
-  algo_hybrid_1.run();
-  algo_hybrid_0.run();
+  algo_counting.run();
+  algo_tmpbuf.run();
+  algo_reverse.run();
 
   std::cout << "#3 " << std::flush;
   algo_alexandrescu.run();
   algo_fmt_format.run();
+  algo_counting.run();
   algo_boost_karma.run();
-  algo_buffer.run();
-  algo_hybrid_0.run();
-  algo_hybrid_1.run();
+  algo_reverse.run();
+  algo_tmpbuf.run();
 
   std::cout << "#4 " << std::flush;
-  algo_buffer.run();
   algo_fmt_format.run();
   algo_alexandrescu.run();
   algo_boost_karma.run();
-  algo_hybrid_0.run();
-  algo_hybrid_1.run();
+  algo_reverse.run();
+  algo_counting.run();
+  algo_tmpbuf.run();
 
   std::cout << "#5 " << std::flush;
-  algo_hybrid_0.run();
+  algo_counting.run();
+  algo_reverse.run();
   algo_fmt_format.run();
   algo_boost_karma.run();
-  algo_buffer.run();
-  algo_hybrid_1.run();
+  algo_tmpbuf.run();
   algo_alexandrescu.run();
 
   std::cout << "Results: " << std::endl;
   Timer::Duration algo_fmt_format_avg = algo_fmt_format.average();
   Timer::Duration algo_boost_karma_avg = algo_boost_karma.average();
   Timer::Duration algo_alexandrescu_avg = algo_alexandrescu.average();
-  Timer::Duration algo_buffer_avg = algo_buffer.average();
-  Timer::Duration algo_hybrid_0_avg = algo_hybrid_0.average();
-  Timer::Duration algo_hybrid_1_avg = algo_hybrid_1.average();
+  Timer::Duration algo_reverse_avg = algo_reverse.average();
+  Timer::Duration algo_tmpbuf_avg = algo_tmpbuf.average();
+  Timer::Duration algo_counting_avg = algo_counting.average();
 
   Timer::Duration min = std::min(
       {
       algo_fmt_format_avg,
       algo_boost_karma_avg,
       algo_alexandrescu_avg,
-      algo_buffer_avg,
-      algo_hybrid_0_avg,
-      algo_hybrid_1_avg
+      algo_reverse_avg,
+      algo_tmpbuf_avg,
+      algo_counting_avg
       }
   );
 
@@ -160,22 +160,9 @@ template <class Type> void run_with_type(
   algo_fmt_format.output_result(min);
   algo_boost_karma.output_result(min);
   algo_alexandrescu.output_result(min);
-  algo_buffer.output_result(min);
-  algo_hybrid_0.output_result(min);
-  algo_hybrid_1.output_result(min);
-
-  // hybrid best combined results
-  using HybridBest = Runner<In, AlgoHybridBest>;
-  HybridBest::output_result(
-      min,
-      "hybrid(best)",
-      HybridBest::pick_best_durations(
-          algo_hybrid_0.durations(),
-          algo_hybrid_1.durations()
-      ),
-      algo_hybrid_0.timer_iterations(),
-      input
-  );
+  algo_reverse.output_result(min);
+  algo_tmpbuf.output_result(min);
+  algo_counting.output_result(min);
 }
 
 int main() {

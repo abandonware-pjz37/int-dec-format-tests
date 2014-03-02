@@ -20,8 +20,9 @@ add_executable(
     ../third_party/format/format.cc
     algos/cppx.hpp
     algos/alexandrescu.hpp
-    algos/format_buffer.hpp
-    algos/hybrid.hpp
+    algos/tmpbuf.hpp
+    algos/counting.hpp
+    algos/reverse.hpp
     Algos.hpp
     PickFastest.hpp
 )

@@ -1,5 +1,5 @@
-#ifndef ALGOS_FORMAT_BUFFER_HPP_
-#define ALGOS_FORMAT_BUFFER_HPP_
+#ifndef ALGOS_TMPBUF_HPP_
+#define ALGOS_TMPBUF_HPP_
 
 // Copyright (c) 2014, Ruslan Baratov
 // All rights reserved.
@@ -8,11 +8,9 @@
 #include <limits> // std::numeric_limits
 #include <array>
 
-#include "PickFastest.hpp"
-
 // 1) fill temporary buffer "from the end"
 // 2) copy to destination
-namespace format_buffer {
+namespace tmpbuf {
 
 using Iterator = char*;
 
@@ -96,6 +94,6 @@ inline void generate(Iterator& sink_out, Integer input_value) {
   sink_out = sink;
 }
 
-} // namespace format_buffer
+} // namespace tmpbuf
 
-#endif // ALGOS_FORMAT_BUFFER_HPP_
+#endif // ALGOS_TMPBUF_HPP_
