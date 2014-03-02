@@ -7,6 +7,7 @@ project(IntDecFormat)
 option(USE_LIBCXX "Use libcxx library" OFF)
 option(BUILD32 "Build 32 bit test" OFF)
 option(FAST_TEST "Reduce number of iterations" OFF)
+option(LONG_TEST "Increase number of iterations and add 8Mb test" OFF)
 
 if(NOT MSVC)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
