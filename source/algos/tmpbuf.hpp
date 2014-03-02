@@ -86,6 +86,7 @@ inline void generate(Iterator& sink_out, Integer input_value) {
   // std::copy implemented using memcpy call
   // there is no visible befinits on such small memory chunks
   // (20 char maximum) sometimes it's even worse
+  // P.S. works for gcc, msvc still use memcpy
   while (it != buffer_end) {
     *sink = *it;
     ++sink;
