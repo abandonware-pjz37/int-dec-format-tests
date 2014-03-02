@@ -32,7 +32,7 @@ class CountDigits<3> {
     using Type = typename PickFastestMin<T, Rep>::Type;
 
     static_assert(std::is_unsigned<T>::value, "");
-    Type value(input_value);
+    Type value = static_cast<Type>(input_value);
 
     assert(value <= 999ull);
 
@@ -59,7 +59,7 @@ class CountDigits<5> {
     using Type = typename PickFastestMin<T, Rep>::Type;
 
     static_assert(std::is_unsigned<T>::value, "");
-    Type value(input_value);
+    Type value = static_cast<Type>(input_value);
     assert(static_cast<unsigned long long>(value) <= 99999ull);
 
     const Type p03 = 1000;
