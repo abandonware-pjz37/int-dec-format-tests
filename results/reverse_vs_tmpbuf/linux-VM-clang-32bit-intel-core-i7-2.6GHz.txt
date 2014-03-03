@@ -1,0 +1,1072 @@
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:112590729 var:4.08865% ms:112 runs:50 conv_ops:500000000]
+                           (+31%) tmpbuf [avg:147763423 var:8.27523% ms:147 runs:50 conv_ops:500000000]
+Converting 2 int with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:192661773 var:1.2535% ms:192 runs:50 conv_ops:500000000]
+                            (+4%) tmpbuf [avg:202012277 var:3.06664% ms:202 runs:50 conv_ops:500000000]
+Converting 2 long with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:226567242 var:1.04474% ms:226 runs:50 conv_ops:500000000]
+                            (+6%) tmpbuf [avg:241499637 var:1.33526% ms:241 runs:50 conv_ops:500000000]
+Converting 1 long long with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:2008563559 var:0.356081% ms:2008 runs:50 conv_ops:500000000]
+                            (+3%) tmpbuf [avg:2077980344 var:0.512154% ms:2077 runs:50 conv_ops:500000000]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 4 short with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:112394352 var:1.60701% ms:112 runs:50 conv_ops:500000000]
+                           (+31%) tmpbuf [avg:148185962 var:1.36271% ms:148 runs:50 conv_ops:500000000]
+Converting 2 int with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:219627155 var:1.06664% ms:219 runs:50 conv_ops:500000000]
+                            (+8%) tmpbuf [avg:238307690 var:0.872003% ms:238 runs:50 conv_ops:500000000]
+Converting 2 long with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:212633721 var:1.08947% ms:212 runs:50 conv_ops:500000000]
+                           (+11%) tmpbuf [avg:237764597 var:2.69856% ms:237 runs:50 conv_ops:500000000]
+Converting 1 long long with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:2020490704 var:0.643177% ms:2020 runs:50 conv_ops:500000000]
+                            (+3%) tmpbuf [avg:2084545745 var:0.397437% ms:2084 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:46674416 var:2.06737% ms:46 runs:50 conv_ops:500000000]
+                           (+13%) tmpbuf [avg:53043218 var:1.81627% ms:53 runs:50 conv_ops:500000000]
+Converting 2 int with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+6%) reverse [avg:55690108 var:1.79838% ms:55 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:52231017 var:2.00805% ms:52 runs:50 conv_ops:500000000]
+Converting 2 long with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+6%) reverse [avg:59263608 var:1.65099% ms:59 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:55841833 var:2.47047% ms:55 runs:50 conv_ops:500000000]
+Converting 1 long long with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:89522844 var:2.93859% ms:89 runs:50 conv_ops:500000000]
+                           (+16%) tmpbuf [avg:104258506 var:5.98789% ms:104 runs:50 conv_ops:500000000]
+Converting 4 short with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:50229444 var:1.45664% ms:50 runs:50 conv_ops:500000000]
+                            (+7%) tmpbuf [avg:53961806 var:1.87898% ms:53 runs:50 conv_ops:500000000]
+Converting 2 int with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+6%) reverse [avg:59593110 var:2.19098% ms:59 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:55891083 var:1.47333% ms:55 runs:50 conv_ops:500000000]
+Converting 2 long with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+6%) reverse [avg:59841009 var:1.95609% ms:59 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:56044423 var:1.61494% ms:56 runs:50 conv_ops:500000000]
+Converting 1 long long with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:85786185 var:1.37775% ms:85 runs:50 conv_ops:500000000]
+                            (+6%) tmpbuf [avg:91734889 var:1.74784% ms:91 runs:50 conv_ops:500000000]
+Converting 4 short with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:50255135 var:1.68448% ms:50 runs:50 conv_ops:500000000]
+                            (+7%) tmpbuf [avg:53984652 var:1.71599% ms:53 runs:50 conv_ops:500000000]
+Converting 2 int with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+6%) reverse [avg:59907191 var:2.03191% ms:59 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:56066913 var:2.00145% ms:56 runs:50 conv_ops:500000000]
+Converting 2 long with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+6%) reverse [avg:59866133 var:2.22732% ms:59 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:55996879 var:2.27525% ms:55 runs:50 conv_ops:500000000]
+Converting 1 long long with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:85870673 var:1.49705% ms:85 runs:50 conv_ops:500000000]
+                            (+6%) tmpbuf [avg:91461428 var:1.64421% ms:91 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:60698556 var:1.89166% ms:60 runs:50 conv_ops:500000000]
+                           (+38%) tmpbuf [avg:84277434 var:1.55319% ms:84 runs:50 conv_ops:500000000]
+Converting 2 int with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:61984661 var:1.97045% ms:61 runs:50 conv_ops:500000000]
+                           (+26%) tmpbuf [avg:78674307 var:1.80344% ms:78 runs:50 conv_ops:500000000]
+Converting 2 long with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:65089058 var:1.49536% ms:65 runs:50 conv_ops:500000000]
+                           (+29%) tmpbuf [avg:84122793 var:1.7921% ms:84 runs:50 conv_ops:500000000]
+Converting 1 long long with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:108193225 var:1.52579% ms:108 runs:50 conv_ops:500000000]
+                           (+12%) tmpbuf [avg:121347078 var:1.15722% ms:121 runs:50 conv_ops:500000000]
+Converting 4 short with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:56176008 var:1.85625% ms:56 runs:50 conv_ops:500000000]
+                           (+46%) tmpbuf [avg:82416413 var:1.60149% ms:82 runs:50 conv_ops:500000000]
+Converting 2 int with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:62544417 var:7.64713% ms:62 runs:50 conv_ops:500000000]
+                           (+25%) tmpbuf [avg:78350819 var:1.54391% ms:78 runs:50 conv_ops:500000000]
+Converting 2 long with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:61862911 var:1.70421% ms:61 runs:50 conv_ops:500000000]
+                           (+26%) tmpbuf [avg:78530912 var:1.6004% ms:78 runs:50 conv_ops:500000000]
+Converting 1 long long with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:108594371 var:1.52351% ms:108 runs:50 conv_ops:500000000]
+                           (+12%) tmpbuf [avg:121907332 var:1.37282% ms:121 runs:50 conv_ops:500000000]
+Converting 4 short with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:56631491 var:2.98791% ms:56 runs:50 conv_ops:500000000]
+                           (+46%) tmpbuf [avg:82748793 var:3.68462% ms:82 runs:50 conv_ops:500000000]
+Converting 2 int with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:62144148 var:1.61754% ms:62 runs:50 conv_ops:500000000]
+                           (+26%) tmpbuf [avg:78401137 var:1.57712% ms:78 runs:50 conv_ops:500000000]
+Converting 2 long with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:62568238 var:1.85963% ms:62 runs:50 conv_ops:500000000]
+                           (+25%) tmpbuf [avg:78369361 var:1.3808% ms:78 runs:50 conv_ops:500000000]
+Converting 1 long long with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:108295924 var:1.07423% ms:108 runs:50 conv_ops:500000000]
+                           (+12%) tmpbuf [avg:121339689 var:1.13295% ms:121 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:100852694 var:1.38794% ms:100 runs:50 conv_ops:500000000]
+                           (+24%) tmpbuf [avg:125072666 var:1.20703% ms:125 runs:50 conv_ops:500000000]
+Converting 2 int with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:99336052 var:1.20009% ms:99 runs:50 conv_ops:500000000]
+                           (+14%) tmpbuf [avg:113935086 var:1.37962% ms:113 runs:50 conv_ops:500000000]
+Converting 2 long with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:113670674 var:1.39825% ms:113 runs:50 conv_ops:500000000]
+                            (+1%) tmpbuf [avg:115532616 var:1.41114% ms:115 runs:50 conv_ops:500000000]
+Converting 1 long long with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:288756981 var:0.90317% ms:288 runs:50 conv_ops:500000000]
+                            (+6%) tmpbuf [avg:306783421 var:0.764116% ms:306 runs:50 conv_ops:500000000]
+Converting 4 short with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:96689395 var:1.26038% ms:96 runs:50 conv_ops:500000000]
+                           (+28%) tmpbuf [avg:124300663 var:1.64538% ms:124 runs:50 conv_ops:500000000]
+Converting 2 int with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:114190873 var:1.32286% ms:114 runs:50 conv_ops:500000000]
+                            (+1%) tmpbuf [avg:115572110 var:1.25669% ms:115 runs:50 conv_ops:500000000]
+Converting 2 long with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:113872712 var:1.1005% ms:113 runs:50 conv_ops:500000000]
+                            (+1%) tmpbuf [avg:115593256 var:1.4056% ms:115 runs:50 conv_ops:500000000]
+Converting 1 long long with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:282485972 var:0.907411% ms:282 runs:50 conv_ops:500000000]
+                            (+8%) tmpbuf [avg:305966829 var:0.769334% ms:305 runs:50 conv_ops:500000000]
+Converting 4 short with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:96172556 var:1.27088% ms:96 runs:50 conv_ops:500000000]
+                           (+29%) tmpbuf [avg:124178212 var:1.45881% ms:124 runs:50 conv_ops:500000000]
+Converting 2 int with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:100543976 var:1.11262% ms:100 runs:50 conv_ops:500000000]
+                           (+13%) tmpbuf [avg:114209089 var:1.28356% ms:114 runs:50 conv_ops:500000000]
+Converting 2 long with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:113959727 var:1.23098% ms:113 runs:50 conv_ops:500000000]
+                            (+2%) tmpbuf [avg:116482511 var:3.55369% ms:116 runs:50 conv_ops:500000000]
+Converting 1 long long with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:281137027 var:0.850167% ms:281 runs:50 conv_ops:500000000]
+                            (+8%) tmpbuf [avg:304473475 var:0.752168% ms:304 runs:50 conv_ops:500000000]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 1 long long with 10 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:891298618 var:0.654043% ms:891 runs:50 conv_ops:500000000]
+                            (+5%) tmpbuf [avg:941557090 var:0.746565% ms:941 runs:50 conv_ops:500000000]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 1 long long with 10 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:901858989 var:0.461952% ms:901 runs:50 conv_ops:500000000]
+                            (+3%) tmpbuf [avg:934285247 var:0.832922% ms:934 runs:50 conv_ops:500000000]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 1 long long with 10 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:897824154 var:0.568053% ms:897 runs:50 conv_ops:500000000]
+                            (+3%) tmpbuf [avg:931901500 var:0.563455% ms:931 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:136135780 var:1.02027% ms:136 runs:50 conv_ops:499999500]
+                           (+44%) tmpbuf [avg:196169894 var:0.990922% ms:196 runs:50 conv_ops:499999500]
+Converting 25 int with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:240073048 var:0.879087% ms:240 runs:50 conv_ops:500000000]
+                            (+9%) tmpbuf [avg:261893803 var:0.96086% ms:261 runs:50 conv_ops:500000000]
+Converting 25 long with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:295016338 var:1.23628% ms:295 runs:50 conv_ops:500000000]
+                            (+6%) tmpbuf [avg:315214942 var:2.0123% ms:315 runs:50 conv_ops:500000000]
+Converting 14 long long with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:2277868746 var:0.476859% ms:2277 runs:50 conv_ops:499999500]
+                            (+2%) tmpbuf [avg:2333422099 var:0.363527% ms:2333 runs:50 conv_ops:499999500]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 42 short with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:117815746 var:3.49571% ms:117 runs:50 conv_ops:499999500]
+                           (+39%) tmpbuf [avg:164050263 var:0.935941% ms:164 runs:50 conv_ops:499999500]
+Converting 25 int with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:249454267 var:0.918416% ms:249 runs:50 conv_ops:500000000]
+                            (+0%) tmpbuf [avg:250930590 var:0.834079% ms:250 runs:50 conv_ops:500000000]
+Converting 25 long with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:237774463 var:1.27013% ms:237 runs:50 conv_ops:500000000]
+                            (+5%) tmpbuf [avg:250339931 var:1.11447% ms:250 runs:50 conv_ops:500000000]
+Converting 14 long long with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:2225780948 var:0.507081% ms:2225 runs:50 conv_ops:499999500]
+                            (+2%) tmpbuf [avg:2279520232 var:0.529463% ms:2279 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:79099058 var:1.39905% ms:79 runs:50 conv_ops:499999500]
+                           (+11%) tmpbuf [avg:88055227 var:1.66268% ms:88 runs:50 conv_ops:499999500]
+Converting 25 int with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:70661395 var:2.70853% ms:70 runs:50 conv_ops:500000000]
+                            (+6%) tmpbuf [avg:75281182 var:3.01118% ms:75 runs:50 conv_ops:500000000]
+Converting 25 long with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:67886704 var:2.31921% ms:67 runs:50 conv_ops:500000000]
+                            (+9%) tmpbuf [avg:74054492 var:1.65764% ms:74 runs:50 conv_ops:500000000]
+Converting 14 long long with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:93230044 var:2.00038% ms:93 runs:50 conv_ops:499999500]
+                           (+17%) tmpbuf [avg:109120964 var:2.14577% ms:109 runs:50 conv_ops:499999500]
+Converting 42 short with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:45191149 var:1.90673% ms:45 runs:50 conv_ops:499999500]
+                            (+8%) tmpbuf [avg:49052012 var:1.72876% ms:49 runs:50 conv_ops:499999500]
+Converting 25 int with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+8%) reverse [avg:49383293 var:1.93848% ms:49 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:45416664 var:1.62357% ms:45 runs:50 conv_ops:500000000]
+Converting 25 long with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+8%) reverse [avg:49357778 var:2.23237% ms:49 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:45540796 var:1.55752% ms:45 runs:50 conv_ops:500000000]
+Converting 14 long long with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:64844272 var:1.66931% ms:64 runs:50 conv_ops:499999500]
+                            (+5%) tmpbuf [avg:68715697 var:1.49761% ms:68 runs:50 conv_ops:499999500]
+Converting 42 short with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:45326371 var:1.99667% ms:45 runs:50 conv_ops:499999500]
+                            (+7%) tmpbuf [avg:48846355 var:1.7258% ms:48 runs:50 conv_ops:499999500]
+Converting 25 int with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+8%) reverse [avg:49279684 var:1.98827% ms:49 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:45619918 var:2.03414% ms:45 runs:50 conv_ops:500000000]
+Converting 25 long with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+7%) reverse [avg:49332638 var:1.95944% ms:49 runs:50 conv_ops:500000000]
+                              (!) tmpbuf [avg:45754555 var:2.02112% ms:45 runs:50 conv_ops:500000000]
+Converting 14 long long with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:64763714 var:1.90125% ms:64 runs:50 conv_ops:499999500]
+                            (+5%) tmpbuf [avg:68459172 var:1.5608% ms:68 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:90453649 var:1.53899% ms:90 runs:50 conv_ops:499999500]
+                           (+12%) tmpbuf [avg:101453455 var:1.49059% ms:101 runs:50 conv_ops:499999500]
+Converting 25 int with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:71646285 var:2.95776% ms:71 runs:50 conv_ops:500000000]
+                           (+43%) tmpbuf [avg:103005960 var:1.56877% ms:103 runs:50 conv_ops:500000000]
+Converting 25 long with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:67886068 var:3.35999% ms:67 runs:50 conv_ops:500000000]
+                           (+34%) tmpbuf [avg:91308204 var:1.61701% ms:91 runs:50 conv_ops:500000000]
+Converting 14 long long with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:79795079 var:1.31525% ms:79 runs:50 conv_ops:499999500]
+                           (+69%) tmpbuf [avg:135234311 var:1.16595% ms:135 runs:50 conv_ops:499999500]
+Converting 42 short with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:49066626 var:1.97294% ms:49 runs:50 conv_ops:499999500]
+                           (+52%) tmpbuf [avg:74821015 var:1.30751% ms:74 runs:50 conv_ops:499999500]
+Converting 25 int with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:49344601 var:1.73472% ms:49 runs:50 conv_ops:500000000]
+                           (+37%) tmpbuf [avg:67895369 var:1.67986% ms:67 runs:50 conv_ops:500000000]
+Converting 25 long with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:49280519 var:1.49884% ms:49 runs:50 conv_ops:500000000]
+                           (+38%) tmpbuf [avg:68256921 var:2.36623% ms:68 runs:50 conv_ops:500000000]
+Converting 14 long long with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:69230630 var:1.76597% ms:69 runs:50 conv_ops:499999500]
+                           (+37%) tmpbuf [avg:95226362 var:2.34075% ms:95 runs:50 conv_ops:499999500]
+Converting 42 short with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:58641157 var:1.8686% ms:58 runs:50 conv_ops:499999500]
+                           (+36%) tmpbuf [avg:80208420 var:1.75524% ms:80 runs:50 conv_ops:499999500]
+Converting 25 int with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:56088970 var:2.00821% ms:56 runs:50 conv_ops:500000000]
+                           (+24%) tmpbuf [avg:69681962 var:2.05813% ms:69 runs:50 conv_ops:500000000]
+Converting 25 long with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:51401592 var:7.19547% ms:51 runs:50 conv_ops:500000000]
+                           (+29%) tmpbuf [avg:66674814 var:1.17885% ms:66 runs:50 conv_ops:500000000]
+Converting 14 long long with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:68446146 var:1.79725% ms:68 runs:50 conv_ops:499999500]
+                           (+36%) tmpbuf [avg:93479449 var:1.32313% ms:93 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:130010292 var:2.34789% ms:130 runs:50 conv_ops:499999500]
+                           (+29%) tmpbuf [avg:168284626 var:1.19487% ms:168 runs:50 conv_ops:499999500]
+Converting 25 int with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:86089272 var:1.66887% ms:86 runs:50 conv_ops:500000000]
+                           (+36%) tmpbuf [avg:117386696 var:1.3204% ms:117 runs:50 conv_ops:500000000]
+Converting 25 long with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:98226453 var:1.43213% ms:98 runs:50 conv_ops:500000000]
+                           (+40%) tmpbuf [avg:138045589 var:1.66002% ms:138 runs:50 conv_ops:500000000]
+Converting 14 long long with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:282821292 var:0.868497% ms:282 runs:50 conv_ops:499999500]
+                            (+9%) tmpbuf [avg:309388383 var:0.835376% ms:309 runs:50 conv_ops:499999500]
+Converting 42 short with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:83462960 var:1.96863% ms:83 runs:50 conv_ops:499999500]
+                           (+39%) tmpbuf [avg:116383807 var:1.12328% ms:116 runs:50 conv_ops:499999500]
+Converting 25 int with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:87684349 var:1.64123% ms:87 runs:50 conv_ops:500000000]
+                           (+15%) tmpbuf [avg:101501320 var:1.26621% ms:101 runs:50 conv_ops:500000000]
+Converting 25 long with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:87884058 var:1.68982% ms:87 runs:50 conv_ops:500000000]
+                           (+15%) tmpbuf [avg:101823872 var:1.41011% ms:101 runs:50 conv_ops:500000000]
+Converting 14 long long with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:242779786 var:1.00059% ms:242 runs:50 conv_ops:499999500]
+                           (+11%) tmpbuf [avg:271510094 var:1.11088% ms:271 runs:50 conv_ops:499999500]
+Converting 42 short with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:94952861 var:1.26174% ms:94 runs:50 conv_ops:499999500]
+                           (+31%) tmpbuf [avg:124820457 var:1.42576% ms:124 runs:50 conv_ops:499999500]
+Converting 25 int with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:86078925 var:1.42999% ms:86 runs:50 conv_ops:500000000]
+                           (+20%) tmpbuf [avg:103553129 var:1.41201% ms:103 runs:50 conv_ops:500000000]
+Converting 25 long with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:87849640 var:1.53022% ms:87 runs:50 conv_ops:500000000]
+                           (+16%) tmpbuf [avg:101926097 var:1.30197% ms:101 runs:50 conv_ops:500000000]
+Converting 14 long long with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:228815542 var:0.952091% ms:228 runs:50 conv_ops:499999500]
+                           (+13%) tmpbuf [avg:260259549 var:1.07428% ms:260 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 14 long long with 10 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:945893711 var:0.680856% ms:945 runs:50 conv_ops:499999500]
+                            (+5%) tmpbuf [avg:1001998280 var:0.817202% ms:1001 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 14 long long with 10 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:850065034 var:0.471136% ms:850 runs:50 conv_ops:499999500]
+                            (+4%) tmpbuf [avg:891884721 var:0.592536% ms:891 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 14 long long with 10 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:848811736 var:0.5793% ms:848 runs:50 conv_ops:499999500]
+                            (+4%) tmpbuf [avg:888340268 var:0.560317% ms:888 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:170548224 var:1.53207% ms:170 runs:50 conv_ops:499999500]
+                           (+18%) tmpbuf [avg:202318316 var:2.06848% ms:202 runs:50 conv_ops:499999500]
+Converting 341 int with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:290922056 var:1.00131% ms:290 runs:50 conv_ops:499991250]
+                            (+4%) tmpbuf [avg:305328254 var:0.918497% ms:305 runs:50 conv_ops:499991250]
+Converting 341 long with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:306877876 var:0.816227% ms:306 runs:50 conv_ops:499991250]
+                            (+3%) tmpbuf [avg:317180768 var:0.996226% ms:317 runs:50 conv_ops:499991250]
+Converting 195 long long with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:2276344455 var:0.693246% ms:2276 runs:50 conv_ops:499999500]
+                            (+3%) tmpbuf [avg:2347156778 var:0.413742% ms:2347 runs:50 conv_ops:499999500]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 585 short with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:134378596 var:1.16541% ms:134 runs:50 conv_ops:499999500]
+                           (+22%) tmpbuf [avg:164759802 var:1.03813% ms:164 runs:50 conv_ops:499999500]
+Converting 341 int with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+0%) reverse [avg:268138640 var:1.04626% ms:268 runs:50 conv_ops:499991250]
+                              (!) tmpbuf [avg:266498851 var:1.16772% ms:266 runs:50 conv_ops:499991250]
+Converting 341 long with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:267318014 var:0.841879% ms:267 runs:50 conv_ops:499991250]
+                            (+0%) tmpbuf [avg:268982555 var:0.818594% ms:268 runs:50 conv_ops:499991250]
+Converting 195 long long with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:2215701290 var:0.542082% ms:2215 runs:50 conv_ops:499999500]
+                            (+3%) tmpbuf [avg:2300704439 var:0.335312% ms:2300 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:77916067 var:1.41292% ms:77 runs:50 conv_ops:499999500]
+                           (+18%) tmpbuf [avg:92638095 var:1.35139% ms:92 runs:50 conv_ops:499999500]
+Converting 341 int with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:80490619 var:1.36459% ms:80 runs:50 conv_ops:499991250]
+                            (+1%) tmpbuf [avg:82038015 var:1.50785% ms:82 runs:50 conv_ops:499991250]
+Converting 341 long with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:84062009 var:1.44069% ms:84 runs:50 conv_ops:499991250]
+                            (+4%) tmpbuf [avg:87513075 var:1.7762% ms:87 runs:50 conv_ops:499991250]
+Converting 195 long long with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:101118209 var:1.39599% ms:101 runs:50 conv_ops:499999500]
+                           (+10%) tmpbuf [avg:111618746 var:1.49852% ms:111 runs:50 conv_ops:499999500]
+Converting 585 short with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:26602491 var:3.05635% ms:26 runs:50 conv_ops:499999500]
+                           (+82%) tmpbuf [avg:48637001 var:1.62574% ms:48 runs:50 conv_ops:499999500]
+Converting 341 int with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:26755336 var:2.70871% ms:26 runs:50 conv_ops:499991250]
+                           (+13%) tmpbuf [avg:30265876 var:2.64078% ms:30 runs:50 conv_ops:499991250]
+Converting 341 long with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:26570701 var:2.18808% ms:26 runs:50 conv_ops:499991250]
+                           (+13%) tmpbuf [avg:30290383 var:2.50372% ms:30 runs:50 conv_ops:499991250]
+Converting 195 long long with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:63664475 var:2.19643% ms:63 runs:50 conv_ops:499999500]
+                            (+5%) tmpbuf [avg:67119021 var:1.47497% ms:67 runs:50 conv_ops:499999500]
+Converting 585 short with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:26352014 var:2.36042% ms:26 runs:50 conv_ops:499999500]
+                           (+83%) tmpbuf [avg:48445751 var:2.19279% ms:48 runs:50 conv_ops:499999500]
+Converting 341 int with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:26620148 var:2.44051% ms:26 runs:50 conv_ops:499991250]
+                           (+13%) tmpbuf [avg:30190133 var:2.24055% ms:30 runs:50 conv_ops:499991250]
+Converting 341 long with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:26919668 var:3.47064% ms:26 runs:50 conv_ops:499991250]
+                           (+13%) tmpbuf [avg:30477655 var:2.219% ms:30 runs:50 conv_ops:499991250]
+Converting 195 long long with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:63676492 var:1.63624% ms:63 runs:50 conv_ops:499999500]
+                            (+5%) tmpbuf [avg:67352321 var:1.76747% ms:67 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:113222480 var:1.38162% ms:113 runs:50 conv_ops:499999500]
+                           (+15%) tmpbuf [avg:130372776 var:1.31701% ms:130 runs:50 conv_ops:499999500]
+Converting 341 int with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:112337119 var:1.37651% ms:112 runs:50 conv_ops:499991250]
+                            (+4%) tmpbuf [avg:117125146 var:1.48355% ms:117 runs:50 conv_ops:499991250]
+Converting 341 long with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:117791665 var:1.42687% ms:117 runs:50 conv_ops:499991250]
+                            (+1%) tmpbuf [avg:120062928 var:1.36468% ms:120 runs:50 conv_ops:499991250]
+Converting 195 long long with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:125895440 var:1.34339% ms:125 runs:50 conv_ops:499999500]
+                           (+18%) tmpbuf [avg:149446732 var:1.02837% ms:149 runs:50 conv_ops:499999500]
+Converting 585 short with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:48457849 var:1.76443% ms:48 runs:50 conv_ops:499999500]
+                           (+55%) tmpbuf [avg:75240621 var:1.72657% ms:75 runs:50 conv_ops:499999500]
+Converting 341 int with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:48851287 var:1.93943% ms:48 runs:50 conv_ops:499991250]
+                           (+38%) tmpbuf [avg:67607255 var:1.88565% ms:67 runs:50 conv_ops:499991250]
+Converting 341 long with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:48946480 var:2.11875% ms:48 runs:50 conv_ops:499991250]
+                           (+37%) tmpbuf [avg:67487965 var:1.56736% ms:67 runs:50 conv_ops:499991250]
+Converting 195 long long with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:67752939 var:4.95081% ms:67 runs:50 conv_ops:499999500]
+                           (+38%) tmpbuf [avg:93848234 var:1.79765% ms:93 runs:50 conv_ops:499999500]
+Converting 585 short with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:63417545 var:1.40433% ms:63 runs:50 conv_ops:499999500]
+                           (+28%) tmpbuf [avg:81702621 var:1.90023% ms:81 runs:50 conv_ops:499999500]
+Converting 341 int with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:60891948 var:1.88579% ms:60 runs:50 conv_ops:499991250]
+                           (+19%) tmpbuf [avg:72894454 var:2.10239% ms:72 runs:50 conv_ops:499991250]
+Converting 341 long with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:67315733 var:1.70342% ms:67 runs:50 conv_ops:499991250]
+                           (+11%) tmpbuf [avg:74891511 var:2.17013% ms:74 runs:50 conv_ops:499991250]
+Converting 195 long long with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:80088988 var:1.55199% ms:80 runs:50 conv_ops:499999500]
+                           (+28%) tmpbuf [avg:103132771 var:1.51148% ms:103 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:149838411 var:1.28524% ms:149 runs:50 conv_ops:499999500]
+                           (+13%) tmpbuf [avg:170752963 var:1.29446% ms:170 runs:50 conv_ops:499999500]
+Converting 341 int with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:145615030 var:1.45116% ms:145 runs:50 conv_ops:499991250]
+                            (+4%) tmpbuf [avg:152447763 var:1.10117% ms:152 runs:50 conv_ops:499991250]
+Converting 341 long with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:142377848 var:2.05293% ms:142 runs:50 conv_ops:499991250]
+                            (+3%) tmpbuf [avg:147416576 var:1.32907% ms:147 runs:50 conv_ops:499991250]
+Converting 195 long long with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:304657784 var:0.916838% ms:304 runs:50 conv_ops:499999500]
+                            (+8%) tmpbuf [avg:331686034 var:0.912823% ms:331 runs:50 conv_ops:499999500]
+Converting 585 short with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:82206999 var:1.48437% ms:82 runs:50 conv_ops:499999500]
+                           (+40%) tmpbuf [avg:115676524 var:1.3342% ms:115 runs:50 conv_ops:499999500]
+Converting 341 int with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:85548057 var:1.66289% ms:85 runs:50 conv_ops:499991250]
+                           (+18%) tmpbuf [avg:100958171 var:1.38834% ms:100 runs:50 conv_ops:499991250]
+Converting 341 long with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:85786647 var:1.99699% ms:85 runs:50 conv_ops:499991250]
+                           (+17%) tmpbuf [avg:100757480 var:1.4995% ms:100 runs:50 conv_ops:499991250]
+Converting 195 long long with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:240147132 var:0.931233% ms:240 runs:50 conv_ops:499999500]
+                           (+12%) tmpbuf [avg:269040872 var:1.06592% ms:269 runs:50 conv_ops:499999500]
+Converting 585 short with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:98416933 var:1.48702% ms:98 runs:50 conv_ops:499999500]
+                           (+26%) tmpbuf [avg:124754774 var:1.09175% ms:124 runs:50 conv_ops:499999500]
+Converting 341 int with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:102118207 var:1.31145% ms:102 runs:50 conv_ops:499991250]
+                            (+8%) tmpbuf [avg:110573294 var:1.5197% ms:110 runs:50 conv_ops:499991250]
+Converting 341 long with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:106546086 var:1.4331% ms:106 runs:50 conv_ops:499991250]
+                            (+4%) tmpbuf [avg:111357063 var:1.46352% ms:111 runs:50 conv_ops:499991250]
+Converting 195 long long with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:253628971 var:0.853082% ms:253 runs:50 conv_ops:499999500]
+                           (+11%) tmpbuf [avg:283704189 var:0.782276% ms:283 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 195 long long with 10 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:922649567 var:0.625054% ms:922 runs:50 conv_ops:499999500]
+                            (+4%) tmpbuf [avg:960056010 var:0.62335% ms:960 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 195 long long with 10 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:876901525 var:0.62196% ms:876 runs:50 conv_ops:499999500]
+                            (+4%) tmpbuf [avg:916111869 var:0.636736% ms:916 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 195 long long with 10 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:883187717 var:1.09397% ms:883 runs:50 conv_ops:499999500]
+                            (+4%) tmpbuf [avg:919588922 var:0.600444% ms:919 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:168251308 var:1.28852% ms:168 runs:50 conv_ops:479348800]
+                           (+17%) tmpbuf [avg:197919803 var:2.09927% ms:197 runs:50 conv_ops:479348800]
+Converting 699050 int with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:292843433 var:0.433232% ms:292 runs:50 conv_ops:489335000]
+                            (+3%) tmpbuf [avg:302235983 var:0.192244% ms:302 runs:50 conv_ops:489335000]
+Converting 699050 long with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:292739924 var:0.259744% ms:292 runs:50 conv_ops:489335000]
+                            (+3%) tmpbuf [avg:303131847 var:0.323113% ms:303 runs:50 conv_ops:489335000]
+Converting 399457 long long with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:2238834338 var:0.344777% ms:2238 runs:50 conv_ops:499321250]
+                            (+3%) tmpbuf [avg:2306570584 var:0.4991% ms:2306 runs:50 conv_ops:499321250]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 1198372 short with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:130018896 var:1.92053% ms:130 runs:50 conv_ops:479348800]
+                           (+22%) tmpbuf [avg:159012782 var:6.47782% ms:159 runs:50 conv_ops:479348800]
+Converting 699050 int with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:259711345 var:1.30056% ms:259 runs:50 conv_ops:489335000]
+                            (+0%) tmpbuf [avg:260052065 var:1.46144% ms:260 runs:50 conv_ops:489335000]
+Converting 699050 long with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                           (+0%) reverse [avg:259796214 var:1.31585% ms:259 runs:50 conv_ops:489335000]
+                              (!) tmpbuf [avg:259240521 var:0.561946% ms:259 runs:50 conv_ops:489335000]
+Converting 399457 long long with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:2196913726 var:1.04741% ms:2196 runs:50 conv_ops:499321250]
+                            (+3%) tmpbuf [avg:2277702843 var:1.03728% ms:2277 runs:50 conv_ops:499321250]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:73422937 var:0.621966% ms:73 runs:50 conv_ops:479348800]
+                           (+15%) tmpbuf [avg:84797553 var:0.557813% ms:84 runs:50 conv_ops:479348800]
+Converting 699050 int with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:80543583 var:1.42986% ms:80 runs:50 conv_ops:489335000]
+                            (+2%) tmpbuf [avg:82783021 var:1.42973% ms:82 runs:50 conv_ops:489335000]
+Converting 699050 long with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:79648307 var:0.595366% ms:79 runs:50 conv_ops:489335000]
+                            (+3%) tmpbuf [avg:82191136 var:0.891091% ms:82 runs:50 conv_ops:489335000]
+Converting 399457 long long with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:101822478 var:1.06471% ms:101 runs:50 conv_ops:499321250]
+                           (+11%) tmpbuf [avg:113268450 var:0.995983% ms:113 runs:50 conv_ops:499321250]
+Converting 1198372 short with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:25086145 var:1.65511% ms:25 runs:50 conv_ops:479348800]
+                           (+80%) tmpbuf [avg:45312953 var:1.54955% ms:45 runs:50 conv_ops:479348800]
+Converting 699050 int with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:26838599 var:1.8059% ms:26 runs:50 conv_ops:489335000]
+                           (+14%) tmpbuf [avg:30748410 var:2.33645% ms:30 runs:50 conv_ops:489335000]
+Converting 699050 long with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:28438712 var:7.09112% ms:28 runs:50 conv_ops:489335000]
+                           (+12%) tmpbuf [avg:32008025 var:7.26007% ms:32 runs:50 conv_ops:489335000]
+Converting 399457 long long with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:63907594 var:2.4347% ms:63 runs:50 conv_ops:499321250]
+                            (+5%) tmpbuf [avg:67694120 var:1.81686% ms:67 runs:50 conv_ops:499321250]
+Converting 1198372 short with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:25344866 var:2.18463% ms:25 runs:50 conv_ops:479348800]
+                           (+78%) tmpbuf [avg:45121373 var:0.834747% ms:45 runs:50 conv_ops:479348800]
+Converting 699050 int with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:26652641 var:1.19336% ms:26 runs:50 conv_ops:489335000]
+                           (+12%) tmpbuf [avg:30099084 var:1.09895% ms:30 runs:50 conv_ops:489335000]
+Converting 699050 long with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:27102518 var:4.56837% ms:27 runs:50 conv_ops:489335000]
+                           (+11%) tmpbuf [avg:30295920 var:1.86809% ms:30 runs:50 conv_ops:489335000]
+Converting 399457 long long with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:63445882 var:1.78376% ms:63 runs:50 conv_ops:499321250]
+                            (+5%) tmpbuf [avg:67246075 var:1.24062% ms:67 runs:50 conv_ops:499321250]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:104267821 var:1.01284% ms:104 runs:50 conv_ops:479348800]
+                           (+17%) tmpbuf [avg:122119174 var:2.10379% ms:122 runs:50 conv_ops:479348800]
+Converting 699050 int with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:114619119 var:2.93867% ms:114 runs:50 conv_ops:489335000]
+                            (+3%) tmpbuf [avg:118833118 var:2.9219% ms:118 runs:50 conv_ops:489335000]
+Converting 699050 long with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:115504462 var:3.25022% ms:115 runs:50 conv_ops:489335000]
+                            (+2%) tmpbuf [avg:118100298 var:2.05852% ms:118 runs:50 conv_ops:489335000]
+Converting 399457 long long with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:129407406 var:3.81161% ms:129 runs:50 conv_ops:499321250]
+                           (+17%) tmpbuf [avg:152521041 var:3.1584% ms:152 runs:50 conv_ops:499321250]
+Converting 1198372 short with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:47653285 var:2.4491% ms:47 runs:50 conv_ops:479348800]
+                           (+51%) tmpbuf [avg:72331935 var:1.58191% ms:72 runs:50 conv_ops:479348800]
+Converting 699050 int with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:48363927 var:2.20397% ms:48 runs:50 conv_ops:489335000]
+                           (+38%) tmpbuf [avg:66907745 var:2.09912% ms:66 runs:50 conv_ops:489335000]
+Converting 699050 long with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:48380591 var:2.15503% ms:48 runs:50 conv_ops:489335000]
+                           (+39%) tmpbuf [avg:67270983 var:2.79333% ms:67 runs:50 conv_ops:489335000]
+Converting 399457 long long with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:69150319 var:2.35352% ms:69 runs:50 conv_ops:499321250]
+                           (+36%) tmpbuf [avg:94682052 var:1.85592% ms:94 runs:50 conv_ops:499321250]
+Converting 1198372 short with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:63438785 var:2.08394% ms:63 runs:50 conv_ops:479348800]
+                           (+25%) tmpbuf [avg:79713471 var:1.73703% ms:79 runs:50 conv_ops:479348800]
+Converting 699050 int with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:67207279 var:2.0468% ms:67 runs:50 conv_ops:489335000]
+                           (+12%) tmpbuf [avg:75480049 var:2.25965% ms:75 runs:50 conv_ops:489335000]
+Converting 699050 long with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:66698569 var:2.22548% ms:66 runs:50 conv_ops:489335000]
+                           (+12%) tmpbuf [avg:75117146 var:2.06806% ms:75 runs:50 conv_ops:489335000]
+Converting 399457 long long with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:78688890 var:2.0419% ms:78 runs:50 conv_ops:499321250]
+                           (+29%) tmpbuf [avg:101725557 var:1.49826% ms:101 runs:50 conv_ops:499321250]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:146607742 var:1.8734% ms:146 runs:50 conv_ops:479348800]
+                           (+12%) tmpbuf [avg:164445908 var:1.34489% ms:164 runs:50 conv_ops:479348800]
+Converting 699050 int with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:151957073 var:1.55546% ms:151 runs:50 conv_ops:489335000]
+                            (+1%) tmpbuf [avg:153824032 var:1.13904% ms:153 runs:50 conv_ops:489335000]
+Converting 699050 long with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:152611088 var:1.41463% ms:152 runs:50 conv_ops:489335000]
+                            (+1%) tmpbuf [avg:154830914 var:1.39513% ms:154 runs:50 conv_ops:489335000]
+Converting 399457 long long with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:309325640 var:1.71336% ms:309 runs:50 conv_ops:499321250]
+                            (+8%) tmpbuf [avg:334241927 var:1.06879% ms:334 runs:50 conv_ops:499321250]
+Converting 1198372 short with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:80459820 var:1.956% ms:80 runs:50 conv_ops:479348800]
+                           (+38%) tmpbuf [avg:111612693 var:1.51453% ms:111 runs:50 conv_ops:479348800]
+Converting 699050 int with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:84787575 var:1.69575% ms:84 runs:50 conv_ops:489335000]
+                           (+17%) tmpbuf [avg:99807399 var:1.63074% ms:99 runs:50 conv_ops:489335000]
+Converting 699050 long with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:85565108 var:2.05312% ms:85 runs:50 conv_ops:489335000]
+                           (+16%) tmpbuf [avg:100021391 var:2.13078% ms:100 runs:50 conv_ops:489335000]
+Converting 399457 long long with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:241582135 var:1.08388% ms:241 runs:50 conv_ops:499321250]
+                           (+12%) tmpbuf [avg:271414060 var:1.16486% ms:271 runs:50 conv_ops:499321250]
+Converting 1198372 short with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:99181320 var:1.65064% ms:99 runs:50 conv_ops:479348800]
+                           (+23%) tmpbuf [avg:122463476 var:1.41641% ms:122 runs:50 conv_ops:479348800]
+Converting 699050 int with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:103844080 var:1.56979% ms:103 runs:50 conv_ops:489335000]
+                            (+6%) tmpbuf [avg:110774541 var:1.74703% ms:110 runs:50 conv_ops:489335000]
+Converting 699050 long with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:104196291 var:1.83641% ms:104 runs:50 conv_ops:489335000]
+                            (+6%) tmpbuf [avg:110861216 var:1.45644% ms:110 runs:50 conv_ops:489335000]
+Converting 399457 long long with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:255965993 var:1.08051% ms:255 runs:50 conv_ops:499321250]
+                           (+12%) tmpbuf [avg:287722044 var:1.03458% ms:287 runs:50 conv_ops:499321250]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 399457 long long with 10 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:936315806 var:0.713953% ms:936 runs:50 conv_ops:499321250]
+                            (+4%) tmpbuf [avg:976545679 var:0.531367% ms:976 runs:50 conv_ops:499321250]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 399457 long long with 10 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:871959892 var:0.680894% ms:871 runs:50 conv_ops:499321250]
+                            (+4%) tmpbuf [avg:910565148 var:0.784265% ms:910 runs:50 conv_ops:499321250]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: too much digits(10) for current type(long)
+Converting 399457 long long with 10 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 4 8 4
+Run tests #1 #2 #3 #4 #5 Results:
+                             (!) reverse [avg:894191167 var:1.09333% ms:894 runs:50 conv_ops:499321250]
+                            (+4%) tmpbuf [avg:935884896 var:0.706551% ms:935 runs:50 conv_ops:499321250]
