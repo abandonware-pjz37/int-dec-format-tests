@@ -11,7 +11,7 @@ namespace alexandrescu {
 using Iterator = char*;
 
 template <class Integer>
-inline int count_digits(Integer value) {
+inline size_t count_digits(Integer value) {
   static_assert(std::is_unsigned<Integer>::value, "");
 
   const uint64_t p01 = 10ull;
@@ -82,48 +82,50 @@ inline const char* cache_digits() {
 }
 
 template <class Integer>
-inline void generate(Iterator& sink, Integer input_value) {
-  const bool is_negative = (input_value < 0);
-  if (is_negative) {
+inline void generate(Iterator& sink_out, Integer input_value) {
+  using Unsigned = typename std::make_unsigned<Integer>::type;
+  Unsigned value(input_value);
+
+  Iterator sink = sink_out;
+
+  if (input_value < 0) {
     *sink = '-';
     ++sink;
+    value = 0 - value;
   }
 
-  using Unsigned = typename std::make_unsigned<Integer>::type;
-  Unsigned value = is_negative ? -input_value : input_value;
-
-  int digits = count_digits(value);
+  size_t digits = count_digits(value);
   sink += digits;
+  sink_out = sink;
 
-  Iterator it = sink;
   const char* cache = cache_digits();
 
   assert(value >= 0);
   while (value >= 100) {
-    int index = (value % 100) * 2; // 0..198
+    size_t index = (value % 100) * 2; // 0..198
     value /= 100;
 
-    --it;
-    *it = cache[index + 1];
+    --sink;
+    *sink = cache[index + 1];
 
-    --it;
-    *it = cache[index];
+    --sink;
+    *sink = cache[index];
   }
 
   if (value < 10) {
     // 0..9
-    --it;
-    *it = static_cast<char>('0' + value);
+    --sink;
+    *sink = static_cast<char>('0' + value);
   }
   else {
     // 10..99
-    int index = static_cast<int>(value * 2); // 20..198
+    size_t index = static_cast<size_t>(value * 2); // 20..198
 
-    --it;
-    *it = cache[index + 1];
+    --sink;
+    *sink = cache[index + 1];
 
-    --it;
-    *it = cache[index];
+    --sink;
+    *sink = cache[index];
   }
 }
 

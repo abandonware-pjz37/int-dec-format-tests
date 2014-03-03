@@ -1,143 +1,138 @@
 #ifndef COUNT_DIGITS_HPP_
 #define COUNT_DIGITS_HPP_
 
+#include <cstddef> // size_t
+
 // Copyright (c) 2014, Ruslan Baratov
 // All rights reserved.
 
-#include "PickFastest.hpp"
+template <int power>
+class Power10;
 
-template <class T1, class T2>
-class PickFastestMin {
+template <>
+class Power10<0> {
  public:
-  static const bool first_bigger = sizeof(T1) > sizeof(T2);
-  using MinType = typename std::conditional<first_bigger, T2, T1>::type;
-  using Type = typename PickFastest<MinType>::Type;
+  static const unsigned long long value = 1;
 };
 
-// Count decimal digits of unsigned type
-// Optimized for big numbers (for small numbers used non-counting algorithm)
-// Tuned for well-known standard types: uint8_t, uint16_t, uint32_t, uint64_t
-template <int max_digits>
+template <int power>
+class Power10 {
+ public:
+  static_assert(power > 0, "");
+
+  static const unsigned long long value = 10ull * Power10<power - 1>::value;
+};
+
+// Count decimal digits of value without using division operation.
+// Bisection algorithm used (maximum number of comparisons is 5 for uint64)
+
+// max - maximum boundary value that need to be checked, i.e.
+//   * value definitely lower than 10^(max+1)
+//   * value can be bigger than 10^max (in this case number of digits `max + 1`)
+// min - minimum boundary value that need to be checked, i.e.
+//   * value definitely bigger than 10^(min-1)
+//   * value can be lower than 10^min (in this case number of digits `min`)
+
+// Numbers layout:
+//  10^(min-1) ?? 10^min ?? 10^(min+1) ?? ... ?? 10^max ?? 10^(max+1) XX
+//              ^                                        ^
+//              |                                        |
+//             `min` digits                             `max + 1` digits
+
+template <int checks_number> // = max - min + 1
 class CountDigits;
 
-// That's where uint8_t goes
+// Only one boundary need to be checked.
+// Possible results: `min` or `min + 1`
+// Numbers layout:
+//   ?? 10^min = 10^max ??
+//   ^                  ^
+//   |                  |
+//   min                min + 1
 template <>
-class CountDigits<3> {
+class CountDigits<1> {
  public:
-  // All numbers can be represented by this type
-  using Rep = uint16_t;
-
-  template <class T>
-  static size_t count(T input_value) {
-    using Type = typename PickFastestMin<T, Rep>::Type;
-
-    static_assert(std::is_unsigned<T>::value, "");
-    Type value = static_cast<Type>(input_value);
-
-    assert(value <= 999ull);
-
-    const Type p01 = 10;
-    const Type p02 = 100;
-
-    if (value >= p02) {
-      return 3;
-    }
-
-    return 1 + (value >= p01);
+  template <int min, int max, class T>
+  static size_t count(T value) {
+    static_assert(max == min, "");
+    static_assert(min > 0, "");
+    return min + (value >= Power10<min>::value);
   }
 };
 
-// That's where uint16_t goes
+// Two boundaries need to be checked.
+// Possible results: `min`, `max`, `max + 1`
+// Numbers layout:
+//  ?? 10^min ?? 10^max ??
+//   ^                   ^
+//   |                   |
+//   min                 max + 1
 template <>
-class CountDigits<5> {
+class CountDigits<2> {
  public:
-  // All numbers can be represented by this type
-  using Rep = uint32_t;
-
-  template <class T>
-  static size_t count(T input_value) {
-    using Type = typename PickFastestMin<T, Rep>::Type;
-
-    static_assert(std::is_unsigned<T>::value, "");
-    Type value = static_cast<Type>(input_value);
-    assert(static_cast<unsigned long long>(value) <= 99999ull);
-
-    const Type p03 = 1000;
-    const Type p04 = 10000;
-
-    if (value >= p03) {
-      return 4 + (value >= p04);
+  template <int min, int max, class T>
+  static size_t count(T value) {
+    static_assert(min > 0, "");
+    static_assert(max == min + 1, "");
+    if (value >= Power10<max>::value) {
+      // xx 10^min xx 10^max !!
+      return max + 1;
     }
-
-    return CountDigits<3>::count(value);
+    // ?? 10^min ?? 10^max xx
+    return CountDigits<1>::template count<min, min>(value);
   }
 };
 
-// That's where uint32_t goes
-template <>
-class CountDigits<10> {
- public:
-  // All numbers can be represented by this type
-  using Rep = uint64_t;
-
-  template <class T>
-  static size_t count(T input_value) {
-    using Type = typename PickFastestMin<T, Rep>::Type;
-
-    static_assert(std::is_unsigned<T>::value, "");
-    Type value(input_value);
-    assert(static_cast<unsigned long long>(value) <= 9999999999ull);
-
-    const Type p05 = 100000;
-    const Type p06 = 1000000;
-    const Type p07 = 10000000;
-    const Type p08 = 100000000;
-    const Type p09 = 1000000000;
-
-    if (value >= p05) {
-      if (value >= p07) {
-        if (value >= p09) {
-          return 10;
-        }
-        return 8 + (value >= p08);
-      }
-      return 6 + (value >= p06);
-    }
-
-    return CountDigits<5>::count(value);
-  }
-};
-
-// unlimited variant for uint64_t and bigger
-template <int max_decimal_digits>
+// For more than 2 boundaries - check median.
+// Numbers layout:
+//  ?? 10^min ?? 10^(min+1) ?? ... ?? 10^max ??
+//   ^                                        ^
+//   |                                        |
+//   min                                      max + 1
+template <int checks_number>
 class CountDigits {
  public:
-  static_assert(max_decimal_digits > 10, "");
-
-  template <class T>
+  template <int min, int max, class T>
   static size_t count(T value) {
-    static_assert(std::is_unsigned<T>::value, "");
-    static_assert(sizeof(T) >= sizeof(unsigned long long), "");
-    const T p10 = 10000000000ull;
+    static const int median = Median<min, max>::value;
 
-    if (value >= p10) {
-      static const int next = max_decimal_digits - 10;
-      value = value / p10;
-
-      if (next <= 3) {
-        return 10 + CountDigits<3>::count(value);
-      }
-      if (next <= 5) {
-        return 10 + CountDigits<5>::count(value);
-      }
-      if (next <= 10) {
-        return 10 + CountDigits<10>::count(value);
-      }
-      return 10 + CountDigits<next>::count(value);
+    if (value >= Power10<median>::value) {
+      static const int n_max = max;
+      static const int n_min = median + 1;
+      static const int n_checks_number = n_max - n_min + 1;
+      // xx 10^min xx ... xx 10^median ?? 10^n_min ?? ... ?? 10^max ??
+      return CountDigits<n_checks_number>::template count<n_min, n_max>(value);
     }
 
-    return CountDigits<10>::count(value);
+    static const int n_max = median - 1;
+    static const int n_min = min;
+    static const int n_checks_number = n_max - n_min + 1;
+    // ?? 10^min ?? ... ?? 10^n_max ?? 10^median xx ... xx 10^max xx
+    return CountDigits<n_checks_number>::template count<n_min, n_max>(value);
   }
+
+ private:
+  template <int min, int max>
+  struct Median {
+   private:
+    static_assert(min <= max, "");
+    static_assert(0 < min, "");
+
+    static const int diff = max - min;
+    static const bool even = ((diff % 2) == 0);
+
+    static_assert(diff >= 2, "");
+
+    // 0, 1, 2, ... M
+    // Prefer upper bound:
+    //   M = 2N   -> N
+    //   M = 2N+1 -> N + 1
+    static const int half = diff / 2;
+    static const int median = even ? half : half + 1;
+
+   public:
+    static const int value = min + median;
+  };
 };
 
 #endif // COUNT_DIGITS_HPP_

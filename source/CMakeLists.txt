@@ -23,7 +23,6 @@ add_executable(
     algos/counting.hpp
     algos/reverse.hpp
     Algos.hpp
-    PickFastest.hpp
 )
 
 add_test(int_dec_format_test int_dec_format_test)

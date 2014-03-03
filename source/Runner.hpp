@@ -182,6 +182,10 @@ class Runner {
     test_algo_iteration(std::numeric_limits<value_t>::min() + 1);
     test_algo_iteration(std::numeric_limits<value_t>::max() / 2);
     test_algo_iteration(std::numeric_limits<value_t>::min() / 2);
+
+    test_algo_iteration(static_cast<value_t>(5248118ll));
+    test_algo_iteration(static_cast<value_t>(-5248118ll));
+    test_algo_iteration(static_cast<value_t>(-848ll));
   }
 
   void test_algo_iteration(value_t input_value) {

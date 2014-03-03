@@ -5,6 +5,8 @@
 // All rights reserved.
 
 #include <cassert> // assert
+#include <type_traits> // std::make_unsigned
+#include <limits> // std::numeric_limits
 
 #include "CountDigits.hpp"
 
@@ -44,11 +46,15 @@ inline void generate(Iterator& sink_out, Integer input_value) {
     value = 0 - value;
   }
 
-  static const int max_digits =
-      std::numeric_limits<Unsigned>::digits10 +
-      1; // rounding error
+  static const int min = 1;
+  static const int max = std::numeric_limits<Unsigned>::digits10;
+  static const int checks_number = max - min + 1;
 
-  size_t digits = CountDigits<max_digits>::count(value);
+  // Note that `std::numeric_limits<...>::digits10` has a rounding error,
+  // the real number of digits can be `digits10 + 1`.
+  // Counting algorithm checks if `value >= 10^max_digits`, i.e.
+  // can return `max_digits + 1`.
+  size_t digits = CountDigits<checks_number>::template count<min, max>(value);
 
   sink += digits;
   sink_out = sink;
