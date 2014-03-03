@@ -183,24 +183,26 @@ class Runner {
     test_algo_iteration(std::numeric_limits<value_t>::max() / 2);
     test_algo_iteration(std::numeric_limits<value_t>::min() / 2);
 
-    test_algo_iteration(static_cast<value_t>(5248118ll));
-    test_algo_iteration(static_cast<value_t>(-5248118ll));
-    test_algo_iteration(static_cast<value_t>(-848ll));
+    test_algo_iteration(5248118ll);
+    test_algo_iteration(-5248118ll);
+    test_algo_iteration(-848ll);
   }
 
-  void test_algo_iteration(value_t input_value) {
+  template <class T>
+  void test_algo_iteration(T input_value) {
     typename Input::Vector vector;
-    vector.push_back(input_value);
+    value_t value(static_cast<value_t>(input_value));
+    vector.push_back(value);
 
     std::ostringstream result;
-    result << input_value;
+    result << value;
 
     std::vector<char> buffer;
     buffer.resize(result.str().size() * 2);
     Algo::run(buffer.data(), vector);
 
     if (std::string(buffer.data()) != result.str()) {
-      std::cerr << "Convert " << input_value;
+      std::cerr << "Convert " << value;
       std::cerr << " failed for " << name_ << std::endl;
       throw std::runtime_error("Incorrect algorithm");
     }
