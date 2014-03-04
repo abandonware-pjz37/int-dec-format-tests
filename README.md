@@ -28,7 +28,7 @@ Convert vector of integer values to `char` buffer.
 * [reverse](https://github.com/ruslo/int-dec-format-tests/blob/master/source/algos/reverse.hpp)
 (no digits counting, reverse chars in-situ)
 * [counting](https://github.com/ruslo/int-dec-format-tests/blob/master/source/algos/counting.hpp)
-(division free counting algorithm)
+(division free (counting)[https://github.com/ruslo/int-dec-format-tests/blob/master/source/CountDigits.hpp] algorithm)
 
 ### Usage
 * install boost
