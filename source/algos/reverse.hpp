@@ -27,7 +27,7 @@ inline const char* cache_digits() {
 using Iterator = char*;
 
 // 1) fill buffer
-// 2) revert in-situ
+// 2) reverse in-situ
 template <class Integer>
 inline void generate(Iterator& sink_out, Integer input_value) {
   using Unsigned = typename std::make_unsigned<Integer>::type;
