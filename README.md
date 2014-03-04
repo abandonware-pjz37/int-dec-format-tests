@@ -28,7 +28,7 @@ Convert vector of integer values to `char` buffer.
 * [reverse](https://github.com/ruslo/int-dec-format-tests/blob/master/source/algos/reverse.hpp)
 (no digits counting, reverse chars in-situ)
 * [counting](https://github.com/ruslo/int-dec-format-tests/blob/master/source/algos/counting.hpp)
-(division free (counting)[https://github.com/ruslo/int-dec-format-tests/blob/master/source/CountDigits.hpp] algorithm)
+(division free [counting](https://github.com/ruslo/int-dec-format-tests/blob/master/source/CountDigits.hpp) algorithm)
 
 ### Usage
 * install boost
@@ -55,6 +55,8 @@ Convert vector of integer values to `char` buffer.
 ### Options
 * Number of iterations can be reduced using `-DFAST_TEST=ON` option
 * If `-DLONG_TEST` option is `ON`, number of iterations increased and additional `8Mb` test added
+* Set `Algo*::enabled` to `false` to exclude
+[algorithm](https://github.com/ruslo/int-dec-format-tests/blob/master/source/Algos.hpp) from test
 
 ### Results
 * https://github.com/ruslo/int-dec-format-tests/tree/master/results
