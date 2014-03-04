@@ -23,12 +23,12 @@ Convert vector of integer values to `char` buffer.
 * [fmt::FormatInt](https://github.com/vitaut/format)
 * [boost::spirit::karma](http://www.boost.org/doc/libs/1_55_0/libs/spirit/doc/html/spirit/karma.html)
 * [alexandrescu](https://www.facebook.com/notes/facebook-engineering/three-optimization-tips-for-c/10151361643253920)
-* [buffer](https://github.com/ruslo/int-dec-format-tests/blob/master/source/algos/format_buffer.hpp)
+* [tmpbuf](https://github.com/ruslo/int-dec-format-tests/blob/master/source/algos/tmpbuf.hpp)
 (no digits counting, no reverse)
-* [hybrid](https://github.com/ruslo/int-dec-format-tests/blob/master/source/algos/hybrid.hpp)
- * `hybrid::generate<true>` focus on big numbers, it's better to count digits first, then fill buffer "from the end"
- * `hybrid::generate<false>` focus on small numbers, don't count digits, fill buffer "from the beginning"
-then reverse chars
+* [reverse](https://github.com/ruslo/int-dec-format-tests/blob/master/source/algos/reverse.hpp)
+(no digits counting, reverse chars in-situ)
+* [counting](https://github.com/ruslo/int-dec-format-tests/blob/master/source/algos/counting.hpp)
+(division free counting algorithm)
 
 ### Usage
 * install boost
