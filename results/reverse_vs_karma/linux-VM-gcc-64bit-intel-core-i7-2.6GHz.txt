@@ -1,0 +1,1120 @@
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+10%) boost::spirit::karma [avg:119005734 var:2.89257% ms:119 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:107611504 var:5.2206% ms:107 runs:50 conv_ops:500000000]
+Converting 2 int with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+161%) boost::spirit::karma [avg:532671080 var:16.8892% ms:532 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:203329111 var:4.26773% ms:203 runs:50 conv_ops:500000000]
+Converting 1 long with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+133%) boost::spirit::karma [avg:1464725867 var:6.78619% ms:1464 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:626775152 var:1.56475% ms:626 runs:50 conv_ops:500000000]
+Converting 1 long long with ANY base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+139%) boost::spirit::karma [avg:1633592167 var:6.15761% ms:1633 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:682515979 var:1.16933% ms:682 runs:50 conv_ops:500000000]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 4 short with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+8%) boost::spirit::karma [avg:116354058 var:3.51951% ms:116 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:107243399 var:3.7884% ms:107 runs:50 conv_ops:500000000]
+Converting 2 int with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+156%) boost::spirit::karma [avg:538408631 var:16.2605% ms:538 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:209704094 var:3.76235% ms:209 runs:50 conv_ops:500000000]
+Converting 1 long with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+130%) boost::spirit::karma [avg:1539334571 var:7.26062% ms:1539 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:666421668 var:1.58024% ms:666 runs:50 conv_ops:500000000]
+Converting 1 long long with ANY base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+139%) boost::spirit::karma [avg:1599645322 var:6.03855% ms:1599 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:667526717 var:1.9965% ms:667 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+0%) boost::spirit::karma [avg:39376628 var:6.44251% ms:39 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:39371352 var:2.68214% ms:39 runs:50 conv_ops:500000000]
+Converting 2 int with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+44%) boost::spirit::karma [avg:63815577 var:7.37166% ms:63 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:44125304 var:4.52318% ms:44 runs:50 conv_ops:500000000]
+Converting 1 long with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+44%) boost::spirit::karma [avg:87259901 var:3.62851% ms:87 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:60547399 var:6.15803% ms:60 runs:50 conv_ops:500000000]
+Converting 1 long long with 1 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+36%) boost::spirit::karma [avg:102040680 var:7.50794% ms:102 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:74717050 var:4.45978% ms:74 runs:50 conv_ops:500000000]
+Converting 4 short with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+6%) boost::spirit::karma [avg:38780010 var:14.1864% ms:38 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:36243898 var:4.5571% ms:36 runs:50 conv_ops:500000000]
+Converting 2 int with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+41%) boost::spirit::karma [avg:63392660 var:5.3602% ms:63 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:44760765 var:9.54725% ms:44 runs:50 conv_ops:500000000]
+Converting 1 long with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+45%) boost::spirit::karma [avg:87543127 var:3.32644% ms:87 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:60362737 var:6.11536% ms:60 runs:50 conv_ops:500000000]
+Converting 1 long long with 1 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+43%) boost::spirit::karma [avg:87720229 var:5.4007% ms:87 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:61037915 var:5.21157% ms:61 runs:50 conv_ops:500000000]
+Converting 4 short with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+3%) boost::spirit::karma [avg:37596307 var:15.8766% ms:37 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:36282018 var:4.29501% ms:36 runs:50 conv_ops:500000000]
+Converting 2 int with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+43%) boost::spirit::karma [avg:62623032 var:4.64038% ms:62 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:43735787 var:4.05668% ms:43 runs:50 conv_ops:500000000]
+Converting 1 long with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+45%) boost::spirit::karma [avg:85927866 var:1.77749% ms:85 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:59110137 var:4.88879% ms:59 runs:50 conv_ops:500000000]
+Converting 1 long long with 1 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+42%) boost::spirit::karma [avg:85502624 var:0.758726% ms:85 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:59899394 var:2.99495% ms:59 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+3%) boost::spirit::karma [avg:54589636 var:0.899262% ms:54 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:52887378 var:7.61233% ms:52 runs:50 conv_ops:500000000]
+Converting 2 int with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+65%) boost::spirit::karma [avg:95826103 var:6.90757% ms:95 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:57818205 var:0.405734% ms:57 runs:50 conv_ops:500000000]
+Converting 1 long with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+88%) boost::spirit::karma [avg:161930929 var:9.84757% ms:161 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:86040176 var:6.81027% ms:86 runs:50 conv_ops:500000000]
+Converting 1 long long with 2 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+73%) boost::spirit::karma [avg:121672261 var:0.748107% ms:121 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:70111985 var:2.56766% ms:70 runs:50 conv_ops:500000000]
+Converting 4 short with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+                (!) boost::spirit::karma [avg:50125452 var:1.27328% ms:50 runs:50 conv_ops:500000000]
+                           (+1%) reverse [avg:50730621 var:7.09068% ms:50 runs:50 conv_ops:500000000]
+Converting 2 int with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+65%) boost::spirit::karma [avg:92732691 var:5.84171% ms:92 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:56165092 var:0.942758% ms:56 runs:50 conv_ops:500000000]
+Converting 1 long with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+70%) boost::spirit::karma [avg:121918954 var:1.06928% ms:121 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:71681134 var:5.97728% ms:71 runs:50 conv_ops:500000000]
+Converting 1 long long with 2 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+73%) boost::spirit::karma [avg:121739208 var:0.869217% ms:121 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:70117427 var:2.55701% ms:70 runs:50 conv_ops:500000000]
+Converting 4 short with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+0%) boost::spirit::karma [avg:46112821 var:3.04688% ms:46 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:45946371 var:6.28612% ms:45 runs:50 conv_ops:500000000]
+Converting 2 int with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+65%) boost::spirit::karma [avg:93008983 var:5.92362% ms:93 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:56044678 var:0.550326% ms:56 runs:50 conv_ops:500000000]
+Converting 1 long with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+69%) boost::spirit::karma [avg:121889028 var:1.20823% ms:121 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:71841136 var:5.9716% ms:71 runs:50 conv_ops:500000000]
+Converting 1 long long with 2 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+72%) boost::spirit::karma [avg:121633535 var:0.717096% ms:121 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:70402719 var:2.84231% ms:70 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 4 short with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+5%) boost::spirit::karma [avg:95994247 var:1.88468% ms:95 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:90956749 var:1.01711% ms:90 runs:50 conv_ops:500000000]
+Converting 2 int with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+95%) boost::spirit::karma [avg:198715901 var:10.7432% ms:198 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:101819236 var:3.61688% ms:101 runs:50 conv_ops:500000000]
+Converting 1 long with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+108%) boost::spirit::karma [avg:271891182 var:2.38146% ms:271 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:130716849 var:2.11476% ms:130 runs:50 conv_ops:500000000]
+Converting 1 long long with 4 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+109%) boost::spirit::karma [avg:270298944 var:1.27224% ms:270 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:129117737 var:0.564427% ms:129 runs:50 conv_ops:500000000]
+Converting 4 short with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+6%) boost::spirit::karma [avg:96415471 var:2.96616% ms:96 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:90544766 var:1.62044% ms:90 runs:50 conv_ops:500000000]
+Converting 2 int with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+91%) boost::spirit::karma [avg:180548881 var:7.82731% ms:180 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:94143450 var:3.22024% ms:94 runs:50 conv_ops:500000000]
+Converting 1 long with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+116%) boost::spirit::karma [avg:258857840 var:1.36431% ms:258 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:119579514 var:2.59378% ms:119 runs:50 conv_ops:500000000]
+Converting 1 long long with 4 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+115%) boost::spirit::karma [avg:258685297 var:1.2413% ms:258 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:119883326 var:2.69752% ms:119 runs:50 conv_ops:500000000]
+Converting 4 short with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+6%) boost::spirit::karma [avg:89374836 var:2.08614% ms:89 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:83739439 var:1.80683% ms:83 runs:50 conv_ops:500000000]
+Converting 2 int with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+91%) boost::spirit::karma [avg:180359095 var:7.71495% ms:180 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:94050202 var:3.1839% ms:94 runs:50 conv_ops:500000000]
+Converting 1 long with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+116%) boost::spirit::karma [avg:258895965 var:1.47321% ms:258 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:119457570 var:2.38472% ms:119 runs:50 conv_ops:500000000]
+Converting 1 long long with 4 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+92%) boost::spirit::karma [avg:180541613 var:1.38296% ms:180 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:93965738 var:0.690461% ms:93 runs:50 conv_ops:500000000]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 1 long with 10 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+137%) boost::spirit::karma [avg:790006961 var:7.06767% ms:790 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:333051636 var:1.46012% ms:333 runs:50 conv_ops:500000000]
+Converting 1 long long with 10 base-10 digits to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+125%) boost::spirit::karma [avg:724102170 var:2.17212% ms:724 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:320542006 var:0.422588% ms:320 runs:50 conv_ops:500000000]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 1 long with 10 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+137%) boost::spirit::karma [avg:790717120 var:7.10335% ms:790 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:332434652 var:1.21197% ms:332 runs:50 conv_ops:500000000]
+Converting 1 long long with 10 base-10 digits (no sign) (same size) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+149%) boost::spirit::karma [avg:829680673 var:3.94938% ms:829 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:332681404 var:1.39619% ms:332 runs:50 conv_ops:500000000]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 1 long with 10 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+137%) boost::spirit::karma [avg:792785324 var:7.10392% ms:792 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:333780979 var:1.60964% ms:333 runs:50 conv_ops:500000000]
+Converting 1 long long with 10 base-10 digits (no sign) to buffer 30 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+146%) boost::spirit::karma [avg:823531845 var:3.81688% ms:823 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:334187260 var:1.56187% ms:334 runs:50 conv_ops:500000000]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+                (!) boost::spirit::karma [avg:105982604 var:1.32374% ms:105 runs:50 conv_ops:499999500]
+                          (+12%) reverse [avg:118922790 var:17.9353% ms:118 runs:50 conv_ops:499999500]
+Converting 25 int with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+153%) boost::spirit::karma [avg:557026500 var:19.8772% ms:557 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:219899265 var:4.12532% ms:219 runs:50 conv_ops:500000000]
+Converting 14 long with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+135%) boost::spirit::karma [avg:1789655951 var:16.2885% ms:1789 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:758768871 var:8.87702% ms:758 runs:50 conv_ops:499999500]
+Converting 14 long long with ANY base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+139%) boost::spirit::karma [avg:1637956559 var:7.96867% ms:1637 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:684642111 var:6.35122% ms:684 runs:50 conv_ops:499999500]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 42 short with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+                (!) boost::spirit::karma [avg:123417489 var:9.20539% ms:123 runs:50 conv_ops:499999500]
+                           (+5%) reverse [avg:130127213 var:10.1086% ms:130 runs:50 conv_ops:499999500]
+Converting 25 int with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+132%) boost::spirit::karma [avg:536859634 var:18.2871% ms:536 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:231330252 var:2.66018% ms:231 runs:50 conv_ops:500000000]
+Converting 14 long with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+153%) boost::spirit::karma [avg:1690165914 var:18.4184% ms:1690 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:666560200 var:2.21937% ms:666 runs:50 conv_ops:499999500]
+Converting 14 long long with ANY base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+157%) boost::spirit::karma [avg:1610694771 var:8.28312% ms:1610 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:626541150 var:1.02283% ms:626 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+11%) boost::spirit::karma [avg:59003078 var:17.624% ms:59 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:53017518 var:4.62555% ms:53 runs:50 conv_ops:499999500]
+Converting 25 int with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+69%) boost::spirit::karma [avg:67392137 var:11.245% ms:67 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:39715202 var:4.23229% ms:39 runs:50 conv_ops:500000000]
+Converting 14 long with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+79%) boost::spirit::karma [avg:55673758 var:2.39162% ms:55 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:30978123 var:8.25995% ms:30 runs:50 conv_ops:499999500]
+Converting 14 long long with 1 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+93%) boost::spirit::karma [avg:60762178 var:7.30975% ms:60 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:31356247 var:9.3849% ms:31 runs:50 conv_ops:499999500]
+Converting 42 short with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+12%) boost::spirit::karma [avg:32877327 var:17.8181% ms:32 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:29129562 var:5.5321% ms:29 runs:50 conv_ops:499999500]
+Converting 25 int with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+52%) boost::spirit::karma [avg:44313493 var:3.25743% ms:44 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:29065141 var:7.66775% ms:29 runs:50 conv_ops:500000000]
+Converting 14 long with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+71%) boost::spirit::karma [avg:51507493 var:2.23711% ms:51 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:29948946 var:7.37553% ms:29 runs:50 conv_ops:499999500]
+Converting 14 long long with 1 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+74%) boost::spirit::karma [avg:52481451 var:4.21594% ms:52 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:30005707 var:6.11298% ms:30 runs:50 conv_ops:499999500]
+Converting 42 short with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+12%) boost::spirit::karma [avg:32801839 var:17.0001% ms:32 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:29165335 var:7.36869% ms:29 runs:50 conv_ops:499999500]
+Converting 25 int with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+52%) boost::spirit::karma [avg:44355291 var:2.50835% ms:44 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:29061826 var:6.76134% ms:29 runs:50 conv_ops:500000000]
+Converting 14 long with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+70%) boost::spirit::karma [avg:51601599 var:4.24116% ms:51 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:30311651 var:7.14682% ms:30 runs:50 conv_ops:499999500]
+Converting 14 long long with 1 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+74%) boost::spirit::karma [avg:52231413 var:3.43049% ms:52 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:29910975 var:5.86089% ms:29 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+6%) boost::spirit::karma [avg:64607706 var:12.2153% ms:64 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:60465665 var:7.3299% ms:60 runs:50 conv_ops:499999500]
+Converting 25 int with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+22%) boost::spirit::karma [avg:79972187 var:8.68188% ms:79 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:65368839 var:6.46602% ms:65 runs:50 conv_ops:500000000]
+Converting 14 long with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+93%) boost::spirit::karma [avg:88581497 var:5.54533% ms:88 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:45782564 var:13.0953% ms:45 runs:50 conv_ops:499999500]
+Converting 14 long long with 2 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+59%) boost::spirit::karma [avg:96622328 var:18.8785% ms:96 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:60391577 var:4.50006% ms:60 runs:50 conv_ops:499999500]
+Converting 42 short with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+0%) boost::spirit::karma [avg:44849330 var:3.67906% ms:44 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:44735181 var:8.78154% ms:44 runs:50 conv_ops:499999500]
+Converting 25 int with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+73%) boost::spirit::karma [avg:73433892 var:7.14735% ms:73 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:42339441 var:7.16582% ms:42 runs:50 conv_ops:500000000]
+Converting 14 long with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+95%) boost::spirit::karma [avg:87548966 var:2.97518% ms:87 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:44754694 var:12.8323% ms:44 runs:50 conv_ops:499999500]
+Converting 14 long long with 2 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+103%) boost::spirit::karma [avg:87021111 var:1.90089% ms:87 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:42849028 var:4.59213% ms:42 runs:50 conv_ops:499999500]
+Converting 42 short with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+5%) boost::spirit::karma [avg:58951339 var:5.22144% ms:58 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:55805550 var:4.71464% ms:55 runs:50 conv_ops:499999500]
+Converting 25 int with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+76%) boost::spirit::karma [avg:73826353 var:7.43592% ms:73 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:41740652 var:6.30611% ms:41 runs:50 conv_ops:500000000]
+Converting 14 long with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+66%) boost::spirit::karma [avg:82175234 var:3.65836% ms:82 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:49275610 var:9.39812% ms:49 runs:50 conv_ops:499999500]
+Converting 14 long long with 2 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+113%) boost::spirit::karma [avg:82122587 var:6.73459% ms:82 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:38485297 var:1.71492% ms:38 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 42 short with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+                (!) boost::spirit::karma [avg:112618266 var:8.22661% ms:112 runs:50 conv_ops:499999500]
+                          (+10%) reverse [avg:124048834 var:2.80713% ms:124 runs:50 conv_ops:499999500]
+Converting 25 int with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+59%) boost::spirit::karma [avg:163267399 var:8.83235% ms:163 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:102255480 var:3.18779% ms:102 runs:50 conv_ops:500000000]
+Converting 14 long with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+135%) boost::spirit::karma [avg:205891299 var:1.5418% ms:205 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:87532603 var:4.5503% ms:87 runs:50 conv_ops:499999500]
+Converting 14 long long with 4 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+134%) boost::spirit::karma [avg:208917914 var:1.94105% ms:208 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:89268926 var:2.5983% ms:89 runs:50 conv_ops:499999500]
+Converting 42 short with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+7%) boost::spirit::karma [avg:88437792 var:3.21467% ms:88 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:81971386 var:2.09486% ms:81 runs:50 conv_ops:499999500]
+Converting 25 int with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+106%) boost::spirit::karma [avg:161079336 var:8.569% ms:161 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:78095853 var:4.61817% ms:78 runs:50 conv_ops:500000000]
+Converting 14 long with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+153%) boost::spirit::karma [avg:205451562 var:2.87588% ms:205 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:81041567 var:2.42584% ms:81 runs:50 conv_ops:499999500]
+Converting 14 long long with 4 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+153%) boost::spirit::karma [avg:204214720 var:3.25967% ms:204 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:80688606 var:2.54805% ms:80 runs:50 conv_ops:499999500]
+Converting 42 short with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+3%) boost::spirit::karma [avg:93174187 var:6.08075% ms:93 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:89780209 var:5.44995% ms:89 runs:50 conv_ops:499999500]
+Converting 25 int with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+109%) boost::spirit::karma [avg:160179347 var:7.56455% ms:160 runs:50 conv_ops:500000000]
+                             (!) reverse [avg:76603383 var:2.36545% ms:76 runs:50 conv_ops:500000000]
+Converting 14 long with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+154%) boost::spirit::karma [avg:208265226 var:9.21241% ms:208 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:81696143 var:5.03358% ms:81 runs:50 conv_ops:499999500]
+Converting 14 long long with 4 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+158%) boost::spirit::karma [avg:200043526 var:2.84506% ms:200 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:77484513 var:2.47925% ms:77 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 14 long with 10 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+137%) boost::spirit::karma [avg:738460015 var:9.27708% ms:738 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:311283969 var:2.08546% ms:311 runs:50 conv_ops:499999500]
+Converting 14 long long with 10 base-10 digits to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+139%) boost::spirit::karma [avg:757151081 var:5.0492% ms:757 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:316747451 var:1.32565% ms:316 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 14 long with 10 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+141%) boost::spirit::karma [avg:708547524 var:7.20966% ms:708 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:293863286 var:2.55183% ms:293 runs:50 conv_ops:499999500]
+Converting 14 long long with 10 base-10 digits (no sign) (same size) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+145%) boost::spirit::karma [avg:713639235 var:2.55608% ms:713 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:290582984 var:1.42154% ms:290 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 14 long with 10 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+129%) boost::spirit::karma [avg:740918995 var:9.99497% ms:740 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:322745301 var:1.61789% ms:322 runs:50 conv_ops:499999500]
+Converting 14 long long with 10 base-10 digits (no sign) to buffer 300 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+141%) boost::spirit::karma [avg:709258507 var:3.67174% ms:709 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:294236097 var:2.17504% ms:294 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+                (!) boost::spirit::karma [avg:166752024 var:3.54309% ms:166 runs:50 conv_ops:499999500]
+                           (+0%) reverse [avg:167774503 var:6.28527% ms:167 runs:50 conv_ops:499999500]
+Converting 341 int with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+119%) boost::spirit::karma [avg:593548744 var:15.742% ms:593 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:270073279 var:1.9978% ms:270 runs:50 conv_ops:499991250]
+Converting 195 long with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+131%) boost::spirit::karma [avg:1568795222 var:5.15335% ms:1568 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:677629664 var:1.45338% ms:677 runs:50 conv_ops:499999500]
+Converting 195 long long with ANY base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+133%) boost::spirit::karma [avg:1582485537 var:3.72429% ms:1582 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:679004931 var:1.51082% ms:679 runs:50 conv_ops:499999500]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 585 short with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+4%) boost::spirit::karma [avg:138922142 var:2.50576% ms:138 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:132460449 var:7.67864% ms:132 runs:50 conv_ops:499999500]
+Converting 341 int with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+137%) boost::spirit::karma [avg:549532397 var:15.2709% ms:549 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:230903961 var:2.86812% ms:230 runs:50 conv_ops:499991250]
+Converting 195 long with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+143%) boost::spirit::karma [avg:1521121921 var:5.10404% ms:1521 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:625114377 var:0.897631% ms:625 runs:50 conv_ops:499999500]
+Converting 195 long long with ANY base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+148%) boost::spirit::karma [avg:1557472648 var:5.15962% ms:1557 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:626791654 var:1.16772% ms:626 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+11%) boost::spirit::karma [avg:70463695 var:3.21439% ms:70 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:63169210 var:2.96848% ms:63 runs:50 conv_ops:499999500]
+Converting 341 int with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+28%) boost::spirit::karma [avg:82084634 var:3.83924% ms:82 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:63893128 var:1.94905% ms:63 runs:50 conv_ops:499991250]
+Converting 195 long with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+34%) boost::spirit::karma [avg:87524656 var:2.61411% ms:87 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:64912382 var:3.35054% ms:64 runs:50 conv_ops:499999500]
+Converting 195 long long with 1 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+48%) boost::spirit::karma [avg:86475535 var:2.55513% ms:86 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:58260161 var:1.68699% ms:58 runs:50 conv_ops:499999500]
+Converting 585 short with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+21%) boost::spirit::karma [avg:26820420 var:4.21995% ms:26 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:22066755 var:1.89852% ms:22 runs:50 conv_ops:499999500]
+Converting 341 int with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+100%) boost::spirit::karma [avg:44281384 var:3.55461% ms:44 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:22121471 var:0.882251% ms:22 runs:50 conv_ops:499991250]
+Converting 195 long with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+122%) boost::spirit::karma [avg:50316099 var:3.89067% ms:50 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:22614710 var:3.94343% ms:22 runs:50 conv_ops:499999500]
+Converting 195 long long with 1 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+121%) boost::spirit::karma [avg:50062884 var:1.88207% ms:50 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:22570044 var:2.42873% ms:22 runs:50 conv_ops:499999500]
+Converting 585 short with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+26%) boost::spirit::karma [avg:27789348 var:9.73898% ms:27 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:21958506 var:1.57258% ms:21 runs:50 conv_ops:499999500]
+Converting 341 int with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+98%) boost::spirit::karma [avg:44295559 var:3.28408% ms:44 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:22291978 var:2.62517% ms:22 runs:50 conv_ops:499991250]
+Converting 195 long with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+126%) boost::spirit::karma [avg:51455280 var:8.31346% ms:51 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:22739105 var:3.05807% ms:22 runs:50 conv_ops:499999500]
+Converting 195 long long with 1 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+119%) boost::spirit::karma [avg:50627610 var:4.16026% ms:50 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:23076612 var:7.57452% ms:23 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+4%) boost::spirit::karma [avg:91907219 var:6.42595% ms:91 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:88164450 var:4.51165% ms:88 runs:50 conv_ops:499999500]
+Converting 341 int with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+29%) boost::spirit::karma [avg:111203525 var:4.36923% ms:111 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:85924187 var:2.37654% ms:85 runs:50 conv_ops:499991250]
+Converting 195 long with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+37%) boost::spirit::karma [avg:116300172 var:1.67366% ms:116 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:84626894 var:6.72231% ms:84 runs:50 conv_ops:499999500]
+Converting 195 long long with 2 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+38%) boost::spirit::karma [avg:120150715 var:2.21268% ms:120 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:86518479 var:3.09988% ms:86 runs:50 conv_ops:499999500]
+Converting 585 short with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+0%) boost::spirit::karma [avg:44046742 var:3.59246% ms:44 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:44010948 var:8.51684% ms:44 runs:50 conv_ops:499999500]
+Converting 341 int with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+79%) boost::spirit::karma [avg:72323490 var:6.58357% ms:72 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:40263504 var:1.59041% ms:40 runs:50 conv_ops:499991250]
+Converting 195 long with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+101%) boost::spirit::karma [avg:86039373 var:2.05458% ms:86 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:42764697 var:18.8437% ms:42 runs:50 conv_ops:499999500]
+Converting 195 long long with 2 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+116%) boost::spirit::karma [avg:86206404 var:2.01997% ms:86 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:39861779 var:7.23631% ms:39 runs:50 conv_ops:499999500]
+Converting 585 short with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+5%) boost::spirit::karma [avg:53018508 var:5.11433% ms:53 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:50473245 var:7.06169% ms:50 runs:50 conv_ops:499999500]
+Converting 341 int with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+58%) boost::spirit::karma [avg:84813619 var:7.474% ms:84 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:53636121 var:7.28915% ms:53 runs:50 conv_ops:499991250]
+Converting 195 long with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+84%) boost::spirit::karma [avg:102119637 var:2.81249% ms:102 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:55294624 var:15.8826% ms:55 runs:50 conv_ops:499999500]
+Converting 195 long long with 2 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+99%) boost::spirit::karma [avg:98723958 var:2.25741% ms:98 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:49590524 var:5.50371% ms:49 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 585 short with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+2%) boost::spirit::karma [avg:129476993 var:1.69459% ms:129 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:126487255 var:2.45389% ms:126 runs:50 conv_ops:499999500]
+Converting 341 int with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+52%) boost::spirit::karma [avg:193765159 var:7.07699% ms:193 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:127442661 var:3.08019% ms:127 runs:50 conv_ops:499991250]
+Converting 195 long with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+82%) boost::spirit::karma [avg:233427819 var:0.8919% ms:233 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:127797866 var:2.89156% ms:127 runs:50 conv_ops:499999500]
+Converting 195 long long with 4 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+90%) boost::spirit::karma [avg:242404116 var:3.30471% ms:242 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:127373076 var:3.75709% ms:127 runs:50 conv_ops:499999500]
+Converting 585 short with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+6%) boost::spirit::karma [avg:91511223 var:5.24833% ms:91 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:85548237 var:7.38102% ms:85 runs:50 conv_ops:499999500]
+Converting 341 int with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+100%) boost::spirit::karma [avg:152642447 var:6.68741% ms:152 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:76074657 var:3.98031% ms:76 runs:50 conv_ops:499991250]
+Converting 195 long with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+160%) boost::spirit::karma [avg:203737580 var:2.17992% ms:203 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:78269075 var:5.73678% ms:78 runs:50 conv_ops:499999500]
+Converting 195 long long with 4 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+163%) boost::spirit::karma [avg:203897680 var:3.0036% ms:203 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:77368430 var:4.33597% ms:77 runs:50 conv_ops:499999500]
+Converting 585 short with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+7%) boost::spirit::karma [avg:97693173 var:1.73134% ms:97 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:90705831 var:1.89093% ms:90 runs:50 conv_ops:499999500]
+Converting 341 int with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+87%) boost::spirit::karma [avg:161313426 var:6.74507% ms:161 runs:50 conv_ops:499991250]
+                             (!) reverse [avg:85818434 var:2.39548% ms:85 runs:50 conv_ops:499991250]
+Converting 195 long with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+133%) boost::spirit::karma [avg:214664155 var:1.58973% ms:214 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:91753201 var:2.28928% ms:91 runs:50 conv_ops:499999500]
+Converting 195 long long with 4 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+139%) boost::spirit::karma [avg:212322612 var:4.03753% ms:212 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:88680710 var:5.46712% ms:88 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 195 long with 10 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+125%) boost::spirit::karma [avg:760389708 var:5.42011% ms:760 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:337301467 var:1.24247% ms:337 runs:50 conv_ops:499999500]
+Converting 195 long long with 10 base-10 digits to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+135%) boost::spirit::karma [avg:770787449 var:3.83079% ms:770 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:327929485 var:1.47234% ms:327 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 195 long with 10 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+137%) boost::spirit::karma [avg:685507724 var:4.17775% ms:685 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:288435308 var:0.984185% ms:288 runs:50 conv_ops:499999500]
+Converting 195 long long with 10 base-10 digits (no sign) (same size) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+142%) boost::spirit::karma [avg:706559820 var:3.04572% ms:706 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:291433440 var:2.23526% ms:291 runs:50 conv_ops:499999500]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 195 long with 10 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+129%) boost::spirit::karma [avg:701546500 var:3.68156% ms:701 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:306067194 var:1.39483% ms:306 runs:50 conv_ops:499999500]
+Converting 195 long long with 10 base-10 digits (no sign) to buffer 4096 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+136%) boost::spirit::karma [avg:706385978 var:2.83106% ms:706 runs:50 conv_ops:499999500]
+                             (!) reverse [avg:299187522 var:1.43536% ms:299 runs:50 conv_ops:499999500]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+2%) boost::spirit::karma [avg:171619946 var:4.09429% ms:171 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:166935486 var:5.94404% ms:166 runs:50 conv_ops:479348800]
+Converting 699050 int with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+117%) boost::spirit::karma [avg:586398419 var:15.2409% ms:586 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:269022359 var:2.95784% ms:269 runs:50 conv_ops:489335000]
+Converting 399457 long with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+128%) boost::spirit::karma [avg:1571584940 var:4.71859% ms:1571 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:686745412 var:0.996093% ms:686 runs:50 conv_ops:499321250]
+Converting 399457 long long with ANY base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+132%) boost::spirit::karma [avg:1600230686 var:4.15087% ms:1600 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:688272850 var:1.66966% ms:688 runs:50 conv_ops:499321250]
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Skip: same size with any number of digits
+Converting 1198372 short with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+4%) boost::spirit::karma [avg:135849576 var:2.6487% ms:135 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:129989893 var:7.47205% ms:129 runs:50 conv_ops:479348800]
+Converting 699050 int with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+143%) boost::spirit::karma [avg:553136071 var:15.5392% ms:553 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:227401074 var:1.87673% ms:227 runs:50 conv_ops:489335000]
+Converting 399457 long with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+142%) boost::spirit::karma [avg:1530107791 var:5.15137% ms:1530 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:631718983 var:1.07852% ms:631 runs:50 conv_ops:499321250]
+Converting 399457 long long with ANY base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+146%) boost::spirit::karma [avg:1559088479 var:4.13323% ms:1559 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:632458275 var:1.03375% ms:632 runs:50 conv_ops:499321250]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+9%) boost::spirit::karma [avg:68034676 var:3.98205% ms:68 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:62191420 var:3.02722% ms:62 runs:50 conv_ops:479348800]
+Converting 699050 int with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+28%) boost::spirit::karma [avg:82450402 var:4.3368% ms:82 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:63951938 var:2.79404% ms:63 runs:50 conv_ops:489335000]
+Converting 399457 long with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+36%) boost::spirit::karma [avg:89328108 var:4.56322% ms:89 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:65582532 var:3.26006% ms:65 runs:50 conv_ops:499321250]
+Converting 399457 long long with 1 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+37%) boost::spirit::karma [avg:89691140 var:3.52293% ms:89 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:65173697 var:2.06374% ms:65 runs:50 conv_ops:499321250]
+Converting 1198372 short with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+17%) boost::spirit::karma [avg:25889018 var:5.06128% ms:25 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:21952723 var:9.53064% ms:21 runs:50 conv_ops:479348800]
+Converting 699050 int with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+95%) boost::spirit::karma [avg:44083568 var:8.34757% ms:44 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:22492500 var:9.26385% ms:22 runs:50 conv_ops:489335000]
+Converting 399457 long with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+131%) boost::spirit::karma [avg:52905084 var:7.08978% ms:52 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:22871194 var:3.27933% ms:22 runs:50 conv_ops:499321250]
+Converting 399457 long long with 1 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+118%) boost::spirit::karma [avg:52155292 var:6.5239% ms:52 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:23905691 var:12.1124% ms:23 runs:50 conv_ops:499321250]
+Converting 1198372 short with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+22%) boost::spirit::karma [avg:26040951 var:5.4731% ms:26 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:21221125 var:1.54634% ms:21 runs:50 conv_ops:479348800]
+Converting 699050 int with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+98%) boost::spirit::karma [avg:43971652 var:6.68556% ms:43 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:22193438 var:6.16752% ms:22 runs:50 conv_ops:489335000]
+Converting 399457 long with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+124%) boost::spirit::karma [avg:51060440 var:2.86268% ms:51 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:22731794 var:3.09686% ms:22 runs:50 conv_ops:499321250]
+Converting 399457 long long with 1 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+118%) boost::spirit::karma [avg:51633410 var:3.41272% ms:51 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:23628051 var:8.28613% ms:23 runs:50 conv_ops:499321250]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+5%) boost::spirit::karma [avg:93521231 var:4.50028% ms:93 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:88314514 var:5.47438% ms:88 runs:50 conv_ops:479348800]
+Converting 699050 int with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+31%) boost::spirit::karma [avg:119422377 var:4.48351% ms:119 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:90544544 var:3.0547% ms:90 runs:50 conv_ops:489335000]
+Converting 399457 long with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+42%) boost::spirit::karma [avg:136479978 var:2.27234% ms:136 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:95445140 var:5.95979% ms:95 runs:50 conv_ops:499321250]
+Converting 399457 long long with 2 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+49%) boost::spirit::karma [avg:139769276 var:8.9539% ms:139 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:93330542 var:4.66988% ms:93 runs:50 conv_ops:499321250]
+Converting 1198372 short with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+2%) boost::spirit::karma [avg:44056082 var:6.13% ms:44 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:42946522 var:9.00401% ms:42 runs:50 conv_ops:479348800]
+Converting 699050 int with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+82%) boost::spirit::karma [avg:74140966 var:9.59546% ms:74 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:40619670 var:3.75597% ms:40 runs:50 conv_ops:489335000]
+Converting 399457 long with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+102%) boost::spirit::karma [avg:89965843 var:5.67407% ms:89 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:44326919 var:17.3183% ms:44 runs:50 conv_ops:499321250]
+Converting 399457 long long with 2 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+117%) boost::spirit::karma [avg:89420329 var:3.37668% ms:89 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:41072936 var:8.54785% ms:41 runs:50 conv_ops:499321250]
+Converting 1198372 short with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+7%) boost::spirit::karma [avg:54410976 var:5.92125% ms:54 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:50478979 var:7.88514% ms:50 runs:50 conv_ops:479348800]
+Converting 699050 int with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+63%) boost::spirit::karma [avg:82287079 var:5.46292% ms:82 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:50277946 var:8.13445% ms:50 runs:50 conv_ops:489335000]
+Converting 399457 long with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+87%) boost::spirit::karma [avg:101222753 var:3.2934% ms:101 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:54004126 var:14.7718% ms:54 runs:50 conv_ops:499321250]
+Converting 399457 long long with 2 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+101%) boost::spirit::karma [avg:100875089 var:2.5149% ms:100 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:50085340 var:5.01589% ms:50 runs:50 conv_ops:499321250]
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Converting 1198372 short with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+1%) boost::spirit::karma [avg:132391133 var:2.04829% ms:132 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:130980124 var:3.04821% ms:130 runs:50 conv_ops:479348800]
+Converting 699050 int with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+56%) boost::spirit::karma [avg:203979982 var:7.67329% ms:203 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:130501323 var:2.84373% ms:130 runs:50 conv_ops:489335000]
+Converting 399457 long with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+82%) boost::spirit::karma [avg:260109576 var:2.2758% ms:260 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:142309845 var:3.48376% ms:142 runs:50 conv_ops:499321250]
+Converting 399457 long long with 4 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+82%) boost::spirit::karma [avg:260459592 var:2.46378% ms:260 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:143074979 var:5.0062% ms:143 runs:50 conv_ops:499321250]
+Converting 1198372 short with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+4%) boost::spirit::karma [avg:85427424 var:2.36078% ms:85 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:81370517 var:3.99444% ms:81 runs:50 conv_ops:479348800]
+Converting 699050 int with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+103%) boost::spirit::karma [avg:155152474 var:8.18937% ms:155 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:76213414 var:4.60021% ms:76 runs:50 conv_ops:489335000]
+Converting 399457 long with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+170%) boost::spirit::karma [avg:219613510 var:3.79473% ms:219 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:81248322 var:4.8049% ms:81 runs:50 conv_ops:499321250]
+Converting 399457 long long with 4 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+165%) boost::spirit::karma [avg:215804778 var:3.66118% ms:215 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:81142706 var:5.02425% ms:81 runs:50 conv_ops:499321250]
+Converting 1198372 short with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+              (+7%) boost::spirit::karma [avg:95937130 var:3.14469% ms:95 runs:50 conv_ops:479348800]
+                             (!) reverse [avg:89357204 var:2.72059% ms:89 runs:50 conv_ops:479348800]
+Converting 699050 int with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+             (+87%) boost::spirit::karma [avg:165436325 var:7.34879% ms:165 runs:50 conv_ops:489335000]
+                             (!) reverse [avg:88255452 var:7.10673% ms:88 runs:50 conv_ops:489335000]
+Converting 399457 long with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+134%) boost::spirit::karma [avg:224250620 var:2.39907% ms:224 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:95633810 var:6.77428% ms:95 runs:50 conv_ops:499321250]
+Converting 399457 long long with 4 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+138%) boost::spirit::karma [avg:223374453 var:2.37057% ms:223 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:93767119 var:4.40118% ms:93 runs:50 conv_ops:499321250]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Skip: negative/positive with same size
+Skip: negative/positive with same size
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 399457 long with 10 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+127%) boost::spirit::karma [avg:775401925 var:4.13231% ms:775 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:340880058 var:1.14812% ms:340 runs:50 conv_ops:499321250]
+Converting 399457 long long with 10 base-10 digits to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+127%) boost::spirit::karma [avg:788085811 var:3.27896% ms:788 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:346713288 var:5.77554% ms:346 runs:50 conv_ops:499321250]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 399457 long with 10 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+134%) boost::spirit::karma [avg:698593074 var:2.33963% ms:698 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:297609920 var:2.65672% ms:297 runs:50 conv_ops:499321250]
+Converting 399457 long long with 10 base-10 digits (no sign) (same size) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+136%) boost::spirit::karma [avg:699423667 var:1.75218% ms:699 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:295862569 var:1.88345% ms:295 runs:50 conv_ops:499321250]
+Skip: too much digits(10) for current type(short)
+Skip: too much digits(10) for current type(int)
+Converting 399457 long with 10 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+134%) boost::spirit::karma [avg:721669331 var:2.79647% ms:721 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:307612949 var:2.24401% ms:307 runs:50 conv_ops:499321250]
+Converting 399457 long long with 10 base-10 digits (no sign) to buffer 8388608 bytes
+sizeof(short, int, long, long long, void*): 2 4 8 8 8
+Run tests #1 #2 #3 #4 #5 Results: 
+            (+138%) boost::spirit::karma [avg:727599695 var:2.46411% ms:727 runs:50 conv_ops:499321250]
+                             (!) reverse [avg:305063398 var:1.19423% ms:305 runs:50 conv_ops:499321250]
