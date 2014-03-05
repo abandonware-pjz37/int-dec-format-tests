@@ -95,47 +95,22 @@ template <class Type> void run_with_type(
   Runner<In, AlgoTmpbuf> algo_tmpbuf(input, output, "tmpbuf");
   Runner<In, AlgoCounting> algo_counting(input, output, "counting");
 
-  std::cout << "Run tests ";
+  std::cout << "Run tests";
 
-  std::cout << "#1 " << std::flush;
-  algo_fmt_format.run();
-  algo_boost_karma.run();
-  algo_alexandrescu.run();
-  algo_reverse.run();
-  algo_tmpbuf.run();
-  algo_counting.run();
+  enum {
+    N = 5
+  };
 
-  std::cout << "#2 " << std::flush;
-  algo_fmt_format.run();
-  algo_boost_karma.run();
-  algo_alexandrescu.run();
-  algo_counting.run();
-  algo_tmpbuf.run();
-  algo_reverse.run();
+  for (int i = 0; i < N; ++i) {
+    std::cout << " #" << i << std::flush;
 
-  std::cout << "#3 " << std::flush;
-  algo_alexandrescu.run();
-  algo_fmt_format.run();
-  algo_counting.run();
-  algo_boost_karma.run();
-  algo_reverse.run();
-  algo_tmpbuf.run();
-
-  std::cout << "#4 " << std::flush;
-  algo_fmt_format.run();
-  algo_alexandrescu.run();
-  algo_boost_karma.run();
-  algo_reverse.run();
-  algo_counting.run();
-  algo_tmpbuf.run();
-
-  std::cout << "#5 " << std::flush;
-  algo_counting.run();
-  algo_reverse.run();
-  algo_fmt_format.run();
-  algo_boost_karma.run();
-  algo_tmpbuf.run();
-  algo_alexandrescu.run();
+    algo_fmt_format.run();
+    algo_boost_karma.run();
+    algo_alexandrescu.run();
+    algo_reverse.run();
+    algo_tmpbuf.run();
+    algo_counting.run();
+  }
 
   std::cout << "Results: " << std::endl;
   Timer::Duration algo_fmt_format_avg = algo_fmt_format.average();
@@ -165,8 +140,31 @@ template <class Type> void run_with_type(
   algo_counting.output_result(min);
 }
 
+class RunFunctor {
+ public:
+  RunFunctor(size_t output_size, int digit, bool sign, bool same_size):
+      output_size_(output_size),
+      digit_(digit),
+      sign_(sign),
+      same_size_(same_size) {
+  }
+
+  template <class T>
+  void operator()(const T&) const {
+    run_with_type<T>(output_size_, digit_, sign_, same_size_);
+  }
+
+ private:
+  const size_t output_size_;
+  const int digit_;
+  const bool sign_;
+  const bool same_size_;
+};
+
 int main() {
   try {
+    using RunTypes = boost::fusion::vector<short, int, long, long long>;
+
     std::vector<size_t> output_size_variants{30, 300, 4096};
     std::vector<int> digit_variants{0, 1, 2, 4, 10};
     std::vector<bool> sign_variants{true, false};
@@ -184,10 +182,8 @@ int main() {
           for (auto same_size: same_size_variants) {
             run_any = true;
 
-            run_with_type<short>(output_size, digit, sign, same_size);
-            run_with_type<int>(output_size, digit, sign, same_size);
-            run_with_type<long>(output_size, digit, sign, same_size);
-            run_with_type<long long>(output_size, digit, sign, same_size);
+            const RunFunctor run_functor(output_size, digit, sign, same_size);
+            boost::fusion::for_each(RunTypes(), run_functor);
           }
         }
       }
